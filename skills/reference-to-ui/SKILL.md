@@ -25,6 +25,8 @@ description: Use when building, redesigning, or tokenizing UI from references, s
 
 ## 레포 디자인 맥락
 
+디자인의 기본 화면 배경은 `#FFFFFF`로 고정한다. 오프화이트·크림·연회색·브랜드 틴트로 대체하지 않는다. 다크모드는 사용자의 명시 요청에만 적용하며 어두운 레퍼런스·기기 설정만으로 추가하지 않는다. 기존 문서와 충돌하면 현재 배경 요구를 우선하고 변경 이유·범위를 기록한다. 내부 요소의 기능색·사진은 역할을 구별하며 넓은 면으로 기본 배경을 우회하지 않는다.
+
 대상 레포 루트의 `DESIGN.md`를 먼저 읽고 현재 제품 기준을 적용한다. 없으면 구현 전 `design-md`로 기존 UI·토큰·레퍼런스를 분석해 작성한다. 기존 문서 갱신도 해당 스킬을 사용하며 사용할 수 없으면 같은 분석과 보존 원칙으로 직접 작성한다. 디자인 기준이 바뀌면 루트 문서와 실제 토큰/구현을 함께 갱신한다. 상세 계약은 기존 경로에 유지하고 루트 문서에서 연결한다.
 
 ## 구현 전 계약
@@ -36,6 +38,8 @@ description: Use when building, redesigning, or tokenizing UI from references, s
 [제품의 본질에서 배치하기](references/product-reasoning.md)를 먼저 읽는다. 사용자·문제·핵심 행동·필요한 정보를 정의하고, 중요한 요소마다 배치/강조 이유를 연결한다. 레퍼런스에서 유지할 원리와 새 아이디어의 역할·검증 방법을 기록한다. 기존 요구로 알 수 있는 내용을 되묻지 않는다.
 
 [레퍼런스 장점의 결합과 품질 검증](references/reference-synthesis.md)을 반드시 읽고 Q-ID별 채택 특징·구현 요소·비교 근거를 정한다. 기능이나 색 일부만 가져온 것을 레퍼런스 반영 완료로 보지 않는다.
+
+새 Primary 색을 고르거나 색 적합성·강조에 대한 교정을 받으면 [Primary 컬러 선택](references/primary-color.md)을 읽는다. 제품 내용·레퍼런스의 명도/채도/면적 관계와 실제 화면 비교로 결정하고 브랜드색·주 행동·선택·상태의 역할을 구별한다. 기존 시스템·명시 색을 보존하며 익숙한 예시 HEX나 업종별 색 고정관념으로 대체하지 않는다.
 
 [적용 형식](references/application-format.md)과 [근거 없는 디자인 방지 규칙](references/design-guardrails.md)을 읽고 프로젝트 문서 위치 또는 `design/design-contract.md`에 작성한다. 작은 수정은 채팅의 짧은 계약으로 충분하다.
 
