@@ -23,6 +23,7 @@
 - UI 설계·구현·토큰 변경: [reference-to-ui](skills/reference-to-ui/SKILL.md)를 읽는다. 사용자 문제, 핵심 행동, 필요한 정보를 먼저 정의하고 요소별 위치·크기·강조 이유를 연결한다. 기존 요구로 알 수 있는 내용을 반복해서 묻지 않는다.
 - 레퍼런스 조사·상세 분석: [uibowl-research](skills/uibowl-research/SKILL.md)를 읽는다. 실제 이미지 근거를 남기고 사방 패딩·간격·타이포그래피·버튼 배경과 글자/아이콘 색·아이콘 선/채움·상태를 분석한다. 이미지 px와 CSS px, 관찰·추정·새 결정을 구별한다.
 - UI 스타일: [토큰 계약](skills/reference-to-ui/references/design-tokens.md)을 따른다. 기존 토큰을 우선하고 정의 → 참조 → 실제 사용처를 확인한다. 직접값 예외와 이유를 기록한다.
+- 간격 설계·교정·리듬 감사: [Spacing Audit](skills/reference-to-ui/references/spacing-audit.md)을 따른다. 새 구조8단위·촘촘한 내부4단위를 중심으로 판단하고 기존 토큰/의도된 예외를 보존한다. 기존 값 수정 전 전체 요약을 보여주며 구조의8단위 검토 의견을 하드 오류로 바꾸지 않는다.
 - 생성·수정 코드: [anti-slop 기준](skills/reference-to-ui/references/anti-slop-code.md)을 따른다. TS/JS에는 해당 일반 규칙 검사와 lint/typecheck를 적용한다. 다른 언어는 그 언어에 맞는 검증을 수행하며 anti-slop 검사 통과로 보고하지 않는다. 규칙을 끄거나 타입 단언을 반복해 통과시키지 않는다.
 - 한국어 제품 문구: [ux-copy](skills/ux-copy/SKILL.md)를 읽는다. 토스의 8가지 원칙을 적용하고 번역투·불필요한 영어·중복 설명을 줄인다. 실제 행동, 비용, 조건, 가능성, 선택권을 보존한다.
 - 가입·첫 사용·동의·복구 흐름: [onboarding-flow](skills/onboarding-flow/SKILL.md)를 읽는다.
