@@ -1,0 +1,42 @@
+# 종속 프로젝트 동기화
+
+사용자 요구(2026-10-21): samkill-ui 변경이 이를 호출하거나 참고한 세 프로젝트에 영향을 주면 해당 부분도 수정한다. 원본만 커밋하고 후속 프로젝트를 놓치지 않는다.
+
+## 관리 대상
+
+| 프로젝트 | 확인한 관계 | 변경 시 확인할 실제 사용처 |
+|---|---|---|
+| [samkill-pdp-design](https://github.com/safethecode/samkill-pdp-design) | samkill-ui의 PDP 라우팅, 분해/검수 스킬 복사본, PDP 전용 제작 절차 | `skills/pdp-design/`, `skills/reference-decompose/`, `skills/reference-review/`, README·DESIGN, 별도 개인 pdp-design 설치본 |
+| [qwen3.6-35b-a3b-coding-samkill-ui](https://github.com/safethecode/qwen3.6-35b-a3b-coding-samkill-ui) | 8개 공통 스킬을 guide.md로 가공한 스냅샷과 로컬 Qwen 실행 계약 | `skills/qwen-samkill-ui/`, `scripts/skill-context.mjs`의 실제 전달 경로, AGENTS·UPSTREAM·출처 해시, 설치기 소비 경로 |
+| [samkill-goodnotes-diary](https://github.com/safethecode/samkill-goodnotes-diary) | reference-decompose 사용 기록과 자체 PDF 조사·분해·제작·검수에 반영한 원칙 | `skills/samkill-goodnotes-design/`의 해당 본문/참고 기준, DESIGN·README·맥락 기록 |
+
+프로젝트는 각각 별도 저장소다. 개인 설치본과 저장소 원본, 과거 실험 산출물을 구별한다. 찾을 수 없는 프로젝트는 접근 가능 여부를 확인하고 남은 일로 기록한다. 수정 권한을 푸시·배포·새 설치 권한으로 확대하지 않는다.
+
+## 변경 시 수행
+
+1. 원본의 변경 경로·이전/현재 커밋과 변경 의미를 확인한다. 각 대상의 AGENTS·DESIGN·관련 맥락, Git 상태와 해당 사용처를 읽는다.
+2. 직접 호출, 복사, 변환, 원칙만 반영한 관계를 실제 파일로 대조한다. 변경에 영향받는 진입점·필수 참고 기준·활성 프롬프트를 수정한다. 원칙 반영은 제품별 단계에 대응하고 모든 스킬의 일괄 복사로 바꾸지 않는다.
+3. 기존 사용자 요구·제품별 예외와 과거 실패를 보존한다. 과거 출력이나 고정 해시·설치 영수증을 조용히 덮어쓰지 않는다. 이번에 새 설치/릴리스하지 않은 복사본은 자동 최신화됐다고 하지 않는다.
+4. 문서·링크·메타데이터와 실제 전달 경로를 검사한다. 코드·판독기 변경 시 해당 프로젝트 검사를 실행한다. 문서 검사로 제품 렌더·행동·실기기 게이트를 통과시키지 않는다.
+5. 원본 버전, 실제 수정 경로, 대상 커밋, 설치본 대조, 검증·미실행과 후속 작업을 기록한다. 목적별 커밋에서 기존 무관한 변경을 제외하고 현재 승인 범위로만 원격에 반영한다.
+
+## 2026-10-21 실행 순서 반영
+
+원본 기준 커밋은 `ad3f8110df2522d72150831e99429744861ce8a5`다. `uibowl-research → reference-decompose → reference-to-ui → reference-review` 순서, 단계별 기존 자료 재사용, 검색만·국소 수정·접근 실패의 범위를 다뤘다.
+
+- PDP: 실제 전용 진입점과 Gen 인계에 원본 확인 → 분해 → 콘셉트/Gen → 렌더 비교를 반영했다. 상품 조사에 UIbowl을 강제하지 않았다. 이번에 변경한 원본3개 파일은 PDP 복사본에 없으므로 전체 스킬 묶음을 추가하지 않았다. 기존 분해/검수 복사본 전체가 최신이라는 인증은 아니다. 기록은 대상 `docs/upstream-sync.md`다.
+- Qwen: 원본3개 파일의 기존 변환 바이트를 확인한 뒤 갱신하고 source/adapted SHA-256을 남겼다. 로컬 진입점과 모든 direct stage/컴포넌트에 실제 전달하는 `decomposed-layout.md`도 맞췄다. 기존 가이드 전달 코드·로컬 Python 잠금 방식은 보존했다. 기록은 대상 `UPSTREAM.md`, `docs/upstream-sync-20261021.md`, `evals/results/upstream-20261021/sync.json`이다.
+- Goodnotes: 직접 호출/복사본은 없고 자체 조사·분해 절차가 원칙을 반영한다. 진입점에 단계별 재사용·부재 구분을 명시하고 PDF 전용 의미와 최신 빈 서식 요구를 보존했다. 기존 PDF·고정 해시·설치 릴리스를 바꾸지 않았다. 기록은 대상 `docs/context/upstream-sync-2026-10-21.md`다.
+
+DOWNSTREAM-SYNC-01 수동 대조: 세 관계를 실제 파일에서 구별했고, upstream 버전 문서만 수정하는 데서 끝내지 않고 각 활성 진입점·공통 프롬프트의 해당 부분을 수정했다. 제품별 기존 출력은 그대로 두었다. 신규 UI/PDF 품질 실험으로 확대하지 않는다.
+
+| 대상 | 반영 커밋 | 실행한 검증 |
+|---|---|---|
+| 원본 실행 순서 | `ad3f811` | 2개 스킬 형식·YAML·스테이징 로컬 링크193개·공백 검사 |
+| PDP | `9a9e387` | 프로젝트/개인 설치본 스킬 형식·로컬 링크25개·공백 검사, 개인 설치8파일 전체 바이트 일치 |
+| Qwen | `bf372d7` | 스킬 형식·로컬 링크63개/앵커4개·3개 원본/가공 해시·공백 검사, Node213개와 Python게이트2개 |
+| Goodnotes | `32bacde` | 스킬 형식·로컬 링크56개·공백 검사, PDF/엔진/설치 릴리스 변경 없음 |
+
+Qwen 첫 Node 검사는 macOS 임시 폴더의 symlink/realpath 표기 차이로212/213이었다. 테스트를 바꾸지 않고 `TMPDIR=/private/tmp npm test`로 전체를 재실행해213/213을 확인했다. 첫 실패와 환경별 결과는 대상 `validation.json`에 보존했다. 실제 모델 생성·새 UI/PDF 렌더·시각/행동·Goodnotes 실기기 시험은 수행하지 않았다. 개인 samkill-ui/reference-to-ui는 원본 심볼릭 링크를, PDP는 이번에 갱신한 별도 복사본을 확인했다. 다른 프로젝트의 기존 외부 설치본까지 새로 설치/갱신한 것은 아니다.
+
+세 대상은 모두 기존 origin/main보다1커밋 앞선 로컬 상태다. 이번 작업은 푸시하지 않았다. 원본의 기존 screen-spec·Round07/11·output 및 PDP의 기존 미추적 수집 파일은 커밋에서 제외했다.

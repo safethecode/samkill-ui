@@ -24,6 +24,8 @@
 
 레퍼런스 기반 UI 작업은 `uibowl-research → reference-decompose → reference-to-ui → reference-review` 순서로 진행해요. 충분한 자료는 각 단계에서 적합성을 확인해 재사용해요. 문구·온보딩 스킬은 해당 과제가 있을 때만 사용해요. 작업에 필요한 스킬만 읽어요. 루트 `DESIGN.md`가 있으면 먼저 반영하고, 없으면 `design-md`가 분석해 작성해요.
 
+공통 기준을 바꾸면 PDP·Qwen·Goodnotes 프로젝트의 관련 호출·복사본·적용 원칙도 함께 확인해요. 대상과 반영 범위는 [종속 프로젝트 동기화](docs/downstream-sync.md)에서 관리해요.
+
 프로젝트에 기존 문서 위치가 있으면 그 위치를 써요. 없으면 아래 결과물을 필요한 것만 만들어요.
 
 ```text
