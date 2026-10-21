@@ -16,7 +16,7 @@
 
 통합 진입에서 해당하는 모든 분기의 실제 SKILL.md와 필수 참고 기준을 읽고 적용한다. 설계·구현·핵심 화면 확장·최종 전달 시점의 산출물과 검증 근거로 누락을 확인하며, 스킬 이름 나열이나 파일 읽기만으로 적용 완료를 판단하지 않는다.
 
-원본을 확보한 뒤 [reference-decompose](skills/reference-decompose/SKILL.md)로 관찰을 요소·관계·조립 언어로 번역하고 제품에 적용한다. 프롬프트 재현 실험의 사례별 값과 사용자 교정은 [별도 실험 기준](design/reference-language/DESIGN.md)에 둔다.
+레퍼런스 기반 UI 작업은 `uibowl-research → reference-decompose → reference-to-ui → reference-review` 순서다. 조사 결과를 확인한 뒤 [reference-decompose](skills/reference-decompose/SKILL.md)로 관찰을 요소·관계·조립 언어로 번역하고, 그다음 제품에 적용한다. 기존 자료는 각 단계에서 확인해 재사용하며 구현을 먼저 시작하지 않는다. 프롬프트 재현 실험의 사례별 값과 사용자 교정은 [별도 실험 기준](design/reference-language/DESIGN.md)에 둔다.
 
 [요소 구성](skills/reference-to-ui/references/ui-composition.md), [토큰과 패딩 소유권](skills/reference-to-ui/references/design-tokens.md), [레퍼런스 결합](skills/reference-to-ui/references/reference-synthesis.md)을 적용한다. 공통 역할은 일관되게 연결하며 묶기·분리·이동·삭제는 사용자의 과제와 요소 관계로 판단한다.
 
