@@ -75,3 +75,13 @@ PDP의 원래 main 작업 폴더와 미추적 파일은 그대로이며 통합 �
 | samkill-goodnotes-diary | `41f3a65182348ba25cb0899025a7eb656c6f960c` |
 
 원본은43개 파일에서 해당 문단만 분리했고, Qwen14/PDP10/Goodnotes6개 파일을 커밋했다. 원본/가공 해시8개를 원본 구현 커밋3b7ed67과 다시 대조했고 종속 문서의 출처를 연결했다. 스테이징 링크·앵커·공백 확인도 통과했다. PDP 전체69개 검사를 canonical TMPDIR에서 통과했으며 초기 sparse/경로 실패와 재실행 조건을 [원격·검증 기록](../evals/results/reference-evidence-2026-10-22/push-result.json)에 보존했다. 원본의 이 결과 문서는 후속 문서 커밋으로 반영한다.
+
+## 2026-10-23 확장 JSON·raw·해석 전달
+
+사용자가 좌표·HEX/alpha·레이아웃 관계를 확장 JSON으로 전달하고 전체 raw·받은 쪽 해석·핵심 화면 비교를 연결하도록 요청하고 이번 범위의 계속 커밋·푸시를 승인했다. 원본 기준은 `4333970` 이후 변경이며 구현 커밋은 확정 후 연결한다. [실행 결과](../evals/results/decomposition-json-2026-10-23/README.md)에 실제 검증과 한계를 기록한다.
+
+- Qwen: 바뀐 guide/참고 기준·합성 예제와 helper를 가공해 반영한다. 로컬 진입점·AGENTS·실제 전달되는 decomposed-layout에 export payload를 REFERENCE.md/공유 component 입력으로 넣도록 명시했다. 전체 runner가 파일 이름만 보고 자동 로드/추론을 감시한다고 주장하지 않는다. 기존 Windows/sidecar 잠금은 보존한다. 루트 DESIGN은 도구 범위로 추가한다.
+- PDP: 기존 제품별 스킬 차이를 보존한 문단 패치, Gen/learning-input freeze의 실제 payload·원문·첫 출력 비교와 최종 소비 기록, helper와 예제를 반영한다. 개인 설치에는 이번2문단만 추가한다. 기존 상품/팔레트·원래 checkout·수집 파일은 그대로다.
+- Goodnotes: 앱75게이트를 들여오지 않고 PDF 전용 인계/해석·HEX/좌표계·원문/확장·대표면의 첫 비교/최종 G2/G5 처리 기록으로 대응한다. 독립 helper와 예제는 같고 새 PDF·릴리스·개인 설치를 만들지 않는다.
+
+원본/Qwen/PDP는각60개 회귀, Goodnotes는14개 분해/export 검사, 기존 Qwen213/2개·PDP69개를 통과했다. 구조 검증으로 실제 모델 이해도·상품/PDF 품질을 승인하지 않는다. 출처 해시·반영 커밋·원격 결과는 후속 기록으로 확정한다.

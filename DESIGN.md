@@ -20,6 +20,8 @@
 
 [수치 인계와 원본 비교](skills/reference-review/references/reference-evidence.md)를 실제 실행 검사에 연결한다. 핵심 치수·비율·단위·근거를 확인한 prepare READY 후 구현하고, RUI-16/17은 원본→계약→결과의 수치와 전체 시각 판독을 함께 검증한다. READY나 숫자 일치가 디자인 품질 승인은 아니다. 원본 관찰은 제약 적용 전에 보존하며 기본 배경·장식 기준 때문에 모든 내부 표현을 초기화하지 않는다.
 
+분해의 관리 원본은 [확장 JSON과 전체 raw](skills/reference-decompose/references/decomposition-json.md)다. 좌표계·요소·HEX/투명도·레이아웃 관계·상태·제품별 확장을 보존하고 구현 담당의 해석, 핵심 화면의 첫 비교, 최종 처리 기록까지 연결한다. 색/배치의 실측·추정·미확인을 구별하고 구조 검사로 실제 이해·미관을 승인하지 않는다.
+
 [요소 구성](skills/reference-to-ui/references/ui-composition.md), [토큰과 패딩 소유권](skills/reference-to-ui/references/design-tokens.md), [레퍼런스 결합](skills/reference-to-ui/references/reference-synthesis.md)을 적용한다. 공통 역할은 일관되게 연결하며 묶기·분리·이동·삭제는 사용자의 과제와 요소 관계로 판단한다.
 
 간격 설계·수정·리듬 점검은 [Spacing Audit](skills/reference-to-ui/references/spacing-audit.md)으로 구조8단위·촘촘한 내부4단위를 중심으로 판단한다. 내부20은 제공 기준의 허용값, 구조20/28 등은 검토 의견이다. 기존 변수/토큰·광학 보정·가변 배치는 보존하고 수정 전 전체 요약과 실제 전후 검증을 남긴다. 이 기준으로 기존 제품·Round 데모의 토큰을 일괄 변경하지 않는다.

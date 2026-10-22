@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "source_base_commit": "433397052b332f434e7fac390b240ad58f114892",
+  "scope": "Structural checks and synthetic fixtures, not model comprehension or new UI quality",
+  "tests": {
+    "source_gate": 46,
+    "source_decomposition": 14,
+    "qwen_same_suite": 60,
+    "pdp_same_suite": 60,
+    "goodnotes_decomposition": 14,
+    "qwen_node": 213,
+    "qwen_python": 2,
+    "pdp_full_suite": 69
+  },
+  "tdd": {
+    "initial_cases": 12,
+    "source_and_qwen_and_pdp_before": "3 failures and14 subtest errors: old CLI has no decompose command",
+    "source_after_first_implementation": "12 passed",
+    "final_decomposition_cases": 14
+  },
+  "limitations": [
+    "No new inference or fresh product UI/PDF generation was run.",
+    "Interpretation and consumption records cannot prove honest observations, real understanding, screenshot reading or aesthetics.",
+    "Host must put exported payload into the actual generation input; automatic model inference interception was not added.",
+    "Current artifacts are new versioned inputs; prior v1 evaluations are preserved."
+  ],
+  "files": [
+    {
+      "path": "skills/reference-review/scripts/reference_check.py",
+      "sha256": "e7e145d234d7b745ed01eb5a88475977a19d2190c9d4fbe5c5f77f0f5fb19e8b"
+    },
+    {
+      "path": "skills/reference-review/scripts/design_gate.py",
+      "sha256": "f42fb014bf9ebc5c153b6163af6c1767cd7910d1023511135223a173d755a69b"
+    },
+    {
+      "path": "skills/reference-decompose/references/decomposition-json.md",
+      "sha256": "04e923fa8fad257779cdc3a7ebf34756b38b278b153d448470944564381278df"
+    },
+    {
+      "path": "evals/reference_json_fixture.py",
+      "sha256": "fe97eddaabeef8f944a217b78b3394b977a3b5d5c622960adfcfcf0865ccfc0e"
+    },
+    {
+      "path": "evals/test_decomposition.py",
+      "sha256": "033664efd6d0a65fc3e41b2c4b0b3d79b8cae5437fd1398022d8f9501700482a"
+    },
+    {
+      "path": "evals/test_design_gate.py",
+      "sha256": "e18529c43ca7932405409909960eb0262d5b888af031249a89d112ff89718a8a"
+    }
+  ],
+  "file_validation": {
+    "skills": 10,
+    "source_adapted_hash_pairs": 15,
+    "pdp_audit_links": {
+      "missing": []
+    },
+    "gate_locks": "Existing functions except main scope wording unchanged by AST comparison",
+    "helper_copies": "PDP/Goodnotes bytes identical; Qwen functions identical with module docstring omitted",
+    "diff_check": "passed in all four repositories",
+    "staged_source": {
+      "files": 28,
+      "local_links": 289,
+      "anchors": 16,
+      "errors": []
+    }
+  }
+}

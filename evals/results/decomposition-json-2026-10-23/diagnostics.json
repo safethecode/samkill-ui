@@ -1,0 +1,22 @@
+[
+  {
+    "case": "named color instead of HEX",
+    "exit_code": 2,
+    "result": {
+      "status": "UNVERIFIED",
+      "errors": [
+        "Colors need uppercase #RRGGBB; preserve original notation separately"
+      ]
+    }
+  },
+  {
+    "case": "silently omitted extension treatment",
+    "exit_code": 2,
+    "result": {
+      "status": "UNVERIFIED",
+      "errors": [
+        "Treatment silently omitted properties, raw analysis or extension data"
+      ]
+    }
+  }
+]

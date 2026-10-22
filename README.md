@@ -26,6 +26,8 @@
 
 공통 기준을 바꾸면 PDP·Qwen·Goodnotes 프로젝트의 관련 호출·복사본·적용 원칙도 함께 확인해요. 대상과 반영 범위는 [종속 프로젝트 동기화](docs/downstream-sync.md)에서 관리해요.
 
+분해는 [확장 가능한 JSON과 전체 원문](skills/reference-decompose/references/decomposition-json.md)으로 전달해요. 좌표·HEX 색·요소 관계를 근거와 연결하고, 받은 쪽의 해석 → 핵심 화면 비교 → 최종 처리 기록을 확인해요. [합성 예제](skills/reference-decompose/references/json-example/decomposition.json)는 실제 파일로 검사할 수 있어요.
+
 프로젝트에 기존 문서 위치가 있으면 그 위치를 써요. 없으면 아래 결과물을 필요한 것만 만들어요.
 
 ```text

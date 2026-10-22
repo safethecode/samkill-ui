@@ -8,6 +8,8 @@ import sys
 import tempfile
 import unittest
 
+from reference_json_fixture import binding, decomposition_fixture
+
 
 SCRIPT = Path(os.environ.get("DESIGN_GATE_SCRIPT", str(
     Path(__file__).resolve().parents[1] / "skills/reference-review/scripts/design_gate.py")))
@@ -209,18 +211,33 @@ class DesignGateTests(unittest.TestCase):
         self.contract["rules"][0]["id"] = "RUI-16"
         self.report["results"][0]["id"] = "RUI-16"
         self.write("catalog.json", self.catalog)
-        handoff = {"schema_version": 1, "anchors": [{
+        self.decomposition, self.interpretation = decomposition_fixture(self.root)
+        self.decomposition["spaces"][0]["unit"] = "CSS-px"
+        self.decomposition["elements"][0]["properties"]["width"]["unit"] = "CSS-px"
+        self.write("decomposition.json", self.decomposition)
+        self.interpretation["decomposition_sha256"] = binding(self.root, "decomposition.json")["sha256"]
+        self.write("interpretation.json", self.interpretation)
+        handoff = {"schema_version": 2, "decomposition": binding(self.root, "decomposition.json"),
+            "interpretation": binding(self.root, "interpretation.json"), "anchors": [{
             "id": "Q3-width", "feature": "public form column width",
-            "source": self.evidence("visual", "evidence/screen.png"),
+            "observation_id": "O1", "source": binding(self.root, "reference.svg"),
             "observed": {"value": 464, "unit": "CSS-px", "basis": "measured",
                          "method": "fixture DOM column bounding box"},
             "target": ".public-form", "expected": {"value": 464, "unit": "CSS-px", "tolerance": 8}}]}
         self.write("handoff.json", handoff)
         self.contract["reference_handoff"] = self.evidence("spec", "handoff.json")
         self.refresh_contract()
-        comparison = {"schema_version": 1,
+        self.core = {"schema_version": 1, "decomposition_sha256": handoff["decomposition"]["sha256"],
+            "interpretation_sha256": handoff["interpretation"]["sha256"],
+            "source_snapshot": binding(self.root, "src/button.css"), "capture": binding(self.root, "evidence/screen.png"),
+            "status": "retained", "reason": "Synthetic fixture; no visual quality claim"}
+        self.write("core.json", self.core)
+        comparison = {"schema_version": 2,
             "handoff_sha256": self.contract["reference_handoff"]["sha256"],
             "target_sha256": self.report["target_sha256"],
+            "core_review": binding(self.root, "core.json"),
+            "consumption": [{**item, "status": "applied" if item["status"] == "planned" else "unverified"}
+                            for item in self.interpretation["coverage"]],
             "results": [{"id": "Q3-width", "capture": self.evidence("visual", "evidence/screen.png"),
                 "actual": {"value": 464, "unit": "CSS-px", "method": "fixture output DOM column bounding box"}}],
             "visual_review": {"status": "retained", "reason": "Fixture only; not a real image assessment"}}
@@ -229,6 +246,15 @@ class DesignGateTests(unittest.TestCase):
         return handoff, comparison
 
     def refresh_reference(self, handoff, comparison):
+        self.write("decomposition.json", self.decomposition)
+        self.interpretation["decomposition_sha256"] = binding(self.root, "decomposition.json")["sha256"]
+        self.write("interpretation.json", self.interpretation)
+        handoff["decomposition"] = binding(self.root, "decomposition.json")
+        handoff["interpretation"] = binding(self.root, "interpretation.json")
+        self.core["decomposition_sha256"] = handoff["decomposition"]["sha256"]
+        self.core["interpretation_sha256"] = handoff["interpretation"]["sha256"]
+        self.write("core.json", self.core)
+        comparison["core_review"] = binding(self.root, "core.json")
         self.write("handoff.json", handoff)
         self.contract["reference_handoff"] = self.evidence("spec", "handoff.json")
         self.refresh_contract()
@@ -279,8 +305,7 @@ class DesignGateTests(unittest.TestCase):
 
     def test_reference_changed_source_invalidates_review(self):
         self.reference_fixture()
-        (self.root / "evidence/screen.png").write_bytes(b"changed reference")
-        self.report["results"][0]["evidence"][1] = self.evidence("visual", "evidence/screen.png")
+        (self.root / "reference.svg").write_bytes(b"changed reference")
         self.check("UNVERIFIED")
 
     def test_reference_numeric_match_does_not_replace_visual_review(self):
@@ -341,6 +366,7 @@ class DesignGateTests(unittest.TestCase):
         self.refresh_reference(handoff, comparison)
         self.check("UNVERIFIED")
         handoff["anchors"][0]["observed"]["uncertainty"] = 4
+        self.decomposition["elements"][0]["properties"]["width"].update(status="estimated", uncertainty="Synthetic +/-4px")
         self.refresh_reference(handoff, comparison)
         self.check("PASS")
 
@@ -359,6 +385,57 @@ class DesignGateTests(unittest.TestCase):
         result = subprocess.run(args, capture_output=True, text=True, timeout=10)
         self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
         self.assertEqual(json.loads(result.stdout)["status"], "UNVERIFIED")
+
+    def test_legacy_measurements_do_not_replace_full_decomposition(self):
+        handoff, comparison = self.reference_fixture()
+        handoff["schema_version"] = 1
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_missing_decomposition_or_readback_blocks_prepare(self):
+        for key in ("decomposition", "interpretation"):
+            with self.subTest(key=key):
+                handoff, comparison = self.reference_fixture()
+                del handoff[key]
+                self.write("handoff.json", handoff)
+                self.contract["reference_handoff"] = binding(self.root, "handoff.json")
+                self.refresh_contract()
+                self.assertEqual(self.run_cli("prepare", expected_exit=2)["status"], "UNVERIFIED")
+
+    def test_anchor_must_match_full_observation(self):
+        handoff, comparison = self.reference_fixture()
+        self.decomposition["elements"][0]["properties"]["width"]["value"] = 320
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_final_consumption_cannot_silently_drop_extensions(self):
+        handoff, comparison = self.reference_fixture()
+        comparison["consumption"].pop()
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_required_property_cannot_finish_unsupported(self):
+        handoff, comparison = self.reference_fixture()
+        comparison["consumption"][1]["status"] = "unsupported"
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_first_core_screen_regression_is_not_final_pass(self):
+        handoff, comparison = self.reference_fixture()
+        self.core["status"] = "regressed"
+        self.refresh_reference(handoff, comparison)
+        self.assertIn("RUI-16", self.check("FAIL")["failures"])
+
+    def test_core_comparison_needs_bound_source_and_capture(self):
+        self.reference_fixture()
+        (self.root / "core.json").unlink()
+        self.check("UNVERIFIED")
+
+    def test_stale_interpretation_cannot_approve_new_decomposition(self):
+        self.reference_fixture()
+        self.decomposition["revision"] = "2"
+        self.write("decomposition.json", self.decomposition)
+        self.check("UNVERIFIED")
 
 
 if __name__ == "__main__":
