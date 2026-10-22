@@ -1,0 +1,68 @@
+{
+  "verified_at": "2026-10-22T13:58:29.026582+00:00",
+  "scope": "Implementation commits verified on remote main; the following source documentation receipt is committed separately",
+  "repositories": [
+    {
+      "name": "samkill-ui",
+      "commit": "3b7ed67a994572b226601157a0114e78f924840d",
+      "remote_main": "3b7ed67a994572b226601157a0114e78f924840d"
+    },
+    {
+      "name": "qwen3.6-35b-a3b-coding-samkill-ui",
+      "commit": "f0534280739fea6cbbc3224b4836af940d427c5e",
+      "remote_main": "f0534280739fea6cbbc3224b4836af940d427c5e"
+    },
+    {
+      "name": "samkill-pdp-design",
+      "commit": "eb3b4361a40045449b06c31d2c7d279f7f4b9ddf",
+      "remote_main": "eb3b4361a40045449b06c31d2c7d279f7f4b9ddf"
+    },
+    {
+      "name": "samkill-goodnotes-diary",
+      "commit": "41f3a65182348ba25cb0899025a7eb656c6f960c",
+      "remote_main": "41f3a65182348ba25cb0899025a7eb656c6f960c"
+    }
+  ],
+  "additional_validation": {
+    "scope": "PDP full suite before commit",
+    "initial_run": {
+      "tests": 59,
+      "failures": 1,
+      "import_errors": 2,
+      "reason": "Sparse checkout omitted crawler; macOS temporary path alias broke the mocked read match"
+    },
+    "successful_run": {
+      "command": "TMPDIR=/private/tmp python3 -m unittest discover -s tests -v",
+      "tests": 69,
+      "failures": 0,
+      "errors": 0
+    },
+    "source_and_tests_changed_for_retry": false
+  },
+  "staged_file_checks": [
+    {
+      "scope": "samkill-ui implementation",
+      "files": 43,
+      "local_links": 250,
+      "anchors": 15
+    },
+    {
+      "scope": "Qwen",
+      "files": 14,
+      "local_links": 77,
+      "anchors": 8
+    },
+    {
+      "scope": "PDP",
+      "files": 10,
+      "local_links": 35,
+      "anchors": 3
+    },
+    {
+      "scope": "Goodnotes",
+      "files": 6,
+      "local_links": 17,
+      "anchors": 0
+    }
+  ]
+}

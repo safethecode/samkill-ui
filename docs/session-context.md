@@ -632,3 +632,9 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 
 - 사용자 요청: 위 변경을 커밋하고 푸시한다. 원본 스킬·판독기·평가와 관련된 문서 부분, 세 종속 프로젝트의 실제 반영을 목적별로 커밋한다. 앞의 미커밋/미푸시 표기는 승인 전 상태로 보존한다. screen-spec·Round07/11·output·DS_Store와 yoch 작업은 포함하지 않는다. 원격 main 해시와 커밋 범위를 확인하고 실제 결과를 후속 기록으로 남긴다.
 - 추가 검증: PDP 전체 suite는 첫 실행에서 sparse worktree의 crawler 누락으로 import2개와 임시 경로 alias 때문에 읽기 실패 모의1개가 실패했다. crawler를 작업 폴더에 추가하고 소스/테스트 수정 없이 `TMPDIR=/private/tmp python3 -m unittest discover -s tests -v`로69개 모두 통과했다. 첫 실패를 이번 판독기 회귀나 실제 파일 권한 결함으로 분류하지 않는다.
+
+### 2026-10-22 원격 반영 확인
+
+- 실제 결과: 원본 구현 `3b7ed67`, Qwen `f053428`, PDP `eb3b436`, Goodnotes `41f3a65`를 각각 원격 main에 푸시하고 refs/heads/main의 전체 해시가 로컬 구현 커밋과 일치함을 확인했다. [전체 해시·검증](../evals/results/reference-evidence-2026-10-22/push-result.json)과 [종속 기록](downstream-sync.md)에 연결했다. 원본 origin의 이동 리다이렉트로 정상 반영했으며 remote 설정은 바꾸지 않았다.
+- 포함 범위: 원본43파일·Qwen14·PDP10·Goodnotes6파일. 원본 DESIGN/평가/맥락의 관련 부분만 스테이징했고 README의 기존 변경, screen-spec·Round07/11·output·DS_Store는 제외했다. yoch 파일은 수정하거나 커밋하지 않았다. PDP는 통합 worktree에서 푸시했으며 원래 로컬 main과 수집 파일은 그대로다.
+- 검증: 스테이징 Markdown의 로컬 링크 원본250/Qwen77/PDP35/Goodnotes17개와 앵커15/8/3/0개, 공백·JSON·원본/가공8개 해시를 확인했다. 판독기 회귀38개씩·Qwen213/2개 검사에 더해 PDP 전체69개 검사를 통과했다. 첫 PDP 전체 검사의 누락 import와 임시 경로 alias 실패를 기록했고 코드나 테스트를 완화하지 않았다. 이 기록은 후속 문서 커밋으로 푸시하며 새 UI/PDF 품질 승인으로 확대하지 않는다.
