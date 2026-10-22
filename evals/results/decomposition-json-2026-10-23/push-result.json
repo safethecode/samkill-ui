@@ -1,0 +1,68 @@
+{
+  "verified_at": "2026-10-22T16:37:15.350484+00:00",
+  "scope": "Implementation commits and merged downstream tips; source result receipt is committed separately",
+  "repositories": [
+    {
+      "name": "samkill-ui",
+      "commit": "5ed255f4c803c2270fb920045edd023fa7a0b0de",
+      "remote_main": "5ed255f4c803c2270fb920045edd023fa7a0b0de"
+    },
+    {
+      "name": "qwen3.6-35b-a3b-coding-samkill-ui",
+      "commit": "b0b00042c3abd74bbb2cad8b2341760f00e399d0",
+      "remote_main": "b0b00042c3abd74bbb2cad8b2341760f00e399d0"
+    },
+    {
+      "name": "samkill-pdp-design",
+      "commit": "13689ad9630873adc28344f0b55cb6103fd9ffce",
+      "remote_main": "13689ad9630873adc28344f0b55cb6103fd9ffce"
+    },
+    {
+      "name": "samkill-goodnotes-diary",
+      "commit": "809ab4c7abe378a52d2cb272a58a68807ef87430",
+      "remote_main": "809ab4c7abe378a52d2cb272a58a68807ef87430"
+    }
+  ],
+  "goodnotes_integration": {
+    "local_change": "aa5f734",
+    "remote_before_merge": "2353cf416583e11555d4cad94d3b7a2d7e3eb7a9",
+    "remote_ahead_commits": 15,
+    "merge": "242196026a2386376d4629cfffc38dc09d43f385",
+    "followup": "809ab4c",
+    "conflicts": false,
+    "post_merge_decomposition_tests": 14,
+    "preserved": "Prior source/first-output/correction evidence, source index, private-pixel policy and product constraints"
+  },
+  "staged_file_checks": [
+    {
+      "repository": "samkill-ui",
+      "files": 28,
+      "local_links": 289,
+      "anchors": 16
+    },
+    {
+      "repository": "Qwen",
+      "files": 22,
+      "local_links": 96,
+      "anchors": 9
+    },
+    {
+      "repository": "PDP",
+      "files": 17,
+      "local_links": 47,
+      "anchors": 4
+    },
+    {
+      "repository": "Goodnotes",
+      "files": 12,
+      "local_links": 19,
+      "anchors": 0
+    },
+    {
+      "repository": "Goodnotes merge followup",
+      "files": 2,
+      "local_links": 1,
+      "anchors": 0
+    }
+  ]
+}

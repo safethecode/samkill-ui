@@ -647,3 +647,9 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 - 검증: 초기12개 사례는 원본/Qwen/PDP의 구도구에서 실패3개/하위 오류14개를 확인한 뒤 구현했다. 최종 원본46+14개·Qwen/PDP각60개·Goodnotes14개, 기존Qwen Node213/Python2개·PDP전체69개가 통과했다. [실행 가능한 합성 예제](../skills/reference-decompose/references/json-example/decomposition.json), [전체 raw export와 거절 진단](../evals/results/decomposition-json-2026-10-23/README.md)을 보존했다. 이는 실제 모델 이해도/신규 UI 품질 실험과 구별한다.
 - 종속 적용: Qwen의 가공 문서·실제 공유 가이드/진입점·helper와 출처, PDP의 분해/검수·Gen/freeze 인계와 helper, Goodnotes의 PDF전용 원문/해석·대표면 G2/G5 검수와 helper를 맞춘다. Qwen에 없던 루트 DESIGN을 도구 범위로 작성하고 임의 제품 팔레트는 만들지 않았다. PDP 통합 worktree를 사용하고 개인 설치에는 관련2문단만 추가해 구버전 나머지를 덮어쓰지 않았다.
 - 한계: 구조/해시/해석 기록은 관찰의 진실성·실제 이해·올바른 영역·미관을 자동 증명하지 않는다. 실제 핵심 화면과 전체 비교가 필요하다. host가 export payload를 REFERENCE.md/공유 component 입력에 실제 넣어야 하며 모든 추론의 자동 감시를 추가한 것은 아니다. 새 모델 추론·제품 UI/PDF·기기 검증은 수행하지 않았다. yoch 및 기존 screen-spec·Round07/11·output은 수정/커밋하지 않는다. 검증된 이번 변경을 목적별 커밋·푸시하고 실제 원격 해시를 확인한다.
+
+### 2026-10-23 확장 JSON 변경의 원격 반영 결과
+
+- 실제 결과: 원본 구현5ed255f·Qwen b0b0004·PDP13689ad를 각각 푸시했다. Goodnotes는 원격2353cf4의15개 선행 커밋으로 첫 푸시가 거절돼 이번aa5f734와2421960에서 충돌 없이 병합했다. 원격의 새 reconstruction-loop에도 인계를 연결한809ab4c를 푸시하고 네 저장소의 실제 refs/heads/main 해시를 확인했다. [전체 해시·검사](../evals/results/decomposition-json-2026-10-23/push-result.json)를 보존한다.
+- 검증/보존: 원본28파일·Qwen22·PDP17·Goodnotes12파일과 병합 후속2파일만 목적별 커밋했다. 스테이징 링크/앵커·공백·JSON과15개 원본/가공 해시, 스킬10개·개인 PDP 관련 문단을 확인했다. 원본/Qwen/PDP각60개·Goodnotes14개, 기존Qwen213/2·PDP69개에 더해 병합 후 Goodnotes14개와 스킬/연결 검사를 통과했다. 원격 연구·조건부 스킬·수집/재현 증거를 보존했으며 새로운 UI/PDF/모델 이해도 승인을 하지 않았다.
+- 무관한 screen-spec·Round07/11·output·공유 문서의 기존 부분과 DS_Store, PDP 원래 checkout·수집 파일, yoch 작업은 이번 커밋에서 제외했다. Qwen/PDP의 기존 잠금/플랫폼 함수를 AST로 대조했고 Goodnotes의 제품별 제약을 유지했다. 이번 원격 결과 문서도 후속 커밋·푸시한다.

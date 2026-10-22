@@ -85,3 +85,16 @@ PDP의 원래 main 작업 폴더와 미추적 파일은 그대로이며 통합 �
 - Goodnotes: 앱75게이트를 들여오지 않고 PDF 전용 인계/해석·HEX/좌표계·원문/확장·대표면의 첫 비교/최종 G2/G5 처리 기록으로 대응한다. 독립 helper와 예제는 같고 새 PDF·릴리스·개인 설치를 만들지 않는다.
 
 원본/Qwen/PDP는각60개 회귀, Goodnotes는14개 분해/export 검사, 기존 Qwen213/2개·PDP69개를 통과했다. 구조 검증으로 실제 모델 이해도·상품/PDF 품질을 승인하지 않는다. 출처 해시·반영 커밋·원격 결과는 후속 기록으로 확정한다.
+
+### 2026-10-23 커밋·푸시와 원격 확인
+
+위 검증된 변경은 원본28파일·Qwen22·PDP17·Goodnotes12파일로 분리 커밋했고 다음 원격 main 해시와 일치함을 확인했다.
+
+| 저장소 | 확인한 구현/통합 커밋 |
+|---|---|
+| samkill-ui | `5ed255f4c803c2270fb920045edd023fa7a0b0de` |
+| qwen3.6-35b-a3b-coding-samkill-ui | `b0b00042c3abd74bbb2cad8b2341760f00e399d0` |
+| samkill-pdp-design | `13689ad9630873adc28344f0b55cb6103fd9ffce` |
+| samkill-goodnotes-diary | `809ab4c7abe378a52d2cb272a58a68807ef87430` |
+
+Goodnotes의 첫 푸시는 원격2353cf4에15개 선행 커밋이 있어 거절됐다. 이번aa5f734와 원격을2421960으로 충돌 없이 병합하고 새 reconstruction-loop에도 인계를 연결한809ab4c를 푸시했다. 두 기존 이력을 보존했고 병합 후 helper14개·스킬 형식/문서 연결을 다시 확인했다. 기존 수집/재현/PDF·실패·소스 픽셀 비공개 기준을 새 승인으로 바꾸지 않았다. [전체 원격·검사 기록](../evals/results/decomposition-json-2026-10-23/push-result.json)에 연결한다. 이 결과 기록은 원본의 후속 문서 커밋으로 반영한다.
