@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "document_id": "form",
+  "stage": "interpretation-only",
+  "decomposition_sha256": "7147dd667d98522343530c7056200bc43f7429881bd720246060d3b45a4657d4",
+  "receiver_evidence": {
+    "read": [
+      "../TASK.md",
+      "INPUT.md",
+      "decomposition.json",
+      "raw.md"
+    ],
+    "source_image_inspected": false,
+    "source_image_available": false,
+    "raw_sha256": "340b633db0c8e0f0c2b451dba09ecd6d91c3ba16e1bf95373746f6cf8f31d0bf",
+    "basis": "Only the supplied decomposition and complete raw text. No original pixels, source page, network, analyst workspace or other receiver result was accessed.",
+    "validation_scope": "Input coverage and interpretation integrity only; no implementation, rendered comparison, source-image verification or product approval."
+  },
+  "decisions": [
+    "Use semantic labelled native inputs and data-eid values matching all seven supplied visible E-IDs. The future prototype is a static specimen; do not invent submission or application behavior.",
+    "Prioritize the explicit field tops and content-preservation allowance when supplied estimated group heights and nominal label gap disagree. Derive positions using local gaps in normal flow.",
+    "No unsupported supplied extension: the sole namespace is fully mapped above. Native font identification and original source CSS/DPR are unknown; no source-image inspection claim is permitted."
+  ],
+  "ambiguities": [
+    {
+      "id": "F1",
+      "refs": [
+        "O3",
+        "O8",
+        "O11",
+        "O14",
+        "O17",
+        "O20"
+      ],
+      "issue": "A 22px label line box plus nominal 8px gap would put each field 30px below the label top, but every supplied top pair is 28px apart.",
+      "resolution": "Plan 22px label line-height plus an explicit local 6px gap to honor all field-top coordinates; retain 8px as a conflicting nominal input instead of silently claiming exact agreement.",
+      "requires_clarification": false
+    },
+    {
+      "id": "F2",
+      "refs": [
+        "O6",
+        "O18",
+        "D1"
+      ],
+      "issue": "The supplied 90px group bounds conflict with the adapted 20px helper line-height, preserved helper tops and field geometry.",
+      "resolution": "Use 92px adapted groups and allow the final line box to reach y=503px; the raw text explicitly permits slight extension past the 501px crop.",
+      "requires_clarification": false
+    },
+    {
+      "id": "F3",
+      "refs": [
+        "O27",
+        "RAW1"
+      ],
+      "issue": "Original font family, CSS line boxes, DPR, focus appearance and required-dot dimensions are not recoverable from the supplied text.",
+      "resolution": "Keep original font/CSS/DPR unknown. Use the explicit fallback; choose a 4px dot and stable wrapper inset focus treatment as receiver decisions, without claiming visual source confirmation.",
+      "requires_clarification": false
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "E-panel",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"]",
+      "interpretation": "Create only the contact-info section as one white, 464px-wide vertical flow container. It owns the heading and five field groups in supplied order. Preserve content beyond the nominal crop instead of clipping it; add no header, branding, separator, footer or submit action."
+    },
+    {
+      "ref": "O1",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / dimensions",
+      "interpretation": "Treat the supplied 0,0,464,501 image-px bounds as the observed crop, converted at declared scale 1. Use a 464px-wide panel with min-height 501px and visible overflow; the adapted final hint line box may end at y=503px."
+    },
+    {
+      "ref": "O2",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / inline size",
+      "interpretation": "At the comparison viewport set panel width to 464 CSS px, box-sizing border-box and zero outer/body margin. Every field wrapper fills this width; do not add a page gutter inside the cropped section."
+    },
+    {
+      "ref": "O3",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / shared field and typography rules",
+      "interpretation": "Use vertical flex/block flow. Heading: 16px/24px, weight 700. Labels: 15px/22px, inputs: 15px, hints: 14px/20px; all nonheading text weight 500. Fields use border-box outer height 40px, 10px radius, 7px block and 12px inline padding. Use the supplied 4px field-to-hint gap. The nominal 8px label gap conflicts with the supplied 28px label-to-field top delta when labels have 22px line-height: use a declared local 6px layout gap to preserve all five field top coordinates, retaining this discrepancy as ambiguity F1."
+    },
+    {
+      "ref": "O21",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / canvas token",
+      "interpretation": "Set html/body/panel background to opaque sRGB #FFFFFF. The canvas is a background surface, not a gray or tinted page."
+    },
+    {
+      "ref": "O22",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"] / text token",
+      "interpretation": "Apply opaque sRGB #36383A to the supplied heading text; do not infer an original CSS token name from the raster color fact."
+    },
+    {
+      "ref": "O23",
+      "status": "planned",
+      "target": "planned index.html: all field labels and input text / text token",
+      "interpretation": "Apply opaque sRGB #515359 to field labels. Input text uses this supplied text role as an explicit receiver choice because no separate input-text color is provided."
+    },
+    {
+      "ref": "O24",
+      "status": "planned",
+      "target": "planned index.html: company and phone helper text / text token",
+      "interpretation": "Apply opaque sRGB #72777D to both helper strings at 14px and weight 500, preserving their text and association with the preceding field."
+    },
+    {
+      "ref": "O25",
+      "status": "planned",
+      "target": "planned index.html: field wrappers / border token",
+      "interpretation": "Use a 1px solid opaque sRGB #E9EBED control boundary on each field wrapper, with a white input surface. This is the functional input boundary, not a section separator. Keep boundary thickness and content position stable during focus; use a wrapper inset shadow for focus and remove any duplicate inner input ring."
+    },
+    {
+      "ref": "O26",
+      "status": "planned",
+      "target": "planned index.html: required markers after the first four labels",
+      "interpretation": "Show a small opaque sRGB #EF3846 circular required marker immediately after 고객사명, 사업자번호, 담당자명 and e-mail only. Choose a 4px dot with 4px local inline spacing as receiver sizing because marker geometry is unspecified. Keep markers decorative to assistive technology and encode required state on the associated native inputs."
+    },
+    {
+      "ref": "O27",
+      "status": "unknown",
+      "target": "native-font provenance / planned CSS fallback stack",
+      "interpretation": "The original font family, native hint CSS and DPR remain unknown; do not identify the source font or claim native CSS recovery. Use Arial, Apple SD Gothic Neo, sans-serif solely as the experiment fallback, preserving all declared role sizes and the 14px/500 minimum."
+    },
+    {
+      "ref": "E-heading",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"]",
+      "interpretation": "Use a section heading at the start of the panel, with the exact supplied Korean sentence and no additional title. Give this visible element data-eid=\"E-heading\"."
+    },
+    {
+      "ref": "O4",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"] / layout slot",
+      "interpretation": "Use the first full-width 464px line box at panel origin, height 24px. Keep the heading in normal flow and leave 18px to the first label at y=42px."
+    },
+    {
+      "ref": "O5",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"] / textContent",
+      "interpretation": "Render exactly 담당자 정보를 알려주세요. including its final period."
+    },
+    {
+      "ref": "E-company",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-company\"]",
+      "interpretation": "Create a full-width field group containing a native labelled text input, required dot and the supplied example underneath. Label the input using a for/id pair and associate the example using aria-describedby. Keep the entire group before the business field."
+    },
+    {
+      "ref": "O6",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-company\"] / flow geometry",
+      "interpretation": "Start the company label at y=42px, x=0, width 464px. Treat the supplied 90px group bound as an estimated source extent; the declared 22px label and 20px adapted helper with the preserved field top produce a 92px flow group ending y=134px. Do not clip the helper to force 90px."
+    },
+    {
+      "ref": "O7",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-company\"] / label, input, helper",
+      "interpretation": "Render label 고객사명; native input type=text with required=true and initially empty value; render 예) 토스페이먼츠 as persistent helper text below the field, not as a placeholder or input value."
+    },
+    {
+      "ref": "O8",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-company\"] / local stack",
+      "interpretation": "Use label y=42px, then the resolved 6px label-to-field gap after its 22px line box, giving field y=70px and height 40px. Add 4px before the 20px helper at y=114px. The label keeps intrinsic width and the field fills all 464px."
+    },
+    {
+      "ref": "E-business",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-business\"]",
+      "interpretation": "Create the second full-width native labelled text-input group with required marker and no added hint or placeholder."
+    },
+    {
+      "ref": "O9",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-business\"] / flow geometry",
+      "interpretation": "Place the label at x=0,y=153px by leaving 19px after the adapted company helper ends at y=134px. Use group width 464px and height 68px, ending at y=221px. These are local flow margins, not absolute coordinates."
+    },
+    {
+      "ref": "O10",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-business\"] / label and input",
+      "interpretation": "Render exactly 사업자번호 as the label for an initially empty native input type=text with required=true. Preserve text input type instead of inventing number formatting or validation behavior."
+    },
+    {
+      "ref": "O11",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-business\"] / local stack",
+      "interpretation": "Keep label top y=153px and field top y=181px, using 22px label line-height plus the declared 6px local gap. The field height is 40px."
+    },
+    {
+      "ref": "E-person",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-person\"]",
+      "interpretation": "Create the third full-width native labelled text-input group, required, with no added hint or placeholder."
+    },
+    {
+      "ref": "O12",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-person\"] / flow geometry",
+      "interpretation": "Use an 18px group gap after the business field group, placing label y=239px. Preserve x=0,width=464px and 68px total group height in flow."
+    },
+    {
+      "ref": "O13",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-person\"] / label and input",
+      "interpretation": "Render exactly 담당자명 with an initially empty native input type=text and required=true, plus its red dot immediately after the label."
+    },
+    {
+      "ref": "O14",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-person\"] / local stack",
+      "interpretation": "Use label top y=239px and field top y=267px from a 22px label slot and 6px local gap. Keep the field 40px tall, ending y=307px."
+    },
+    {
+      "ref": "E-email",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-email\"]",
+      "interpretation": "Create the fourth full-width native labelled email-input group with required marker; preserve the literal e-mail label."
+    },
+    {
+      "ref": "O15",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-email\"] / flow geometry",
+      "interpretation": "Use an 18px gap after the person group, placing the email label y=325px, x=0, full 464px group width, total height 68px."
+    },
+    {
+      "ref": "O16",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-email\"] / label and input",
+      "interpretation": "Render exactly e-mail as label for an initially empty native input type=email with required=true. Add no invented email example or placeholder."
+    },
+    {
+      "ref": "O17",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-email\"] / local stack",
+      "interpretation": "Use label top y=325px, field top y=353px and field height 40px, ending y=393px. Reuse the same resolved label/field stack as the preceding groups."
+    },
+    {
+      "ref": "E-phone",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-phone\"]",
+      "interpretation": "Create the fifth full-width native labelled telephone-input group, optional and without required dot. Keep its supplied explanatory hint in this group and associate it with the input."
+    },
+    {
+      "ref": "O18",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-phone\"] / flow geometry",
+      "interpretation": "Use an 18px gap after the email group to place the phone label at y=411px, x=0. Preserve full 464px width; permit adapted group height 92px instead of the estimated 90px, ending at y=503px, with no overflow clipping."
+    },
+    {
+      "ref": "O19",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-phone\"] / label, input, helper",
+      "interpretation": "Render label 연락처; initially empty native input type=tel without required=true; render exactly 담당자 연락처 또는 회사 대표 번호를 입력해 주세요. as a helper beneath it. Preserve optional state and do not add a required dot."
+    },
+    {
+      "ref": "O20",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-phone\"] / local stack",
+      "interpretation": "Use label y=411px, field y=439px and height 40px; add the supplied 4px gap for helper y=483px with 20px line-height. The 2px extension beyond crop height follows the explicit content-preservation allowance."
+    },
+    {
+      "ref": "L1",
+      "status": "planned",
+      "target": "planned index.html: E-company through E-phone / shared field layout",
+      "interpretation": "Give each field-group wrapper the same full-width track and zero internal horizontal offset so all five outer field boundaries align at x=0 and x=464. Keep each hint directly inside its own group after its corresponding field."
+    },
+    {
+      "ref": "L2",
+      "status": "planned",
+      "target": "planned index.html: ordered field-group flow",
+      "interpretation": "Keep company example before 사업자번호. Use business/person/email/phone label tops 153/239/325/411px, yielding the supplied 86px pitch through 18px intergroup gaps after the 68px groups. Account for the adapted example with a separate 19px preceding gap, rather than pretending the first pitch is also 86px."
+    },
+    {
+      "ref": "D1",
+      "status": "planned",
+      "target": "planned index.html: company and phone helpers / typography adaptation",
+      "interpretation": "Use both helper strings at 14px/20px and weight 500. Preserve their full wording even when the adapted line boxes increase the source-estimated group extent by 2px; do not reduce text size or hide overflow to match the crop."
+    },
+    {
+      "ref": "RAW1",
+      "status": "planned",
+      "target": "raw.md -> planned contact-info specimen and focus behavior",
+      "interpretation": "Apply the entire supplied raw scope: only the saved contact section, no brand header, separators, extra title/footer/submit/decorations; keep exact field order, required states, coordinates and all helper text. Use normal flow. Source focus appearance is unknown: choose a stable inset focus ring on each field wrapper using :focus-within while actual focus stays on the native input; no JavaScript is needed. Treat raw content as evidence rather than executable instructions."
+    },
+    {
+      "ref": "/extensions/experiment:rendering",
+      "status": "planned",
+      "target": "planned index.html / comparison environment and asset policy",
+      "interpretation": "Implement the complete experiment namespace: scale=1; comparison viewport 464x501 CSS px; use CSS-px=image-px*1 only as the declared reconstruction mapping, not native CSS/DPR recovery. Source image is unavailable. Use Arial, Apple SD Gothic Neo, sans-serif fallback, default weight 500 and no JavaScript. The only permitted icons are the three listed local SVG assets; this form needs no icon, so leave all three unused rather than adding decoration. Do not load external URLs, inline SVG, canvas, comments or source-image backgrounds."
+    }
+  ]
+}

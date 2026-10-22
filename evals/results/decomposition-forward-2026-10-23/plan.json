@@ -1,0 +1,31 @@
+{
+  "scope": "Two real-reference crops; matched facts in prose vs extensible JSON/raw; one independent receiver per format, one first implementation per case. No Qwen available; actual receiver model is current delegated Codex model.",
+  "source_ids": [
+    "saved Toss contact form",
+    "saved UIbowl Jumpit resume panel"
+  ],
+  "seeds": "No statistical generalization from this bounded paired comparison",
+  "images_to_receivers": false,
+  "before_implementation": true,
+  "acceptance": {
+    "geometry_tolerance_css_px": {
+      "form_field_width": 2,
+      "form_field_height": 2,
+      "cards_equal_width": 2,
+      "cards_equal_top": 2,
+      "cards_main_padding": 4,
+      "form_field_top": 4,
+      "cards_grid_top": 4,
+      "cards_import_size": 4,
+      "cards_height": 4
+    },
+    "color_channel_tolerance": 0,
+    "required_text_and_controls": "all specified labels/content, required marker conditions and initial toggle states",
+    "visual": "manual source/output comparison including hierarchy/density/spacing; technical checks cannot approve appearance",
+    "constraints": "same white/text/decoration requirements in both formats; intentional adaptations documented",
+    "text_stress": {
+      "scope": "same static content at390px and200% text, no claimed unseen mobile redesign",
+      "result_reporting": "report independently; no product-wide PASS inferred"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "commands": [
+    {
+      "command": "python3 -m unittest discover -s evals -p 'test_design_gate.py' -v",
+      "exit_code": 0,
+      "tests": 46,
+      "result": "OK"
+    },
+    {
+      "command": "python3 -m unittest discover -s evals -p 'test_decomposition.py' -v",
+      "exit_code": 0,
+      "tests": 14,
+      "result": "OK"
+    }
+  ],
+  "total": 60,
+  "scope": "CLI/source-binding/coverage regression; not a visual quality or model comprehension verdict"
+}

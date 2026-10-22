@@ -1,0 +1,269 @@
+{
+  "schema_version": 2,
+  "handoff_sha256": "5bf43e893e9a8ca3d6fc854577f2d5a06b80974d33322bdf70e0ee8fcd5b998c",
+  "target_sha256": "d91b2bb4efd6cdab92f561c6c3fe194932f2ebc41978c0134865ff9ebdcfa5cd",
+  "core_review": {
+    "path": "core-review.json",
+    "sha256": "43266ea92dd39c38c605c61b173e5f18eab3484fce9767242f21880ae9f9247f"
+  },
+  "consumption": [
+    {
+      "ref": "/extensions/experiment:rendering",
+      "status": "applied",
+      "target": "index.html / comparison environment and asset policy",
+      "interpretation": "Declared viewport/scale, fallback family, no-JavaScript scope and local official asset policy applied; source image intentionally withheld from receiver for this bounded transmission experiment."
+    },
+    {
+      "ref": "D1",
+      "status": "applied",
+      "target": "index.html: company and phone helpers / typography adaptation",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Use both helper strings at 14px/20px and weight 500. Preserve their full wording even when the adapted line boxes increase the source-estimated group extent by 2px; do not reduce text size or hide overflow to match the crop."
+    },
+    {
+      "ref": "E-business",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-business\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create the second full-width native labelled text-input group with required marker and no added hint or placeholder."
+    },
+    {
+      "ref": "E-company",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-company\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create a full-width field group containing a native labelled text input, required dot and the supplied example underneath. Label the input using a for/id pair and associate the example using aria-describedby. Keep the entire group before the business field."
+    },
+    {
+      "ref": "E-email",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-email\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create the fourth full-width native labelled email-input group with required marker; preserve the literal e-mail label."
+    },
+    {
+      "ref": "E-heading",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Use a section heading at the start of the panel, with the exact supplied Korean sentence and no additional title. Give this visible element data-eid=\"E-heading\"."
+    },
+    {
+      "ref": "E-panel",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create only the contact-info section as one white, 464px-wide vertical flow container. It owns the heading and five field groups in supplied order. Preserve content beyond the nominal crop instead of clipping it; add no header, branding, separator, footer or submit action."
+    },
+    {
+      "ref": "E-person",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-person\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create the third full-width native labelled text-input group, required, with no added hint or placeholder."
+    },
+    {
+      "ref": "E-phone",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-phone\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create the fifth full-width native labelled telephone-input group, optional and without required dot. Keep its supplied explanatory hint in this group and associate it with the input."
+    },
+    {
+      "ref": "L1",
+      "status": "applied",
+      "target": "index.html: E-company through E-phone / shared field layout",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Give each field-group wrapper the same full-width track and zero internal horizontal offset so all five outer field boundaries align at x=0 and x=464. Keep each hint directly inside its own group after its corresponding field."
+    },
+    {
+      "ref": "L2",
+      "status": "applied",
+      "target": "index.html: ordered field-group flow",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Keep company example before 사업자번호. Use business/person/email/phone label tops 153/239/325/411px, yielding the supplied 86px pitch through 18px intergroup gaps after the 68px groups. Account for the adapted example with a separate 19px preceding gap, rather than pretending the first pitch is also 86px."
+    },
+    {
+      "ref": "O1",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / dimensions",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O10",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-business\"] / label and input",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O11",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-business\"] / local stack",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O12",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-person\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O13",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-person\"] / label and input",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O14",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-person\"] / local stack",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O15",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-email\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O16",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-email\"] / label and input",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O17",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-email\"] / local stack",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O18",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-phone\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O19",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-phone\"] / label, input, helper",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O2",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / inline size",
+      "interpretation": "Verified length observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O20",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-phone\"] / local stack",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O21",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / canvas token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O22",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"] / text token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O23",
+      "status": "applied",
+      "target": "index.html: all field labels and input text / text token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O24",
+      "status": "applied",
+      "target": "index.html: company and phone helper text / text token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O25",
+      "status": "applied",
+      "target": "index.html: field wrappers / border token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O26",
+      "status": "applied",
+      "target": "index.html: required markers after the first four labels",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O27",
+      "status": "unverified",
+      "target": "native-font provenance / CSS fallback stack",
+      "interpretation": "Original font/CSS is not established. Fallback use is explicit; no original-font recovery claimed."
+    },
+    {
+      "ref": "O28",
+      "status": "applied",
+      "target": "correction in index.html: .field-label and .required-dot inside E-company, E-business, E-person and E-email",
+      "interpretation": "Verified marker-layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O3",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / shared field and typography rules",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O4",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"] / layout slot",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O5",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"] / textContent",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O6",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-company\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O7",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-company\"] / label, input, helper",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O8",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-company\"] / local stack",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O9",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-business\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "RAW1",
+      "status": "applied",
+      "target": "raw.md -> contact-info specimen and focus behavior",
+      "interpretation": "Complete raw text exported and read; bytes preserved. Scope, content, exclusions and unknowns checked against actual static output; raw is not printed as UI."
+    }
+  ],
+  "results": [
+    {
+      "id": "Q-panel-width",
+      "capture": {
+        "path": "render.png",
+        "sha256": "8094bff5e24b1abcaf13a389ad7f75d6682d30eb62cf623a7b4133e93516885f"
+      },
+      "actual": {
+        "value": 464.0,
+        "unit": "image-px",
+        "method": "Actual Chrome DOM panel width divided by the frozen experimental display scale; not recovered native CSS."
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "adapted-and-verified",
+    "reason": "Inspected source and final side-by-side: full464px shared field width, exact five field tops, required dots at the label tops, preserved labels/hints/order. The explicit14px/500 helper adaptation ends at503px without clipping. Fallback typography is disclosed and source native font remains unknown."
+  }
+}

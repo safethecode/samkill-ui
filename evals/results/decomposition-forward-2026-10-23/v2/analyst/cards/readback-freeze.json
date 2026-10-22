@@ -1,0 +1,13 @@
+{
+  "stage": "corrected and reviewed before implementation",
+  "files": [
+    {
+      "path": "text/cards/interpretation.md",
+      "sha256": "e83dbe1032e2888494298fedc55e6cd232f4678c90f8aac464a45dd4b0186b53"
+    },
+    {
+      "path": "json/cards/interpretation.json",
+      "sha256": "ee562b972e455602bde92b84c13c3a9b63a27a2e1a6b2d609305b1e16c9fe924"
+    }
+  ]
+}

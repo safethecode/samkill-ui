@@ -1,0 +1,26 @@
+{
+  "package": "lucide",
+  "version": "1.51.0",
+  "source": "https://github.com/lucide-icons/lucide",
+  "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+  "icons": [
+    {
+      "name": "Plus",
+      "file": "Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+      "geometrySha256": "3ed1784e53a9252aa47f2392c529dc2078803a22e84522f68ec8165c23f05bb0"
+    },
+    {
+      "name": "EllipsisVertical",
+      "file": "EllipsisVertical.svg",
+      "sha256": "2c7c31424668dbcbb11a6b0cb8ff66af3149d458f6272e3cab671251ab664d3a",
+      "geometrySha256": "b233ecf540cd36a2f86431832cb963231ff423898f2559cb50eea3e21b717a21"
+    },
+    {
+      "name": "CircleHelp",
+      "file": "CircleHelp.svg",
+      "sha256": "690410d09311e77345440a0ca5a81f71009b994e8e0538229656e62121107fd5",
+      "geometrySha256": "1f4c92b16abf8a678f1511225254eca5fa028157e1a3af0299a1c3022091fdad"
+    }
+  ]
+}

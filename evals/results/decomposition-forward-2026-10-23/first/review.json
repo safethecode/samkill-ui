@@ -1,0 +1,42 @@
+{
+  "scope": "Parent read actual source crops and four first renders. Not a full product gate.",
+  "status": "correction-required",
+  "geometry": "Both formats preserve exact form outer boxes464x40 at all five expected tops. Card tracks differ by <0.016px and preserve shared106.875px top/203.125px height.",
+  "findings": [
+    {
+      "id": "V1",
+      "case": "form",
+      "found_in": [
+        "text",
+        "json"
+      ],
+      "status": "needs-correction",
+      "cause": "analyst-omission",
+      "finding": "Required dots were centered beside labels; source dots are superscript, at label line-box top. Input geometry and required semantics match, but inline marker relation was omitted.",
+      "source_sample": "Red pixel bounds: (53,42,57,46), (66,153,70,157), (53,239,57,243), (44,325,48,329). Source ink bounds are not native CSS."
+    },
+    {
+      "id": "V2",
+      "case": "cards",
+      "found_in": [
+        "text",
+        "json"
+      ],
+      "status": "needs-correction",
+      "cause": "analyst-omission",
+      "finding": "Status dots precede their labels in both outputs; actual reference places each dot after its label. Handoff named colors and count but omitted order."
+    },
+    {
+      "id": "V3",
+      "case": "cards",
+      "found_in": [
+        "json",
+        "text"
+      ],
+      "status": "needs-correction",
+      "cause": "analyst-omission plus receiver choice",
+      "finding": "Palette did not bind import/add/menu/help/off-toggle roles precisely. JSON selected dark off-track and darker import/add labels, both selected overly dark ellipsis. First outputs must remain preserved."
+    }
+  ],
+  "readback_limit": "Both receivers caught input contradictions, but neither could infer relationships absent from supplied text/JSON. Original images were intentionally withheld in this bounded transmission test; full workflow supplies them too."
+}

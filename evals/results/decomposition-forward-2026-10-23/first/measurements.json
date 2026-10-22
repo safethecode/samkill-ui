@@ -1,0 +1,1314 @@
+[
+  {
+    "variant": "text",
+    "case": "form",
+    "geometry": [
+      {
+        "label": "field1.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field1.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field1.y",
+        "actual": 70,
+        "expected": 70,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field2.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field2.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field2.y",
+        "actual": 181,
+        "expected": 181,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field3.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field3.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field3.y",
+        "actual": 267,
+        "expected": 267,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field4.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field4.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field4.y",
+        "actual": 353,
+        "expected": 353,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field5.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field5.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field5.y",
+        "actual": 439,
+        "expected": 439,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      }
+    ],
+    "color_roles": [
+      {
+        "label": "canvas",
+        "actual": "#FFFFFF",
+        "expected": "#FFFFFF",
+        "pass": true
+      },
+      {
+        "label": "field1.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field2.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field3.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field4.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field5.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "heading",
+        "actual": "#36383A",
+        "expected": "#36383A",
+        "pass": true
+      },
+      {
+        "label": "고객사명",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "예) 토스페이먼츠",
+        "actual": "#72777D",
+        "expected": "#72777D",
+        "pass": true
+      },
+      {
+        "label": "사업자번호",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "담당자명",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "e-mail",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "연락처",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "담당자 연락처 또는 회사 대표 번호를 입력해 주세요.",
+        "actual": "#72777D",
+        "expected": "#72777D",
+        "pass": true
+      },
+      {
+        "label": "required1",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      },
+      {
+        "label": "required2",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      },
+      {
+        "label": "required3",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      },
+      {
+        "label": "required4",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      }
+    ],
+    "supplemental_v3_relations": [
+      {
+        "label": "required1.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      },
+      {
+        "label": "required2.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      },
+      {
+        "label": "required3.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      },
+      {
+        "label": "required4.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      }
+    ],
+    "required_content_and_native_states": true,
+    "stress": [
+      {
+        "phase": "normal",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "narrow",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "enlarged",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 28.0,
+        "min_reading_weight": 500
+      }
+    ],
+    "runtime_errors": [],
+    "blocked_external_requests": [],
+    "scripts": 0,
+    "all_img_assets_loaded": true,
+    "scope": "Frozen normal geometry; supplemental role/order checks follow preserved first-render discoveries. Manual whole-image review remains separate."
+  },
+  {
+    "variant": "text",
+    "case": "cards",
+    "geometry": [
+      {
+        "label": "E-card1.width",
+        "actual": 355.578125,
+        "expected": 355.5833333333333,
+        "tolerance": 2,
+        "delta": 0.0052083333333143855,
+        "pass": true
+      },
+      {
+        "label": "E-card1.height",
+        "actual": 203.125,
+        "expected": 203.125,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-card1.y",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-card2.width",
+        "actual": 355.578125,
+        "expected": 355.5833333333333,
+        "tolerance": 2,
+        "delta": 0.0052083333333143855,
+        "pass": true
+      },
+      {
+        "label": "E-card2.height",
+        "actual": 203.125,
+        "expected": 203.125,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-card2.y",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-add.width",
+        "actual": 355.59375,
+        "expected": 355.5833333333333,
+        "tolerance": 2,
+        "delta": 0.010416666666685614,
+        "pass": true
+      },
+      {
+        "label": "E-add.height",
+        "actual": 203.125,
+        "expected": 203.125,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-add.y",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "equal-width-range",
+        "actual": 0.015625,
+        "expected": 0,
+        "tolerance": 2,
+        "delta": 0.015625,
+        "pass": true
+      },
+      {
+        "label": "equal-top-range",
+        "actual": 0.0,
+        "expected": 0,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "panel-padding",
+        "actual": 45,
+        "expected": 45,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "grid-top",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "import-width",
+        "actual": 181.25,
+        "expected": 181.25,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "import-height",
+        "actual": 43.75,
+        "expected": 43.75,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      }
+    ],
+    "color_roles": [
+      {
+        "label": "canvas",
+        "actual": "#FFFFFF",
+        "expected": "#FFFFFF",
+        "pass": true
+      },
+      {
+        "label": "E-card1.surface",
+        "actual": "#F5F5F8",
+        "expected": "#F5F5F8",
+        "pass": true
+      },
+      {
+        "label": "E-card2.surface",
+        "actual": "#F5F5F8",
+        "expected": "#F5F5F8",
+        "pass": true
+      },
+      {
+        "label": "E-add.surface",
+        "actual": "#F5F5F8",
+        "expected": "#F5F5F8",
+        "pass": true
+      },
+      {
+        "label": "heading",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "import",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "card-title",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "기술스택",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "학력",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "경력/프로젝트",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "공개",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "date",
+        "actual": "#A2A2A2",
+        "expected": "#A2A2A2",
+        "pass": true
+      },
+      {
+        "label": "card-title",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "기술스택",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "학력",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "경력/프로젝트",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "비공개",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "date",
+        "actual": "#A2A2A2",
+        "expected": "#A2A2A2",
+        "pass": true
+      },
+      {
+        "label": "add-label",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "status-dot1",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "status-dot2",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "status-dot3",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "status-dot4",
+        "actual": "#FE5467",
+        "expected": "#FE5467",
+        "pass": true
+      },
+      {
+        "label": "status-dot5",
+        "actual": "#FE5467",
+        "expected": "#FE5467",
+        "pass": true
+      },
+      {
+        "label": "status-dot6",
+        "actual": "#FE5467",
+        "expected": "#FE5467",
+        "pass": true
+      },
+      {
+        "label": "EllipsisVertical.svg",
+        "actual": null,
+        "expected": "#A2A2A2",
+        "pass": null,
+        "status": "not-collected-by-first-harness; see manual code/visual review"
+      },
+      {
+        "label": "CircleHelp.svg",
+        "actual": null,
+        "expected": "#C7CFC9",
+        "pass": null,
+        "status": "not-collected-by-first-harness; see manual code/visual review"
+      },
+      {
+        "label": "toggle0",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "toggle1",
+        "actual": "#E2E4E3",
+        "expected": "#E2E4E3",
+        "pass": true
+      }
+    ],
+    "supplemental_v3_relations": [
+      {
+        "label": "status1.label-then-dot",
+        "actual_gap": -60.453125,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status2.label-then-dot",
+        "actual_gap": -36.234375,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status3.label-then-dot",
+        "actual_gap": -88.5625,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status4.label-then-dot",
+        "actual_gap": -60.453125,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status5.label-then-dot",
+        "actual_gap": -36.234375,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status6.label-then-dot",
+        "actual_gap": -88.5625,
+        "expected_gap": 6,
+        "pass": false
+      }
+    ],
+    "required_content_and_native_states": true,
+    "stress": [
+      {
+        "phase": "normal",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "narrow",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "enlarged",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 28.0,
+        "min_reading_weight": 500
+      }
+    ],
+    "runtime_errors": [],
+    "blocked_external_requests": [],
+    "scripts": 0,
+    "all_img_assets_loaded": true,
+    "scope": "Frozen normal geometry; supplemental role/order checks follow preserved first-render discoveries. Manual whole-image review remains separate."
+  },
+  {
+    "variant": "json",
+    "case": "form",
+    "geometry": [
+      {
+        "label": "field1.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field1.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field1.y",
+        "actual": 70,
+        "expected": 70,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field2.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field2.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field2.y",
+        "actual": 181,
+        "expected": 181,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field3.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field3.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field3.y",
+        "actual": 267,
+        "expected": 267,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field4.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field4.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field4.y",
+        "actual": 353,
+        "expected": 353,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field5.width",
+        "actual": 464,
+        "expected": 464,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field5.height",
+        "actual": 40,
+        "expected": 40,
+        "tolerance": 2,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "field5.y",
+        "actual": 439,
+        "expected": 439,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      }
+    ],
+    "color_roles": [
+      {
+        "label": "canvas",
+        "actual": "#FFFFFF",
+        "expected": "#FFFFFF",
+        "pass": true
+      },
+      {
+        "label": "field1.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field2.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field3.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field4.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "field5.border",
+        "actual": "#E9EBED",
+        "expected": "#E9EBED",
+        "pass": true
+      },
+      {
+        "label": "heading",
+        "actual": "#36383A",
+        "expected": "#36383A",
+        "pass": true
+      },
+      {
+        "label": "고객사명",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "예) 토스페이먼츠",
+        "actual": "#72777D",
+        "expected": "#72777D",
+        "pass": true
+      },
+      {
+        "label": "사업자번호",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "담당자명",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "e-mail",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "연락처",
+        "actual": "#515359",
+        "expected": "#515359",
+        "pass": true
+      },
+      {
+        "label": "담당자 연락처 또는 회사 대표 번호를 입력해 주세요.",
+        "actual": "#72777D",
+        "expected": "#72777D",
+        "pass": true
+      },
+      {
+        "label": "required1",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      },
+      {
+        "label": "required2",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      },
+      {
+        "label": "required3",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      },
+      {
+        "label": "required4",
+        "actual": "#EF3846",
+        "expected": "#EF3846",
+        "pass": true
+      }
+    ],
+    "supplemental_v3_relations": [
+      {
+        "label": "required1.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      },
+      {
+        "label": "required2.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      },
+      {
+        "label": "required3.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      },
+      {
+        "label": "required4.top-alignment",
+        "actual_delta": 9,
+        "expected_delta": 0,
+        "pass": false
+      }
+    ],
+    "required_content_and_native_states": true,
+    "stress": [
+      {
+        "phase": "normal",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "narrow",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "enlarged",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 28.0,
+        "min_reading_weight": 500
+      }
+    ],
+    "runtime_errors": [],
+    "blocked_external_requests": [],
+    "scripts": 0,
+    "all_img_assets_loaded": true,
+    "scope": "Frozen normal geometry; supplemental role/order checks follow preserved first-render discoveries. Manual whole-image review remains separate."
+  },
+  {
+    "variant": "json",
+    "case": "cards",
+    "geometry": [
+      {
+        "label": "E-card1.width",
+        "actual": 355.578125,
+        "expected": 355.5833333333333,
+        "tolerance": 2,
+        "delta": 0.0052083333333143855,
+        "pass": true
+      },
+      {
+        "label": "E-card1.height",
+        "actual": 203.125,
+        "expected": 203.125,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-card1.y",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-card2.width",
+        "actual": 355.578125,
+        "expected": 355.5833333333333,
+        "tolerance": 2,
+        "delta": 0.0052083333333143855,
+        "pass": true
+      },
+      {
+        "label": "E-card2.height",
+        "actual": 203.125,
+        "expected": 203.125,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-card2.y",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-add.width",
+        "actual": 355.59375,
+        "expected": 355.5833333333333,
+        "tolerance": 2,
+        "delta": 0.010416666666685614,
+        "pass": true
+      },
+      {
+        "label": "E-add.height",
+        "actual": 203.125,
+        "expected": 203.125,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "E-add.y",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "equal-width-range",
+        "actual": 0.015625,
+        "expected": 0,
+        "tolerance": 2,
+        "delta": 0.015625,
+        "pass": true
+      },
+      {
+        "label": "equal-top-range",
+        "actual": 0.0,
+        "expected": 0,
+        "tolerance": 2,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "panel-padding",
+        "actual": 45,
+        "expected": 45,
+        "tolerance": 4,
+        "delta": 0,
+        "pass": true
+      },
+      {
+        "label": "grid-top",
+        "actual": 106.875,
+        "expected": 106.875,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "import-width",
+        "actual": 181.25,
+        "expected": 181.25,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      },
+      {
+        "label": "import-height",
+        "actual": 43.75,
+        "expected": 43.75,
+        "tolerance": 4,
+        "delta": 0.0,
+        "pass": true
+      }
+    ],
+    "color_roles": [
+      {
+        "label": "canvas",
+        "actual": "#FFFFFF",
+        "expected": "#FFFFFF",
+        "pass": true
+      },
+      {
+        "label": "E-card1.surface",
+        "actual": "#F5F5F8",
+        "expected": "#F5F5F8",
+        "pass": true
+      },
+      {
+        "label": "E-card2.surface",
+        "actual": "#F5F5F8",
+        "expected": "#F5F5F8",
+        "pass": true
+      },
+      {
+        "label": "E-add.surface",
+        "actual": "#F5F5F8",
+        "expected": "#F5F5F8",
+        "pass": true
+      },
+      {
+        "label": "heading",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "import",
+        "actual": "#444445",
+        "expected": "#111112",
+        "pass": false
+      },
+      {
+        "label": "card-title",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "기술스택",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "학력",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "경력/프로젝트",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "공개",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "date",
+        "actual": "#A2A2A2",
+        "expected": "#A2A2A2",
+        "pass": true
+      },
+      {
+        "label": "card-title",
+        "actual": "#111112",
+        "expected": "#111112",
+        "pass": true
+      },
+      {
+        "label": "기술스택",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "학력",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "경력/프로젝트",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "비공개",
+        "actual": "#444445",
+        "expected": "#444445",
+        "pass": true
+      },
+      {
+        "label": "date",
+        "actual": "#A2A2A2",
+        "expected": "#A2A2A2",
+        "pass": true
+      },
+      {
+        "label": "add-label",
+        "actual": "#111112",
+        "expected": "#444445",
+        "pass": false
+      },
+      {
+        "label": "status-dot1",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "status-dot2",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "status-dot3",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "status-dot4",
+        "actual": "#FE5467",
+        "expected": "#FE5467",
+        "pass": true
+      },
+      {
+        "label": "status-dot5",
+        "actual": "#FE5467",
+        "expected": "#FE5467",
+        "pass": true
+      },
+      {
+        "label": "status-dot6",
+        "actual": "#FE5467",
+        "expected": "#FE5467",
+        "pass": true
+      },
+      {
+        "label": "EllipsisVertical.svg",
+        "actual": null,
+        "expected": "#A2A2A2",
+        "pass": null,
+        "status": "not-collected-by-first-harness; see manual code/visual review"
+      },
+      {
+        "label": "CircleHelp.svg",
+        "actual": null,
+        "expected": "#C7CFC9",
+        "pass": null,
+        "status": "not-collected-by-first-harness; see manual code/visual review"
+      },
+      {
+        "label": "toggle0",
+        "actual": "#02DD6D",
+        "expected": "#02DD6D",
+        "pass": true
+      },
+      {
+        "label": "toggle1",
+        "actual": "#A2A2A2",
+        "expected": "#E2E4E3",
+        "pass": false
+      }
+    ],
+    "supplemental_v3_relations": [
+      {
+        "label": "status1.label-then-dot",
+        "actual_gap": -62.453125,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status2.label-then-dot",
+        "actual_gap": -38.234375,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status3.label-then-dot",
+        "actual_gap": -90.5625,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status4.label-then-dot",
+        "actual_gap": -62.453125,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status5.label-then-dot",
+        "actual_gap": -38.234375,
+        "expected_gap": 6,
+        "pass": false
+      },
+      {
+        "label": "status6.label-then-dot",
+        "actual_gap": -90.5625,
+        "expected_gap": 6,
+        "pass": false
+      }
+    ],
+    "required_content_and_native_states": true,
+    "stress": [
+      {
+        "phase": "normal",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "narrow",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 14.0,
+        "min_reading_weight": 500
+      },
+      {
+        "phase": "enlarged",
+        "horizontal_overflow": false,
+        "min_reading_font_px": 28.0,
+        "min_reading_weight": 500
+      }
+    ],
+    "runtime_errors": [],
+    "blocked_external_requests": [],
+    "scripts": 0,
+    "all_img_assets_loaded": true,
+    "scope": "Frozen normal geometry; supplemental role/order checks follow preserved first-render discoveries. Manual whole-image review remains separate."
+  }
+]

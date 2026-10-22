@@ -1,0 +1,44 @@
+{
+  "stage": "after first normal render, before corrected implementation",
+  "findings": [
+    {
+      "id": "V1",
+      "case": "form",
+      "found_in": [
+        "text",
+        "json"
+      ],
+      "status": "needs-correction",
+      "cause": "analyst-omission",
+      "finding": "Required dots were centered beside labels; source dots are superscript, at label line-box top. Input geometry and required semantics match, but inline marker relation was omitted.",
+      "source_sample": "Red pixel bounds: (53,42,57,46), (66,153,70,157), (53,239,57,243), (44,325,48,329). Source ink bounds are not native CSS."
+    },
+    {
+      "id": "V2",
+      "case": "cards",
+      "found_in": [
+        "text",
+        "json"
+      ],
+      "status": "needs-correction",
+      "cause": "analyst-omission",
+      "finding": "Status dots precede their labels in both outputs; actual reference places each dot after its label. Handoff named colors and count but omitted order."
+    },
+    {
+      "id": "V3",
+      "case": "cards",
+      "found_in": [
+        "json",
+        "text"
+      ],
+      "status": "needs-correction",
+      "cause": "analyst-omission plus receiver choice",
+      "finding": "Palette did not bind import/add/menu/help/off-toggle roles precisely. JSON selected dark off-track and darker import/add labels, both selected overly dark ellipsis. First outputs must remain preserved."
+    }
+  ],
+  "new_observations": {
+    "form": "First-render visual correction V1 (analyst omission): the required red4px dot is a superscript-like marker at the top of the22px label line box, not vertically centered. It follows the label with a declared2 CSS-px inline gap. Set marker block-start at label line-box block-start; apply only to first four required fields. Source red-dot raster bounds are (53,42,57,46), (66,153,70,157), (53,239,57,243), (44,325,48,329); text widths can differ with unknown font. Keep all prior field anchors, content, styles,14px/500 and helper adaptation. Marker position must remain legible with200% text.",
+    "cards": "First-render visual corrections V2/V3 (analyst omissions): every status item is label followed by its colored dot, with6 CSS-px gap and6px dot diameter (source about10image-px, reconstructed near6.25CSS-px). Shared order is label then dot for all three items in both cards. Bind roles explicitly: import text#111112; add label#444445 at16 CSS-px/500 and24px line-height; ellipsis icons#A2A2A2 at20px; help icons#C7CFC9 at16px; unchecked toggle track#E2E4E3. Card titles#111112, status/public/private text#444445, dates#A2A2A2, checked track/status green#02DD6D and red dots#FE5467 remain as before. Use CSS masks/currentColor with supplied official local icons for exact role colors, not approximate filter recoloring. Original typography is still unknown:16px add-label is a declared reconstruction choice. All prior normal geometry, equal tracks, native states and no-divider adaptation remain."
+  },
+  "original_acceptance_not_rewritten": true
+}

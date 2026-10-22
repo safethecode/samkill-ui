@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decomposition_sha256": "c900be6476ceb80d1fe3c1c008cc4f88312a4195586fe29678fabf10968f4743",
+  "interpretation_sha256": "ee562b972e455602bde92b84c13c3a9b63a27a2e1a6b2d609305b1e16c9fe924",
+  "source_snapshot": {
+    "path": "implementation.html",
+    "sha256": "ede10bb689a055b43b00e9705540d13850f06e24f4079b7051ee5d229f52266b"
+  },
+  "capture": {
+    "path": "render.png",
+    "sha256": "5f36d61497c317ef99cf94d63552a4af5d8001c274551c3ac7d4fda4628d02dc"
+  },
+  "status": "regressed",
+  "reason": "Both first receivers place all six status dots before their labels, opposite to source. JSON additionally assigns import/add/off-track colors from an ambiguous global palette. Equal grid geometry does not remove these observed source mismatches."
+}

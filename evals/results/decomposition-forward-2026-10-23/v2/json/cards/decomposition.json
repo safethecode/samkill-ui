@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "document_id": "cards",
+  "revision": "readback-corrected-v2",
+  "sources": [
+    {
+      "id": "R1",
+      "kind": "image",
+      "artifact": {
+        "path": "source.png",
+        "sha256": "705e7baf7ecad4ddfd6661e17f9df0fcf3aa4efab2899f654cc0d8e0f09d682e"
+      },
+      "description": "Existing real reference crop; full raster (2478, 1548); original crop (283, 284, 2191, 852). Not seen by receiver."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "S1",
+      "source_id": "R1",
+      "unit": "image-px",
+      "width": 1908,
+      "height": 568,
+      "origin": "top-left",
+      "dpr": null
+    }
+  ],
+  "raw": [
+    {
+      "id": "RAW1",
+      "artifact": {
+        "path": "raw.md",
+        "sha256": "7b389b51965e7ffd206afd610dd67ffa1862e78f4bcfe2fe9aaaa121cab493da"
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": "E-panel",
+      "parent_id": null,
+      "role": "resume-management-panel",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O1",
+          "kind": "bounds",
+          "status": "measured",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "width": 1908,
+            "height": 568
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1"
+        },
+        "width": {
+          "id": "O2",
+          "kind": "length",
+          "status": "measured",
+          "value": 1908,
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1"
+        },
+        "layout": {
+          "id": "O3",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "canvas": "white",
+            "comparison_scale": 0.625,
+            "padding_inline_image_px": 72,
+            "font_sizes_css": {
+              "heading": 32,
+              "card_title": 20,
+              "metadata": 14,
+              "import_button": 16
+            },
+            "heading_weight": 700,
+            "card_title_weight": 600,
+            "other_weight": 500,
+            "card_padding_css": 24,
+            "card_radius_css": 15,
+            "grid_gap_image_px": 29,
+            "header_to_grid": "grid y=171image-px"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "canvas": {
+          "id": "O20",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#FFFFFF",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "card_background": {
+          "id": "O21",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#F5F5F8",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "green": {
+          "id": "O22",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#02DD6D",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "red": {
+          "id": "O23",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#FE5467",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "main_text": {
+          "id": "O24",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#111112",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "support_text": {
+          "id": "O25",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#444445",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "muted_text": {
+          "id": "O26",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#A2A2A2",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "border_color": {
+          "id": "O27",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#E2E4E3",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "original_font": {
+          "id": "O28",
+          "kind": "typography",
+          "status": "unknown",
+          "value": null,
+          "unknown_reason": "Native font/CSS/DPR unknown; raster dimensions known. Role font sizes are declared reconstruction choices, not measured source CSS.",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ]
+        }
+      }
+    },
+    {
+      "id": "E-heading",
+      "parent_id": "E-panel",
+      "role": "panel-heading",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O4",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 72,
+            "y": 72,
+            "width": 500,
+            "height": 64
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O5",
+          "kind": "content",
+          "status": "measured",
+          "value": "이력서 관리",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        }
+      }
+    },
+    {
+      "id": "E-import",
+      "parent_id": "E-panel",
+      "role": "secondary-action",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O6",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 1547,
+            "y": 59,
+            "width": 290,
+            "height": 70
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O7",
+          "kind": "content",
+          "status": "measured",
+          "value": "사람인 이력서 가져오기",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O8",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "button_border": "border color token",
+            "button_background": "canvas",
+            "radius_css": 8
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-grid",
+      "parent_id": "E-panel",
+      "role": "three-equal-columns",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O9",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 72,
+            "y": 171,
+            "width": 1765,
+            "height": 325
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "layout": {
+          "id": "O10",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "display": "grid",
+            "columns": 3,
+            "gap_image_px": 29,
+            "each_width_image_px": 569,
+            "each_height_image_px": 325
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-card1",
+      "parent_id": "E-grid",
+      "role": "public-resume-card",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O11",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 72,
+            "y": 171,
+            "width": 569,
+            "height": 325
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O12",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "title": "유아이볼이력서_1차",
+            "status_items": [
+              "기술스택",
+              "학력",
+              "경력/프로젝트"
+            ],
+            "status_color": "green",
+            "public": true,
+            "public_text": "공개",
+            "date": "2026.06.02 등록"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O13",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "title_row": "title then right ellipsis",
+            "status_row_top_css": 70,
+            "footer": "bottom row24px from bottom; toggle/public/help left, date right",
+            "toggle_size_css": [
+              30,
+              18
+            ],
+            "ellipsis_asset": "assets/icons/EllipsisVertical.svg",
+            "help_asset": "assets/icons/CircleHelp.svg"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-card2",
+      "parent_id": "E-grid",
+      "role": "private-resume-card",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O14",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 670,
+            "y": 171,
+            "width": 568,
+            "height": 325
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O15",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "title": "유아이볼이력서_2차",
+            "status_items": [
+              "기술스택",
+              "학력",
+              "경력/프로젝트"
+            ],
+            "status_color": "red",
+            "public": false,
+            "public_text": "비공개",
+            "date": "2026.06.02 등록"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O16",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "same_as": "E-card1 except content and toggle state"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-add",
+      "parent_id": "E-grid",
+      "role": "new-resume-action",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O17",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 1267,
+            "y": 171,
+            "width": 569,
+            "height": 325
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O18",
+          "kind": "content",
+          "status": "measured",
+          "value": "새로운 이력서를 추가해보세요!",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O19",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "alignment": "centered as one vertical group",
+            "circle_diameter_css": 36,
+            "circle_fill": "green",
+            "plus_asset": "assets/icons/Plus.svg",
+            "plus_color": "white",
+            "icon_to_label_gap_css": 12
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "L1",
+      "kind": "same-row",
+      "from": "E-card1",
+      "to": "E-card2",
+      "description": "Equal height, shared top edge, same owned padding; visual variants differ only by content/status.",
+      "raw_refs": [
+        "RAW1"
+      ]
+    },
+    {
+      "id": "L2",
+      "kind": "same-row",
+      "from": "E-card2",
+      "to": "E-add",
+      "description": "Three equally sized cards in one row at comparison width.",
+      "raw_refs": [
+        "RAW1"
+      ]
+    },
+    {
+      "id": "L3",
+      "kind": "header-alignment",
+      "from": "E-heading",
+      "to": "E-import",
+      "description": "Heading left and import right share one header region, not separate sections.",
+      "raw_refs": [
+        "RAW1"
+      ]
+    }
+  ],
+  "adaptations": [
+    {
+      "id": "D1",
+      "element_ids": [
+        "E-card1",
+        "E-card2"
+      ],
+      "requirement": "User prohibits decorative dividers",
+      "reason": "Remove only the two internal horizontal rules, keep footer hierarchy and gap",
+      "raw_refs": [
+        "RAW1"
+      ]
+    },
+    {
+      "id": "D2",
+      "element_ids": [
+        "E-panel"
+      ],
+      "requirement": "Default screen background is#FFFFFF",
+      "reason": "Crop outer gray page and omit external gray corner pixels; preserve gray internal cards",
+      "raw_refs": [
+        "RAW1"
+      ]
+    }
+  ],
+  "required": [
+    "O1",
+    "O2",
+    "O3",
+    "E-panel",
+    "O4",
+    "O5",
+    "E-heading",
+    "O6",
+    "O7",
+    "O8",
+    "E-import",
+    "O9",
+    "O10",
+    "E-grid",
+    "O11",
+    "O12",
+    "O13",
+    "E-card1",
+    "O14",
+    "O15",
+    "O16",
+    "E-card2",
+    "O17",
+    "O18",
+    "O19",
+    "E-add",
+    "O20",
+    "O21",
+    "O22",
+    "O23",
+    "O24",
+    "O25",
+    "O26",
+    "O27",
+    "L1",
+    "L2",
+    "L3",
+    "D1",
+    "D2",
+    "/extensions/experiment:rendering"
+  ],
+  "extensions": {
+    "experiment:rendering": {
+      "scale": 0.625,
+      "viewport_width": 1193,
+      "viewport_height": 355,
+      "mapping": "test reconstruction choice: CSS-px = image-px * scale; not recovered source CSS",
+      "source_image_available_to_receiver": false,
+      "font": "Arial, Apple SD Gothic Neo, sans-serif",
+      "default_text_weight": 500,
+      "no_javascript": true,
+      "assets": [
+        "assets/icons/Plus.svg",
+        "assets/icons/EllipsisVertical.svg",
+        "assets/icons/CircleHelp.svg"
+      ]
+    }
+  }
+}

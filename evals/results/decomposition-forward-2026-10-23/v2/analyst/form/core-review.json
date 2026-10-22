@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decomposition_sha256": "0a9c2783603f8c405f34824b1e453e9212daaa68c5eac190be0ae846a1dd5543",
+  "interpretation_sha256": "fdc2a6f7c25361df7e995c76986dd526f92c6e51bf6779db72cdd690ac5a08a4",
+  "source_snapshot": {
+    "path": "implementation.html",
+    "sha256": "e32b012ce34c6e92c9edb7638a690ffa67dc5d01ef467d71b9341ea5ab1d1d8f"
+  },
+  "capture": {
+    "path": "render.png",
+    "sha256": "e39c31795873b36258b733c85e456cd06b75e59a45d51d3511a157182b220549"
+  },
+  "status": "regressed",
+  "reason": "Source required markers sit at label top; first receiver centers all four9px lower. Other supplied field widths/heights/tops and content match. This source relation was omitted by analyst, so normal geometry alone cannot approve this reconstruction."
+}

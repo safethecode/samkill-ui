@@ -1,0 +1,13 @@
+{
+  "stage": "corrected and reviewed before implementation",
+  "files": [
+    {
+      "path": "text/form/interpretation.md",
+      "sha256": "1d5d29aea13b03c009072a38dbd3393349dc728c008724cc8961030eb3d84744"
+    },
+    {
+      "path": "json/form/interpretation.json",
+      "sha256": "fdc2a6f7c25361df7e995c76986dd526f92c6e51bf6779db72cdd690ac5a08a4"
+    }
+  ]
+}

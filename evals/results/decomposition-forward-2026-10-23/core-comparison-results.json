@@ -1,0 +1,59 @@
+{
+  "scope": "Standalone reference_check.compare_reference with single-HTML digest for this experiment. Not design_gate full product fingerprint or75-rule PASS.",
+  "results": [
+    {
+      "stage": "first",
+      "case": "form",
+      "source_hash": "a8acc95376cfd2c3c3fb69ce7a4b5903d9c9f19d325ef4645d355d91ff4b6c90",
+      "implementation_sha256": "e32b012ce34c6e92c9edb7638a690ffa67dc5d01ef467d71b9341ea5ab1d1d8f",
+      "reference_failures": [
+        {
+          "id": "first-core-screen",
+          "reason": "Source required markers sit at label top; first receiver centers all four9px lower. Other supplied field widths/heights/tops and content match. This source relation was omitted by analyst, so normal geometry alone cannot approve this reconstruction."
+        },
+        {
+          "id": "overall-reference",
+          "reason": "Source required markers sit at label top; first receiver centers all four9px lower. Other supplied field widths/heights/tops and content match. This source relation was omitted by analyst, so normal geometry alone cannot approve this reconstruction."
+        }
+      ],
+      "coverage_entries": 39,
+      "unknown_optional_count": 1
+    },
+    {
+      "stage": "first",
+      "case": "cards",
+      "source_hash": "705e7baf7ecad4ddfd6661e17f9df0fcf3aa4efab2899f654cc0d8e0f09d682e",
+      "implementation_sha256": "ede10bb689a055b43b00e9705540d13850f06e24f4079b7051ee5d229f52266b",
+      "reference_failures": [
+        {
+          "id": "first-core-screen",
+          "reason": "Both first receivers place all six status dots before their labels, opposite to source. JSON additionally assigns import/add/off-track colors from an ambiguous global palette. Equal grid geometry does not remove these observed source mismatches."
+        },
+        {
+          "id": "overall-reference",
+          "reason": "Both first receivers place all six status dots before their labels, opposite to source. JSON additionally assigns import/add/off-track colors from an ambiguous global palette. Equal grid geometry does not remove these observed source mismatches."
+        }
+      ],
+      "coverage_entries": 42,
+      "unknown_optional_count": 1
+    },
+    {
+      "stage": "final",
+      "case": "form",
+      "source_hash": "a8acc95376cfd2c3c3fb69ce7a4b5903d9c9f19d325ef4645d355d91ff4b6c90",
+      "implementation_sha256": "d91b2bb4efd6cdab92f561c6c3fe194932f2ebc41978c0134865ff9ebdcfa5cd",
+      "reference_failures": [],
+      "coverage_entries": 40,
+      "unknown_optional_count": 1
+    },
+    {
+      "stage": "final",
+      "case": "cards",
+      "source_hash": "705e7baf7ecad4ddfd6661e17f9df0fcf3aa4efab2899f654cc0d8e0f09d682e",
+      "implementation_sha256": "08709a01ee71aae2b9935728d0f062b6a987676e70cbbf01fae5799e2bbfa088",
+      "reference_failures": [],
+      "coverage_entries": 48,
+      "unknown_optional_count": 1
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "case": "form",
+    "command": "decompose",
+    "exit_code": 0,
+    "output": {
+      "status": "READY",
+      "references": 40,
+      "decomposition": {
+        "path": "decomposition.json",
+        "sha256": "8b456ac7f47ead6e8f116846a328a532e66dd7e8b809a08d787c2ded5d044841"
+      },
+      "interpretation": {
+        "path": "interpretation.json",
+        "sha256": "f85249a76222d72b6b0260d7b481d5dbd27c60a9af2e3bfe438f4803532620ad"
+      },
+      "scope": "Source/interpretation integrity only; not comprehension or visual approval"
+    }
+  },
+  {
+    "case": "form",
+    "command": "prepare",
+    "exit_code": 0,
+    "output": {
+      "status": "READY",
+      "handoff_sha256": "5bf43e893e9a8ca3d6fc854577f2d5a06b80974d33322bdf70e0ee8fcd5b998c",
+      "scope": "Source/interpretation integrity only; not comprehension or visual approval"
+    }
+  },
+  {
+    "case": "form",
+    "command": "export",
+    "exit_code": 0,
+    "status": "READY",
+    "export_sha256": "64478c8a75fdec771d19b579fb7804d91392b20fce326a49e2a39ba97102e104",
+    "full_raw_equal": true,
+    "decomposition_equal": true
+  },
+  {
+    "case": "cards",
+    "command": "decompose",
+    "exit_code": 0,
+    "output": {
+      "status": "READY",
+      "references": 48,
+      "decomposition": {
+        "path": "decomposition.json",
+        "sha256": "55f86f7c1653edb3b26fbe34b5e04dd4cbfa107e5e4b0b012c63b2437a67c583"
+      },
+      "interpretation": {
+        "path": "interpretation.json",
+        "sha256": "d3c72b62f30c705eefb078c7a662e1ad8adde1105e40609855f1685efd5307e4"
+      },
+      "scope": "Source/interpretation integrity only; not comprehension or visual approval"
+    }
+  },
+  {
+    "case": "cards",
+    "command": "prepare",
+    "exit_code": 0,
+    "output": {
+      "status": "READY",
+      "handoff_sha256": "637bc80704122e774885426f3a82978b06476b5cdd88c7708c44a001088a9331",
+      "scope": "Source/interpretation integrity only; not comprehension or visual approval"
+    }
+  },
+  {
+    "case": "cards",
+    "command": "export",
+    "exit_code": 0,
+    "status": "READY",
+    "export_sha256": "4650d33ee5fe65d90aab8a8264f130713fab31618109b71d296b97f3847fd21e",
+    "full_raw_equal": true,
+    "decomposition_equal": true
+  }
+]

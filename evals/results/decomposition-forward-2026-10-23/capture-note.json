@@ -1,0 +1,6 @@
+{
+  "browser": "Chrome155.0.8059.85 headless",
+  "problem": "First JSON narrow fullPage capture immediately after viewport resize contained repeated stale tiles although DOM boxes/text were correct.",
+  "correction": "Preserved original capture and reproduced with fresh page and tall viewport. Main harness now waits two animation frames after resize/text-size mutation and waits for focus ring settling; stable captures retain unchanged original HTML hashes.",
+  "scope": "Capture timing correction, not a product CSS fix. Original failure evidence remains."
+}

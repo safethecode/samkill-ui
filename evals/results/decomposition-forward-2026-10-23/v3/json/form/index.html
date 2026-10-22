@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>담당자 정보를 알려주세요.</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, "Apple SD Gothic Neo", sans-serif;
+      font-weight: 500;
+      --canvas: #FFFFFF;
+      --heading: #36383A;
+      --text: #515359;
+      --hint: #72777D;
+      --field-border: #E9EBED;
+      --required: #EF3846;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--canvas); }
+    body { color: var(--text); font-weight: 500; }
+    .contact-panel {
+      inline-size: min(100%, 464px);
+      min-block-size: 501px;
+      background: var(--canvas);
+    }
+    .section-heading {
+      margin: 0;
+      color: var(--heading);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .field-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-block-start: 18px;
+    }
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      min-inline-size: 0;
+    }
+    .field-group:first-child { margin-block-end: 1px; }
+    .field-label {
+      display: inline-flex;
+      align-items: flex-start;
+      align-self: flex-start;
+      gap: 2px;
+      max-inline-size: 100%;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      line-height: 1.4666666667;
+      overflow-wrap: anywhere;
+    }
+    .required-dot {
+      flex: 0 0 4px;
+      inline-size: 4px;
+      block-size: 4px;
+      border-radius: 50%;
+      background: var(--required);
+    }
+    .field-shell {
+      display: flex;
+      align-items: center;
+      min-inline-size: 0;
+      min-block-size: 40px;
+      margin-block-start: 6px;
+      padding: 7px 12px;
+      border: 1px solid var(--field-border);
+      border-radius: 10px;
+      background: var(--canvas);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      transition: box-shadow 120ms ease-out;
+    }
+    .field-shell:focus-within { box-shadow: inset 0 0 0 2px var(--heading); }
+    .field-shell input {
+      display: block;
+      inline-size: 100%;
+      min-inline-size: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      outline: none;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-weight: 500;
+      box-shadow: none;
+    }
+    .field-hint {
+      margin: 4px 0 0;
+      color: var(--hint);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.4285714286;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .field-shell { transition: none; }
+    }
+    @media (forced-colors: active) {
+      .field-shell:focus-within { outline: 2px solid Highlight; outline-offset: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="contact-panel" data-eid="E-panel" aria-labelledby="contact-heading">
+    <h1 class="section-heading" id="contact-heading" data-eid="E-heading">담당자 정보를 알려주세요.</h1>
+    <div class="field-groups">
+      <div class="field-group" data-eid="E-company">
+        <label class="field-label" for="company">고객사명<span class="required-dot" aria-hidden="true"></span></label>
+        <div class="field-shell"><input id="company" name="company" type="text" required aria-describedby="company-hint"></div>
+        <p class="field-hint" id="company-hint">예) 토스페이먼츠</p>
+      </div>
+      <div class="field-group" data-eid="E-business">
+        <label class="field-label" for="business">사업자번호<span class="required-dot" aria-hidden="true"></span></label>
+        <div class="field-shell"><input id="business" name="business" type="text" required></div>
+      </div>
+      <div class="field-group" data-eid="E-person">
+        <label class="field-label" for="person">담당자명<span class="required-dot" aria-hidden="true"></span></label>
+        <div class="field-shell"><input id="person" name="person" type="text" required></div>
+      </div>
+      <div class="field-group" data-eid="E-email">
+        <label class="field-label" for="email">e-mail<span class="required-dot" aria-hidden="true"></span></label>
+        <div class="field-shell"><input id="email" name="email" type="email" required></div>
+      </div>
+      <div class="field-group" data-eid="E-phone">
+        <label class="field-label" for="phone">연락처</label>
+        <div class="field-shell"><input id="phone" name="phone" type="tel" aria-describedby="phone-hint"></div>
+        <p class="field-hint" id="phone-hint">담당자 연락처 또는 회사 대표 번호를 입력해 주세요.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

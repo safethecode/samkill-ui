@@ -1,0 +1,12 @@
+{
+  "stage": "before implementation",
+  "identified_by": [
+    "text receiver",
+    "JSON receiver"
+  ],
+  "corrections": {
+    "form": "Analyst correction after independent readback: use a 6 CSS-px gap after the 22px label line box to preserve the observed field-top anchors (70,181,267,353,439). The earlier 8px gap was inconsistent. This 6px flow resolution is a reconstruction decision. Original estimated company/phone group bounds stay90 image-px; the declared14px helper adaptation makes final content height92px and final content end503px. Preserve the full hints rather than clipping. Do not claim90px contains the adapted92px content.",
+    "cards": "Analyst correction after independent readback: comparison viewport is1193x355 CSS-px, explicitly rounding1908*0.625=1192.5 upward for this experiment. The previous1192 extension was a rounding inconsistency. Use panel width100%, inline padding45 CSS-px, three equal grid columns, gap18.125 CSS-px, grid top106.875 CSS-px and card height203.125 CSS-px. Source card bounds remain estimated; their one-image-pixel differences do not override equal-column relations. The resulting equal track width is(1193-90-2*18.125)/3=355.583333 CSS-px. Role font sizes, card padding/radius/status-row offsets are already CSS-px and are not scaled again."
+  },
+  "automatic_integrity_pass_does_not_resolve_semantics": true
+}

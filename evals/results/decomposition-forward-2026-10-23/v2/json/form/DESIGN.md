@@ -1,0 +1,1 @@
+Static bounded reference reconstruction. Read TASK.md. New screen background#FFFFFF, exact supplied content, text>=14px/500. Source-native font/CSS unknown. No production flow or whole-product PASS is claimed.

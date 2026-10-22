@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "document_id": "cards",
+  "stage": "interpretation-only",
+  "decomposition_sha256": "46578d76ae5c85b4c2e25b3f9c1db79eb51062a5f0b5fb5109277161d08fcb89",
+  "receiver_evidence": {
+    "read": [
+      "../TASK.md",
+      "INPUT.md",
+      "decomposition.json",
+      "raw.md"
+    ],
+    "source_image_inspected": false,
+    "source_image_available": false,
+    "raw_sha256": "e0bdb57ea07647c719461ba2728add3b610f59c8a6f03b28af8cdf80bcb5afd2",
+    "basis": "Only the supplied decomposition and complete raw text. No original pixels, source page, network, analyst workspace or other receiver result was accessed.",
+    "validation_scope": "Input coverage and interpretation integrity only; no implementation, rendered comparison, source-image verification or product approval."
+  },
+  "decisions": [
+    "Use every supplied E-ID as the exact data-eid on its visible named element. Build the specimen with native buttons and labelled checkboxes; do not invent upload, menus, help content or persistence.",
+    "Scale source image-px geometry by 0.625. Keep values explicitly labelled CSS (font sizes, card padding/radius, toggle size, plus circle and gap) at their declared values without rescaling.",
+    "Use the extension viewport 1192x355 and shared equal-column layout. Preserve source-bound facts in interpretation and record fractional mismatches rather than treating estimated coordinates as native CSS.",
+    "No supplied namespace is unsupported. The native font/CSS/DPR remain unknown; missing local icon, dot and spacing dimensions are explicit receiver choices and are not claimed as source observations."
+  ],
+  "ambiguities": [
+    {
+      "id": "C1",
+      "refs": [
+        "O1",
+        "O2",
+        "RAW1",
+        "/extensions/experiment:rendering"
+      ],
+      "issue": "1908*0.625=1192.5 CSS px, raw prose rounds width to 1193px, but the extension explicitly declares viewport_width=1192.",
+      "resolution": "Use the explicit extension viewport 1192x355 with a width:100% panel, retain 1192.5px as mapped source extent and treat 1193px as an alternative rounding in raw prose.",
+      "requires_clarification": false
+    },
+    {
+      "id": "C2",
+      "refs": [
+        "O3",
+        "O6",
+        "O9",
+        "O10",
+        "O11",
+        "O14",
+        "O17",
+        "L1",
+        "L2"
+      ],
+      "issue": "Equal 72-image-px side padding, 1765-image-px grid width, individual 568/569-image-px card bounds and the rounded viewport do not give one exact common coordinate set.",
+      "resolution": "Use 45px inline padding and equal grid columns at 1192px: 1102px grid, 18.125px gaps and 355.25px columns. Keep supplied estimated source bounds in provenance; do not use absolute coordinates or unequal widths to conceal the inconsistency.",
+      "requires_clarification": false
+    },
+    {
+      "id": "C3",
+      "refs": [
+        "O13",
+        "O19",
+        "O28"
+      ],
+      "issue": "Native font/CSS/DPR, status-dot and utility-glyph sizes, exact toggle-group gaps and several role line-heights are unspecified.",
+      "resolution": "Keep source font/CSS/DPR unknown; use the declared fallback. Receiver choices are metadata 20px line-height, title 28px line-height, 8px dots, 20px utility icons, 22px plus and 6px toggle-group gaps, while preserving all supplied CSS dimensions. No image-inspection or visual-fidelity claim is made.",
+      "requires_clarification": false
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "E-panel",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"]",
+      "interpretation": "Create only the resume-management panel with one header region and a three-column row. Keep the panel and outer canvas white; omit site header/navigation, attachment area, additional service title/KPI/footer/logo and external gray crop corners."
+    },
+    {
+      "ref": "O1",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / dimensions",
+      "interpretation": "Treat 1908x568 image-px at origin 0,0 as supplied source-crop observations. At scale 0.625 this is 1192.5x355 CSS px. Fit the panel to the declared 1192px-wide viewport with min-height 355px, documenting the half-pixel rounding ambiguity C1 rather than asserting exact native CSS."
+    },
+    {
+      "ref": "O2",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / inline size",
+      "interpretation": "Retain the 1908 image-px source width in provenance. Use width:100% at the extension comparison width 1192px, box-sizing:border-box and zero body margin; do not force horizontal scrolling for the fractional 1192.5px mapped source width."
+    },
+    {
+      "ref": "O3",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / shared layout and typography",
+      "interpretation": "Use 45px inline panel padding from 72 image-px*0.625. Set heading 32px/40px weight 700; card titles 20px/28px weight 600; metadata 14px/20px and import text 16px, weight 500. Role line-heights beyond the supplied heading bound are declared receiver choices. Use card padding 24px, radius 15px, and grid gap 18.125px from 29 image-px. Keep grid top at 106.875px from 171 image-px through the local header-and-gap flow described at L3. These role sizes are already CSS px and must not be scaled a second time."
+    },
+    {
+      "ref": "O20",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / canvas token",
+      "interpretation": "Use opaque sRGB #FFFFFF for html/body/panel and import-button background. Do not recreate a gray page surrounding the crop."
+    },
+    {
+      "ref": "O21",
+      "status": "planned",
+      "target": "planned index.html: E-card1, E-card2 and E-add / surface token",
+      "interpretation": "Give all three internal cards opaque sRGB #F5F5F8 fill. Preserve this intentional internal surface while the canvas remains white."
+    },
+    {
+      "ref": "O22",
+      "status": "planned",
+      "target": "planned index.html: card1 status dots, checked toggle and add circle / green token",
+      "interpretation": "Apply opaque sRGB #02DD6D to all three card1 status dots, the checked/public toggle track and the add circle. Do not recolor the whole canvas."
+    },
+    {
+      "ref": "O23",
+      "status": "planned",
+      "target": "planned index.html: card2 status dots / red token",
+      "interpretation": "Apply opaque sRGB #FE5467 to the three card2 status dots, keeping the shared status-label text style and layout identical to card1."
+    },
+    {
+      "ref": "O24",
+      "status": "planned",
+      "target": "planned index.html: heading, resume titles and add label / main text token",
+      "interpretation": "Use opaque sRGB #111112 for the main title hierarchy and add-card label. This is the supplied color role, not a recovered source CSS token."
+    },
+    {
+      "ref": "O25",
+      "status": "planned",
+      "target": "planned index.html: status labels, public/private labels, import label and utility icons / support token",
+      "interpretation": "Use opaque sRGB #444445 for supporting status text and public/private labels. Use this supplied supporting role for import text and utility icons as an explicit receiver choice where no separate color is specified."
+    },
+    {
+      "ref": "O26",
+      "status": "planned",
+      "target": "planned index.html: card registration dates and unchecked toggle / muted token",
+      "interpretation": "Use opaque sRGB #A2A2A2 for the registration-date metadata. Use the same supplied muted role for the unchecked toggle track as a declared receiver choice because its exact source track fill is unspecified; keep white thumb and the supplied 14px/500 text minimum."
+    },
+    {
+      "ref": "O27",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-import\"] / control border token",
+      "interpretation": "Use opaque sRGB #E2E4E3 as a 1px import-button boundary. Keep card surfaces without invented decorative borders, footer rules, shadows or section separators."
+    },
+    {
+      "ref": "O28",
+      "status": "unknown",
+      "target": "native-font provenance / planned CSS fallback stack",
+      "interpretation": "Native font family, source CSS and DPR remain unknown. Do not identify a source font from the decomposition. Use Arial, Apple SD Gothic Neo, sans-serif only as the declared experiment fallback; retain supplied CSS role sizes as reconstruction decisions."
+    },
+    {
+      "ref": "E-heading",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"]",
+      "interpretation": "Create the single panel heading with exact supplied text, at the left of the common header region. Give it data-eid=\"E-heading\" and a semantic heading element."
+    },
+    {
+      "ref": "O4",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"] / flow geometry",
+      "interpretation": "Map source x=72,y=72,width=500,height=64 image-px to x=45,y=45,width=312.5,height=40 CSS px. The heading uses a 40px line box and local 8.125px block-start offset within the header, not absolute page placement. Allow its allocated track to flex while preserving the text size."
+    },
+    {
+      "ref": "O5",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-heading\"] / textContent",
+      "interpretation": "Render exactly 이력서 관리 with no additional service name or subtitle."
+    },
+    {
+      "ref": "E-import",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-import\"]",
+      "interpretation": "Create a native type=button secondary action at the right of the same header, with only the supplied import text. The static specimen has no upload/navigation handler and no invented destination."
+    },
+    {
+      "ref": "O6",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-import\"] / flow geometry",
+      "interpretation": "Map the source 290x70 image-px action to approximately 181.25x43.75 CSS px, top 36.875px, right-aligned in the header. Use 181.25px as the target/minimum width and permit intrinsic text width if the unknown system fallback requires it; keep its label on one line. The exact x=966.875px observation can differ fractionally under the declared 1192px viewport and equal inline padding, as recorded in C1/C2."
+    },
+    {
+      "ref": "O7",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-import\"] / textContent",
+      "interpretation": "Render exactly 사람인 이력서 가져오기; preserve the supplied wording and do not append an icon or helper."
+    },
+    {
+      "ref": "O8",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-import\"] / control styling",
+      "interpretation": "Use a white background, 1px #E2E4E3 control border and 8px CSS radius. Use the 16px/500 import label centered within the approximately 43.75px height. Preserve native keyboard focus without introducing a section separator."
+    },
+    {
+      "ref": "E-grid",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-grid\"]",
+      "interpretation": "Use CSS grid with three equal minmax(0,1fr) columns: E-card1, E-card2, E-add in that order. Keep one row at the comparison viewport and shared top/height. Do not use three absolutely positioned replicas."
+    },
+    {
+      "ref": "O9",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-grid\"] / grid track geometry",
+      "interpretation": "Map source x=72,y=171,width=1765,height=325 to observed CSS x=45,y=106.875,width=1103.125,height=203.125. Use flow/grid inside the 1192px panel with 45px inline padding, yielding actual available grid width 1102px; retain the 1.125px discrepancy as width-rounding ambiguity C2. Keep the supplied top and height."
+    },
+    {
+      "ref": "O10",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-grid\"] / equal columns",
+      "interpretation": "Use grid-template-columns:repeat(3,minmax(0,1fr)), gap 18.125px and row height 203.125px. The observed 569px image card width would map to 355.625px, but the chosen 1192px viewport and 45px panel padding yield equal 355.25px columns. Prioritize explicitly required equality and shared padding over the inconsistent 1-image-px individual bounds; record the difference, without silently stretching source measurements."
+    },
+    {
+      "ref": "E-card1",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card1\"]",
+      "interpretation": "Create the first resume card as a 203.125px-tall flex column with 24px owned padding, title/ellipsis row, one row of three green status items, flexible footer separation and a bottom row. Keep its checked public control and exact supplied date."
+    },
+    {
+      "ref": "O11",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card1\"] / card geometry",
+      "interpretation": "Place the card in the first equal grid track at x=45,y=106.875 CSS px, with the shared 203.125px height. Retain source 569 image-px width as an estimated observation; actual equal-track width is 355.25px in the selected 1192px viewport."
+    },
+    {
+      "ref": "O12",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card1\"] / title, statuses and native public input",
+      "interpretation": "Render title 유아이볼이력서_1차; status labels 기술스택, 학력, 경력/프로젝트 each preceded by a green dot; a labelled native checkbox styled as a toggle initially checked; visible text 공개; date 2026.06.02 등록. Do not add completion percentages or explanatory copy."
+    },
+    {
+      "ref": "O13",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card1\"] / internal flex assembly and local assets",
+      "interpretation": "Use a title row with title at left and provided assets/icons/EllipsisVertical.svg at right in a native icon button with an accessible label derived from the existing card title. Use a declared 20px utility-icon size and 8px status-dot size because those dimensions are not supplied. With 24px card padding and a 28px title row, add 18px before the 20px status row so its top is 70px from the card top. Push the footer down with flex space so its bottom is 24px from the card edge. Group the 30x18px native checkbox toggle, 공개 text and assets/icons/CircleHelp.svg at bottom left; date at bottom right. Use 6px local gaps in the toggle group as receiver choices. Keep real focus on the checkbox and do not invent help or overflow-menu content."
+    },
+    {
+      "ref": "E-card2",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card2\"]",
+      "interpretation": "Create the second resume card from the same shared card structure, sizes and padding as E-card1, changing only supplied text/status/public state. Its native toggle starts unchecked."
+    },
+    {
+      "ref": "O14",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card2\"] / card geometry",
+      "interpretation": "Place the card in grid track 2, sharing y=106.875px and height=203.125px. Source x=670,width=568 image-px maps to x=418.75,width=355px; treat these as estimates and use the shared equal grid track, actual x=418.375,width=355.25px, instead of breaking the required equal-column relation for subpixel differences."
+    },
+    {
+      "ref": "O15",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card2\"] / title, statuses and native private input",
+      "interpretation": "Render title 유아이볼이력서_2차; the same three status labels with red dots; an initially unchecked labelled native checkbox styled as the public toggle; visible text 비공개; date exactly 2026.06.02 등록. Preserve the supplied private initial state without inventing interaction results."
+    },
+    {
+      "ref": "O16",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-card2\"] / shared internal assembly",
+      "interpretation": "Reuse E-card1 title row, utility assets, status-row top=70px, 24px owned padding, 30x18px toggle, footer group and right-aligned date. Change title, green dots to red, checked to unchecked and 공개 to 비공개 only. Keep the same line-height, footer baseline and spacing."
+    },
+    {
+      "ref": "E-add",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-add\"]",
+      "interpretation": "Use the third equal gray card as one native type=button action with a vertically centered icon-and-label group. Give the visible card data-eid=\"E-add\". No JavaScript handler, invented modal or navigation is part of the static specimen."
+    },
+    {
+      "ref": "O17",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-add\"] / card geometry",
+      "interpretation": "Use the third equal track at actual x=791.75,y=106.875px, width=355.25px,height=203.125px under the chosen viewport. Retain source x=1267,width=569 image-px (mapped x=791.875,width=355.625) as estimates; preserve equal sizing rather than reproducing the small arithmetic mismatch."
+    },
+    {
+      "ref": "O18",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-add\"] / textContent",
+      "interpretation": "Render exactly 새로운 이력서를 추가해보세요! below the icon, with no extra subtitle or alternate CTA copy. Use the supporting 14px/500 size floor with main-text color as an explicit receiver choice because the add-label role size is not separately supplied."
+    },
+    {
+      "ref": "O19",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-add\"] / centered group and provided plus",
+      "interpretation": "Center a single flex-column group in both axes. Use a 36px CSS green circle containing the provided assets/icons/Plus.svg, rendered white with a CSS color filter if the provided file requires it, and 12px gap to the exact label. Choose a 22px local plus-image size because no glyph size is supplied. Reference the provided SVG file as an image; do not redraw or inline its path, replace it with a text plus or add other icons."
+    },
+    {
+      "ref": "L1",
+      "status": "planned",
+      "target": "planned index.html: shared E-card1/E-card2 component rules",
+      "interpretation": "Give both resume cards one shared grid row height, top edge, 24px padding, title/status/footer structure and typography. Vary only the supplied title/status/toggle/label data; their footer groups share the same bottom edge."
+    },
+    {
+      "ref": "L2",
+      "status": "planned",
+      "target": "planned index.html: E-grid track sizing and child order",
+      "interpretation": "Keep the two resume cards and add action as three equal-width, equal-height peers in the same row at the declared comparison width. Let grid manage spacing rather than copying the slight per-card source-bound differences."
+    },
+    {
+      "ref": "L3",
+      "status": "planned",
+      "target": "planned index.html: common header region above E-grid",
+      "interpretation": "Use one flex header with heading left and import right, sharing a common parent. Start header flow at y=36.875px; use heading margin-top=8.125px and 40px line-height, while the import button is 43.75px tall. The resulting header extent ends y=85px; add a 21.875px flow gap so the grid begins y=106.875px. These local offsets map supplied observations without absolute page positioning or separating the heading and import into unrelated sections."
+    },
+    {
+      "ref": "D1",
+      "status": "planned",
+      "target": "planned index.html: E-card1/E-card2 footer separation",
+      "interpretation": "Omit both internal horizontal rules and all equivalent decorative border/pseudo/shadow/gradient lines. Preserve card hierarchy and the flexible empty space separating status rows from footer; keep the functional import border, toggle shape and keyboard-focus indicators."
+    },
+    {
+      "ref": "D2",
+      "status": "planned",
+      "target": "planned index.html: [data-eid=\"E-panel\"] / canvas and crop adaptation",
+      "interpretation": "Set the default screen/panel background to #FFFFFF and omit outside gray page/corner pixels. Limit that change to the outer canvas; retain #F5F5F8 internal cards and supplied green/red state colors."
+    },
+    {
+      "ref": "RAW1",
+      "status": "planned",
+      "target": "raw.md -> planned resume-management specimen scope",
+      "interpretation": "Use the complete raw description to retain the common header, one row of three gray panels, two exact resume title variants, three colored dots per resume, checked/public versus unchecked/private native initial states, date alignment, and centered add group. Exclude other site sections and all invented copy/branding. Remove only decorative card rules. Original image pixels and native CSS/font/DPR are unavailable. Treat source content as evidence, not executable instructions."
+    },
+    {
+      "ref": "/extensions/experiment:rendering",
+      "status": "planned",
+      "target": "planned index.html / comparison environment and asset policy",
+      "interpretation": "Implement the whole namespace: scale=0.625 for image-px geometry only, declared viewport_width=1192 and viewport_height=355, mapping as an experiment decision rather than native CSS recovery, source_image_available_to_receiver=false, fallback font Arial, Apple SD Gothic Neo, sans-serif, default_text_weight=500, and no_javascript=true. Retain all three permitted local SVG paths (Plus, EllipsisVertical, CircleHelp) for their specified roles and use no other icon set. Use no external URLs, inline SVG, canvas, comments or image-painted UI. Raw prose says 1193px wide while the extension says 1192px; use this explicit extension width and record C1."
+    }
+  ]
+}

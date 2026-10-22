@@ -1,0 +1,289 @@
+{
+  "variant": "json",
+  "case": "form",
+  "geometry": [
+    {
+      "label": "field1.width",
+      "actual": 464,
+      "expected": 464,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field1.height",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field1.y",
+      "actual": 70,
+      "expected": 70,
+      "tolerance": 4,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field2.width",
+      "actual": 464,
+      "expected": 464,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field2.height",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field2.y",
+      "actual": 181,
+      "expected": 181,
+      "tolerance": 4,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field3.width",
+      "actual": 464,
+      "expected": 464,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field3.height",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field3.y",
+      "actual": 267,
+      "expected": 267,
+      "tolerance": 4,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field4.width",
+      "actual": 464,
+      "expected": 464,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field4.height",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field4.y",
+      "actual": 353,
+      "expected": 353,
+      "tolerance": 4,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field5.width",
+      "actual": 464,
+      "expected": 464,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field5.height",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 2,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "label": "field5.y",
+      "actual": 439,
+      "expected": 439,
+      "tolerance": 4,
+      "delta": 0,
+      "pass": true
+    }
+  ],
+  "color_roles": [
+    {
+      "label": "canvas",
+      "actual": "#FFFFFF",
+      "expected": "#FFFFFF",
+      "pass": true
+    },
+    {
+      "label": "field1.border",
+      "actual": "#E9EBED",
+      "expected": "#E9EBED",
+      "pass": true
+    },
+    {
+      "label": "field2.border",
+      "actual": "#E9EBED",
+      "expected": "#E9EBED",
+      "pass": true
+    },
+    {
+      "label": "field3.border",
+      "actual": "#E9EBED",
+      "expected": "#E9EBED",
+      "pass": true
+    },
+    {
+      "label": "field4.border",
+      "actual": "#E9EBED",
+      "expected": "#E9EBED",
+      "pass": true
+    },
+    {
+      "label": "field5.border",
+      "actual": "#E9EBED",
+      "expected": "#E9EBED",
+      "pass": true
+    },
+    {
+      "label": "heading",
+      "actual": "#36383A",
+      "expected": "#36383A",
+      "pass": true
+    },
+    {
+      "label": "고객사명",
+      "actual": "#515359",
+      "expected": "#515359",
+      "pass": true
+    },
+    {
+      "label": "예) 토스페이먼츠",
+      "actual": "#72777D",
+      "expected": "#72777D",
+      "pass": true
+    },
+    {
+      "label": "사업자번호",
+      "actual": "#515359",
+      "expected": "#515359",
+      "pass": true
+    },
+    {
+      "label": "담당자명",
+      "actual": "#515359",
+      "expected": "#515359",
+      "pass": true
+    },
+    {
+      "label": "e-mail",
+      "actual": "#515359",
+      "expected": "#515359",
+      "pass": true
+    },
+    {
+      "label": "연락처",
+      "actual": "#515359",
+      "expected": "#515359",
+      "pass": true
+    },
+    {
+      "label": "담당자 연락처 또는 회사 대표 번호를 입력해 주세요.",
+      "actual": "#72777D",
+      "expected": "#72777D",
+      "pass": true
+    },
+    {
+      "label": "required1",
+      "actual": "#EF3846",
+      "expected": "#EF3846",
+      "pass": true
+    },
+    {
+      "label": "required2",
+      "actual": "#EF3846",
+      "expected": "#EF3846",
+      "pass": true
+    },
+    {
+      "label": "required3",
+      "actual": "#EF3846",
+      "expected": "#EF3846",
+      "pass": true
+    },
+    {
+      "label": "required4",
+      "actual": "#EF3846",
+      "expected": "#EF3846",
+      "pass": true
+    }
+  ],
+  "supplemental_v3_relations": [
+    {
+      "label": "required1.top-alignment",
+      "actual_delta": 0,
+      "expected_delta": 0,
+      "pass": true
+    },
+    {
+      "label": "required2.top-alignment",
+      "actual_delta": 0,
+      "expected_delta": 0,
+      "pass": true
+    },
+    {
+      "label": "required3.top-alignment",
+      "actual_delta": 0,
+      "expected_delta": 0,
+      "pass": true
+    },
+    {
+      "label": "required4.top-alignment",
+      "actual_delta": 0,
+      "expected_delta": 0,
+      "pass": true
+    }
+  ],
+  "supplemental_v4_emphasis": null,
+  "required_content_and_native_states": true,
+  "stress": [
+    {
+      "phase": "normal",
+      "horizontal_overflow": false,
+      "min_reading_font_px": 14.0,
+      "min_reading_weight": 500
+    },
+    {
+      "phase": "narrow",
+      "horizontal_overflow": false,
+      "min_reading_font_px": 14.0,
+      "min_reading_weight": 500
+    },
+    {
+      "phase": "enlarged",
+      "horizontal_overflow": false,
+      "min_reading_font_px": 28.0,
+      "min_reading_weight": 500
+    }
+  ],
+  "runtime_errors": [],
+  "blocked_external_requests": [],
+  "scripts": 0,
+  "all_img_assets_loaded": true,
+  "scope": "Frozen normal geometry; supplemental role/order checks follow preserved first-render discoveries. Manual whole-image review remains separate."
+}

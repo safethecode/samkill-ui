@@ -1,0 +1,31 @@
+{
+  "scope": "Evaluation harness code, not full product code gate",
+  "tool_config": "Existing round-11 anti-slop15 general rules all error plus correctness; no configuration changes",
+  "results": [
+    {
+      "check": "node syntax",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "anti-slop and correctness lint",
+      "exit_code": 0,
+      "output": "{ \"diagnostics\": [],\n              \"number_of_files\": 1,\n              \"number_of_rules\": 111,\n              \"threads_count\": 12,\n              \"start_time\": 0.109567083\n            }\n            "
+    },
+    {
+      "check": "checkJs",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "Python compile",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "Final Python compile: compare/measure/verify_evidence/make_boards",
+      "exit_code": 0,
+      "output": ""
+    }
+  ]
+}

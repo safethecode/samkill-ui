@@ -1,0 +1,18 @@
+[
+  {
+    "case": "form",
+    "phase": "first-readback",
+    "exit_code": 0,
+    "output": "{\"status\": \"READY\", \"references\": 39, \"decomposition\": {\"path\": \"decomposition.json\", \"sha256\": \"7147dd667d98522343530c7056200bc43f7429881bd720246060d3b45a4657d4\"}, \"interpretation\": {\"path\": \"interpretation.json\", \"sha256\": \"a7112d2e2a6f00a75148c51407e57e46fc19e7b29add1ceeaf300fa2f0116298\"}, \"scope\": \"Source/interpretation integrity only; not comprehension or visual approval\"}\n",
+    "error": "",
+    "meaning": "Record integrity only; receiver already identified unresolved semantic conflicts."
+  },
+  {
+    "case": "cards",
+    "phase": "first-readback",
+    "exit_code": 0,
+    "output": "{\"status\": \"READY\", \"references\": 42, \"decomposition\": {\"path\": \"decomposition.json\", \"sha256\": \"46578d76ae5c85b4c2e25b3f9c1db79eb51062a5f0b5fb5109277161d08fcb89\"}, \"interpretation\": {\"path\": \"interpretation.json\", \"sha256\": \"4ef5ab5611c835c6823edfdd946a9079566390b445231e2ca64d0a72da7f0c26\"}, \"scope\": \"Source/interpretation integrity only; not comprehension or visual approval\"}\n",
+    "error": "",
+    "meaning": "Record integrity only; receiver already identified unresolved semantic conflicts."
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "method": "Independent Codex receiver subagents, fork_turns none, default inherited model; no Qwen inference",
+  "original_images_visible_to_receivers": false,
+  "format_comparison": "Matched core geometry, palette, copy and constraints; not randomized or statistically powered",
+  "first_readback": {
+    "both_identified": [
+      "form label gap versus coordinate anchors",
+      "adapted helper height versus source bounds",
+      "cards1192 versus1193 viewport",
+      "estimated unequal boxes versus equal grid relationship"
+    ],
+    "parent_action": "Preserved originals and corrected v2 before either implementation"
+  },
+  "first_implementation": {
+    "parent_rendered": true,
+    "receivers_did_not_render": true,
+    "json_export_receipt": {
+      "form": {
+        "sha256": "dede93462b0d3f0c832160e63a5362b41dc97a197a63cbe076f7b27c99d3d3bb",
+        "raw_characters": 1662,
+        "raw_utf8_bytes": 1662
+      },
+      "cards": {
+        "sha256": "eb41c232b95f6f8776aca7ad1f1892b48deb66647a5ebdd17018aab6d60f394d",
+        "raw_characters": 2159,
+        "raw_utf8_bytes": 2163
+      }
+    },
+    "findings": "See first/review.json and first/measurements.json"
+  },
+  "corrected_readback": {
+    "json_form_references": 40,
+    "json_cards_references": 48,
+    "both_no_blocking_conflicts": true
+  },
+  "text_corrected_implementation_receipt": "Only authorized HTML changes; top required dots, label-then-dot, exact role colors and SVG masks. Inputs/readbacks unchanged. No rendering performed by receiver.",
+  "json_corrected_implementation_receipt": {
+    "v3_export_form": "64478c8a75fdec771d19b579fb7804d91392b20fce326a49e2a39ba97102e104",
+    "v3_export_cards": "4650d33ee5fe65d90aab8a8264f130713fab31618109b71d296b97f3847fd21e",
+    "v3_raw_form_characters_bytes": [
+      2257,
+      2257
+    ],
+    "v3_raw_cards_characters_bytes": [
+      3058,
+      3062
+    ]
+  },
+  "v4_emphasis_receipts": {
+    "text_html_sha256": "23e464197c424d1ec7e572cac5bd9fcd9ca59d4964d8e5c0262ae59fbdbbd807",
+    "json_html_sha256": "08709a01ee71aae2b9935728d0f062b6a987676e70cbbf01fae5799e2bbfa088",
+    "json_export_sha256": "8bf34dc1ff63e1d69b5ad46e70c86f80a152c79cc3f7313a66d3ff0316578054",
+    "change": "Import-button font-weight700 only; no receiver rendering; form and other files unchanged"
+  }
+}

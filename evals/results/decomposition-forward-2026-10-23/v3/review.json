@@ -1,0 +1,7 @@
+{
+  "status": "one-role-correction-required",
+  "geometry": "60/60 frozen normal geometry probes pass",
+  "v3_supplemental_relations": "20/20 marker and status-order probes pass",
+  "v3_role_colors": "All measured role colors match declared HEX exactly",
+  "remaining_finding": "Source import text is visibly bolder than reconstructed500. Analyst catch-all500 choice flattened emphasis. Final v4 declares700 for E-import only; source native weight remains unknown."
+}

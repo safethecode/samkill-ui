@@ -1,0 +1,77 @@
+{
+  "stage": "visual handoff corrections before second implementation",
+  "files": [
+    {
+      "path": "analyst/form/decomposition.json",
+      "sha256": "8b456ac7f47ead6e8f116846a328a532e66dd7e8b809a08d787c2ded5d044841"
+    },
+    {
+      "path": "analyst/form/raw.md",
+      "sha256": "4fdac5f41d6a38497455f8f55ad11e86b1e7d8d8fb1f087c245da12cc9195ae4"
+    },
+    {
+      "path": "analyst/form/text-input.md",
+      "sha256": "0f521321e27d50f07fed6b2b14a3e1f7736a0821343bbca04df56b4ab10a9b17"
+    },
+    {
+      "path": "analyst/cards/decomposition.json",
+      "sha256": "55f86f7c1653edb3b26fbe34b5e04dd4cbfa107e5e4b0b012c63b2437a67c583"
+    },
+    {
+      "path": "analyst/cards/raw.md",
+      "sha256": "1026b11d8270b006cfa1d5320a023667b728c0a18e5b1a7347e7f4a3c1040b15"
+    },
+    {
+      "path": "analyst/cards/text-input.md",
+      "sha256": "bfde750a5e3972f14789635345c0dcd6baec71e0df5c08f4975095736ca26157"
+    },
+    {
+      "path": "text/form/INPUT.md",
+      "sha256": "0f521321e27d50f07fed6b2b14a3e1f7736a0821343bbca04df56b4ab10a9b17"
+    },
+    {
+      "path": "text/form/REVISION.md",
+      "sha256": "8f72b5d3ac91a0146255ca9c25dff8e504ad3e54fc22bdbd589bd56d68db6efe"
+    },
+    {
+      "path": "text/cards/INPUT.md",
+      "sha256": "bfde750a5e3972f14789635345c0dcd6baec71e0df5c08f4975095736ca26157"
+    },
+    {
+      "path": "text/cards/REVISION.md",
+      "sha256": "339aeed9a5476e6bc0dff93af1da92846db7ecf8a730f6304ec3ae7371b037e9"
+    },
+    {
+      "path": "json/form/INPUT.md",
+      "sha256": "5d8342b564c2d30e840fd23faeb06b4c29f437d4cfd0720a55574996d3dc1973"
+    },
+    {
+      "path": "json/form/REVISION.md",
+      "sha256": "8f72b5d3ac91a0146255ca9c25dff8e504ad3e54fc22bdbd589bd56d68db6efe"
+    },
+    {
+      "path": "json/form/decomposition.json",
+      "sha256": "8b456ac7f47ead6e8f116846a328a532e66dd7e8b809a08d787c2ded5d044841"
+    },
+    {
+      "path": "json/form/raw.md",
+      "sha256": "4fdac5f41d6a38497455f8f55ad11e86b1e7d8d8fb1f087c245da12cc9195ae4"
+    },
+    {
+      "path": "json/cards/INPUT.md",
+      "sha256": "5d8342b564c2d30e840fd23faeb06b4c29f437d4cfd0720a55574996d3dc1973"
+    },
+    {
+      "path": "json/cards/REVISION.md",
+      "sha256": "339aeed9a5476e6bc0dff93af1da92846db7ecf8a730f6304ec3ae7371b037e9"
+    },
+    {
+      "path": "json/cards/decomposition.json",
+      "sha256": "55f86f7c1653edb3b26fbe34b5e04dd4cbfa107e5e4b0b012c63b2437a67c583"
+    },
+    {
+      "path": "json/cards/raw.md",
+      "sha256": "1026b11d8270b006cfa1d5320a023667b728c0a18e5b1a7347e7f4a3c1040b15"
+    }
+  ]
+}

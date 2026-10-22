@@ -1,0 +1,317 @@
+{
+  "schema_version": 2,
+  "handoff_sha256": "bb8001aaec33ac6a31bdddba63c4d7f3fc612488adf43fb5ee7b4a1702c3bc59",
+  "target_sha256": "08709a01ee71aae2b9935728d0f062b6a987676e70cbbf01fae5799e2bbfa088",
+  "core_review": {
+    "path": "core-review.json",
+    "sha256": "94ac80eee73df2071a72bcfa2d76b2e372929dd30559ba3044a0706cd7998789"
+  },
+  "consumption": [
+    {
+      "ref": "/extensions/experiment:rendering",
+      "status": "applied",
+      "target": "index.html / comparison environment and asset policy",
+      "interpretation": "Declared viewport/scale, fallback family, no-JavaScript scope and local official asset policy applied; source image intentionally withheld from receiver for this bounded transmission experiment."
+    },
+    {
+      "ref": "D1",
+      "status": "applied",
+      "target": "index.html: E-card1/E-card2 footer separation",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Omit both internal horizontal rules and all equivalent decorative border/pseudo/shadow/gradient lines. Preserve card hierarchy and the flexible empty space separating status rows from footer; keep the functional import border, toggle shape and keyboard-focus indicators."
+    },
+    {
+      "ref": "D2",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / canvas and crop adaptation",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Set the default screen/panel background to #FFFFFF and omit outside gray page/corner pixels. Limit that change to the outer canvas; retain #F5F5F8 internal cards and supplied green/red state colors."
+    },
+    {
+      "ref": "E-add",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-add\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Use the third equal gray card as one native type=button action with a vertically centered icon-and-label group. Give the visible card data-eid=\"E-add\". No JavaScript handler, invented modal or navigation is part of the static specimen."
+    },
+    {
+      "ref": "E-card1",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card1\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Retain the first resume card as a 203.125px normal-height flex column with 24px owned padding, title/ellipsis row, three green status items in label-then-dot order, flexible footer separation and a bottom row. Keep the initially checked public native input and exact supplied date. Apply distinct ellipsis and help icon role colors/sizes from new O31/O32."
+    },
+    {
+      "ref": "E-card2",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card2\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create the second resume card from the same shared card structure, sizes and padding as E-card1, changing only supplied text/status/public state. Its native toggle starts unchecked."
+    },
+    {
+      "ref": "E-grid",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-grid\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Use CSS grid with three equal minmax(0,1fr) columns: E-card1, E-card2, E-add in that order. Keep one row at the comparison viewport and shared top/height. Do not use three absolutely positioned replicas."
+    },
+    {
+      "ref": "E-heading",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create the single panel heading with exact supplied text, at the left of the common header region. Give it data-eid=\"E-heading\" and a semantic heading element."
+    },
+    {
+      "ref": "E-import",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-import\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create a native type=button secondary action at the right of the same header, with only the supplied import text. The static specimen has no upload/navigation handler and no invented destination."
+    },
+    {
+      "ref": "E-panel",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"]",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Create only the resume-management panel with one header region and a three-column row. Keep the panel and outer canvas white; omit site header/navigation, attachment area, additional service title/KPI/footer/logo and external gray crop corners."
+    },
+    {
+      "ref": "L1",
+      "status": "applied",
+      "target": "index.html: shared E-card1/E-card2 component rules",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Give both resume cards one shared grid row height, top edge, 24px padding, title/status/footer structure and typography. Vary only the supplied title/status/toggle/label data; their footer groups share the same bottom edge."
+    },
+    {
+      "ref": "L2",
+      "status": "applied",
+      "target": "index.html: E-grid track sizing and child order",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Keep the two resume cards and add action as three equal-width, equal-height peers in the same row at the declared comparison width. Let grid manage spacing rather than copying the slight per-card source-bound differences."
+    },
+    {
+      "ref": "L3",
+      "status": "applied",
+      "target": "index.html: common header region above E-grid",
+      "interpretation": "Actual named owner, parent/shared relation or scoped adaptation inspected in source/render and DOM. Use one flex header with heading left and import right, sharing a common parent. Start header flow at y=36.875px; use heading margin-top=8.125px and 40px line-height, while the import button is 43.75px tall. The resulting header extent ends y=85px; add a 21.875px flow gap so the grid begins y=106.875px. These local offsets map supplied observations without absolute page positioning or separating the heading and import into unrelated sections."
+    },
+    {
+      "ref": "O1",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / dimensions",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O10",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-grid\"] / equal columns",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O11",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card1\"] / card geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O12",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card1\"] / title, statuses and native public input",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O13",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card1\"] / internal flex assembly and local assets",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O14",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card2\"] / card geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O15",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card2\"] / title, statuses and native private input",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O16",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-card2\"] / shared internal assembly",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O17",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-add\"] / card geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O18",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-add\"] / textContent",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O19",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-add\"] / centered group and provided plus",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O2",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / inline size",
+      "interpretation": "Verified length observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O20",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / canvas token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O21",
+      "status": "applied",
+      "target": "index.html: E-card1, E-card2 and E-add / surface token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O22",
+      "status": "applied",
+      "target": "index.html: card1 status dots, checked toggle and add circle / green token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O23",
+      "status": "applied",
+      "target": "index.html: card2 status dots / red token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O24",
+      "status": "applied",
+      "target": "index.html: heading, resume titles and add label / main text token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O25",
+      "status": "applied",
+      "target": "index.html: status labels, public/private labels, import label and utility icons / support token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O26",
+      "status": "applied",
+      "target": "index.html: card registration dates and unchecked toggle / muted token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O27",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-import\"] / control border token",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O28",
+      "status": "unverified",
+      "target": "native-font provenance / CSS fallback stack",
+      "interpretation": "Original font/CSS is not established. Fallback use is explicit; no original-font recovery claimed."
+    },
+    {
+      "ref": "O29",
+      "status": "applied",
+      "target": "correction in index.html: .import-button foreground",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O3",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-panel\"] / shared layout and typography",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O30",
+      "status": "applied",
+      "target": "correction in index.html: .add-label foreground",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O31",
+      "status": "applied",
+      "target": "correction in index.html: both card-menu official EllipsisVertical icon masks",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O32",
+      "status": "applied",
+      "target": "correction in index.html: both footer official CircleHelp icon masks",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O33",
+      "status": "applied",
+      "target": "correction in index.html: native .public-toggle unchecked track",
+      "interpretation": "Verified color observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O34",
+      "status": "applied",
+      "target": "correction in index.html: .add-card / .add-label text typography",
+      "interpretation": "Verified typography observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O4",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O5",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-heading\"] / textContent",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O6",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-import\"] / flow geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O7",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-import\"] / textContent",
+      "interpretation": "Verified content observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O8",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-import\"] / control styling",
+      "interpretation": "Verified layout observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "O9",
+      "status": "applied",
+      "target": "index.html: [data-eid=\"E-grid\"] / grid track geometry",
+      "interpretation": "Verified bounds observation in implementation.html, observations.json and source/render comparison; declared scale, source estimate and reconstruction adaptation remain distinct. Actual role values and layout probes are preserved in measurements.json."
+    },
+    {
+      "ref": "RAW1",
+      "status": "applied",
+      "target": "raw.md -> resume-management specimen scope",
+      "interpretation": "Complete raw text exported and read; bytes preserved. Scope, content, exclusions and unknowns checked against actual static output; raw is not printed as UI."
+    }
+  ],
+  "results": [
+    {
+      "id": "Q-panel-width",
+      "capture": {
+        "path": "render.png",
+        "sha256": "3a61ea0484316de8eae97e07bd8532216d06cc22bc7278d7e82d0b0b566b698a"
+      },
+      "actual": {
+        "value": 1908.8,
+        "unit": "image-px",
+        "method": "Actual Chrome DOM panel width divided by the frozen experimental display scale; not recovered native CSS."
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "adapted-and-verified",
+    "reason": "Inspected source and final side-by-side: left heading/right heavier import action, equal three gray cards with common106.875px top and203.125px height, titles/status/footer hierarchy, label-then-dot order, exact mapped role colors and native initial states preserved. User-required internal-rule removal, white canvas and14px/500 minimum are scoped adaptations. Source font is not recovered."
+  }
+}

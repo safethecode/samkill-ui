@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이력서 관리</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, "Apple SD Gothic Neo", sans-serif;
+      font-weight: 500;
+      --canvas: #FFFFFF;
+      --card: #F5F5F8;
+      --green: #02DD6D;
+      --red: #FE5467;
+      --main: #111112;
+      --support: #444445;
+      --muted: #A2A2A2;
+      --border: #E2E4E3;
+      --help: #C7CFC9;
+      --unchecked-track: #E2E4E3;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--canvas); }
+    body { color: var(--main); font-weight: 500; }
+    button, input { font: inherit; font-weight: 500; }
+    button { color: inherit; cursor: pointer; }
+    .resume-panel {
+      inline-size: 100%;
+      min-block-size: 355px;
+      padding: 36.875px 45px 45px;
+      background: var(--canvas);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.4285714286;
+    }
+    .panel-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      min-inline-size: 0;
+    }
+    .panel-heading {
+      min-inline-size: 0;
+      max-inline-size: 100%;
+      margin: 8.125px 0 0;
+      color: var(--main);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    .import-button {
+      min-inline-size: min(181.25px, 100%);
+      max-inline-size: 100%;
+      min-block-size: 43.75px;
+      padding: 8.875px 4px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--canvas);
+      color: var(--main);
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: center;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    .resume-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+      grid-auto-rows: minmax(203.125px, auto);
+      gap: 18.125px;
+      margin-block-start: 21.875px;
+    }
+    .resume-card, .add-card {
+      min-inline-size: 0;
+      min-block-size: 203.125px;
+      padding: 24px;
+      border: 0;
+      border-radius: 15px;
+      background: var(--card);
+    }
+    .resume-card { display: flex; flex-direction: column; }
+    .card-heading-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      min-inline-size: 0;
+    }
+    .card-title {
+      min-inline-size: 0;
+      margin: 0;
+      color: var(--main);
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+    .icon-button {
+      display: inline-grid;
+      flex: 0 0 20px;
+      place-items: center;
+      inline-size: 20px;
+      block-size: 20px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 4px;
+      background: transparent;
+      color: var(--support);
+    }
+    .card-menu { block-size: 28px; }
+    .icon-mask {
+      display: block;
+      background-color: currentColor;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+    }
+    .menu-icon {
+      color: var(--muted);
+      -webkit-mask-image: url("assets/icons/EllipsisVertical.svg");
+      mask-image: url("assets/icons/EllipsisVertical.svg");
+    }
+    .utility-icon.help-icon {
+      inline-size: 16px;
+      block-size: 16px;
+      color: var(--help);
+      -webkit-mask-image: url("assets/icons/CircleHelp.svg");
+      mask-image: url("assets/icons/CircleHelp.svg");
+    }
+    .utility-icon {
+      inline-size: 20px;
+      block-size: 20px;
+    }
+    .status-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 12px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--support);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.4285714286;
+    }
+    .status-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-inline-size: 0;
+      overflow-wrap: anywhere;
+    }
+    .status-dot {
+      flex: 0 0 6px;
+      inline-size: 6px;
+      block-size: 6px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .private-card .status-dot { background: var(--red); }
+    .card-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px 12px;
+      margin-block-start: auto;
+      padding-block-start: 16px;
+      color: var(--support);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.4285714286;
+    }
+    .visibility-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-inline-size: 0;
+    }
+    .visibility-control {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      max-inline-size: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .visibility-control:focus-within { box-shadow: inset 0 0 0 2px var(--support); }
+    .public-toggle {
+      appearance: none;
+      display: inline-grid;
+      flex: 0 0 30px;
+      align-items: center;
+      inline-size: 30px;
+      block-size: 18px;
+      margin: 0;
+      padding: 2px;
+      border: 0;
+      border-radius: 18px;
+      outline: none;
+      background: var(--unchecked-track);
+      cursor: pointer;
+      transition: background-color 120ms ease-out;
+    }
+    .public-toggle::before {
+      content: "";
+      display: block;
+      inline-size: 14px;
+      block-size: 14px;
+      border-radius: 50%;
+      background: var(--canvas);
+      transition: transform 120ms ease-out;
+    }
+    .public-toggle:checked { background: var(--green); }
+    .public-toggle:checked::before { transform: translateX(12px); }
+    .registration-date {
+      min-inline-size: 0;
+      margin-inline-start: auto;
+      color: var(--muted);
+      text-align: end;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    .add-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .add-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      max-inline-size: 100%;
+    }
+    .add-circle {
+      display: grid;
+      flex: 0 0 36px;
+      place-items: center;
+      inline-size: 36px;
+      block-size: 36px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .add-icon {
+      inline-size: 22px;
+      block-size: 22px;
+      color: var(--canvas);
+      -webkit-mask-image: url("assets/icons/Plus.svg");
+      mask-image: url("assets/icons/Plus.svg");
+    }
+    .add-label { min-inline-size: 0; color: var(--support); overflow-wrap: anywhere; }
+    button:focus-visible { outline: 2px solid var(--support); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      .public-toggle, .public-toggle::before { transition: none; }
+    }
+    @media (forced-colors: active) {
+      .visibility-control:focus-within { outline: 2px solid Highlight; outline-offset: 2px; }
+      .public-toggle { border: 1px solid ButtonText; }
+      .public-toggle:checked { background: Highlight; }
+      .public-toggle::before { background: ButtonText; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume-panel" data-eid="E-panel" aria-labelledby="resume-heading">
+    <header class="panel-header">
+      <h1 class="panel-heading" id="resume-heading" data-eid="E-heading">이력서 관리</h1>
+      <button class="import-button" type="button" data-eid="E-import">사람인 이력서 가져오기</button>
+    </header>
+    <div class="resume-grid" data-eid="E-grid">
+      <article class="resume-card" data-eid="E-card1" aria-labelledby="resume-title-1">
+        <div class="card-heading-row">
+          <h2 class="card-title" id="resume-title-1">유아이볼이력서_1차</h2>
+          <button class="icon-button card-menu" type="button" aria-label="유아이볼이력서_1차 더 보기"><span class="utility-icon icon-mask menu-icon" aria-hidden="true"></span></button>
+        </div>
+        <ul class="status-list">
+          <li class="status-item"><span>기술스택</span><span class="status-dot" aria-hidden="true"></span></li>
+          <li class="status-item"><span>학력</span><span class="status-dot" aria-hidden="true"></span></li>
+          <li class="status-item"><span>경력/프로젝트</span><span class="status-dot" aria-hidden="true"></span></li>
+        </ul>
+        <div class="card-footer">
+          <div class="visibility-group">
+            <label class="visibility-control" for="public-1"><input class="public-toggle" id="public-1" type="checkbox" role="switch" checked aria-label="유아이볼이력서_1차 공개"><span>공개</span></label>
+            <button class="icon-button" type="button" aria-label="공개 도움말"><span class="utility-icon icon-mask help-icon" aria-hidden="true"></span></button>
+          </div>
+          <time class="registration-date" datetime="2026-06-02">2026.06.02 등록</time>
+        </div>
+      </article>
+      <article class="resume-card private-card" data-eid="E-card2" aria-labelledby="resume-title-2">
+        <div class="card-heading-row">
+          <h2 class="card-title" id="resume-title-2">유아이볼이력서_2차</h2>
+          <button class="icon-button card-menu" type="button" aria-label="유아이볼이력서_2차 더 보기"><span class="utility-icon icon-mask menu-icon" aria-hidden="true"></span></button>
+        </div>
+        <ul class="status-list">
+          <li class="status-item"><span>기술스택</span><span class="status-dot" aria-hidden="true"></span></li>
+          <li class="status-item"><span>학력</span><span class="status-dot" aria-hidden="true"></span></li>
+          <li class="status-item"><span>경력/프로젝트</span><span class="status-dot" aria-hidden="true"></span></li>
+        </ul>
+        <div class="card-footer">
+          <div class="visibility-group">
+            <label class="visibility-control" for="public-2"><input class="public-toggle" id="public-2" type="checkbox" role="switch" aria-label="유아이볼이력서_2차 비공개"><span>비공개</span></label>
+            <button class="icon-button" type="button" aria-label="비공개 도움말"><span class="utility-icon icon-mask help-icon" aria-hidden="true"></span></button>
+          </div>
+          <time class="registration-date" datetime="2026-06-02">2026.06.02 등록</time>
+        </div>
+      </article>
+      <button class="add-card" type="button" data-eid="E-add">
+        <span class="add-group"><span class="add-circle" aria-hidden="true"><span class="add-icon icon-mask" aria-hidden="true"></span></span><span class="add-label">새로운 이력서를 추가해보세요!</span></span>
+      </button>
+    </div>
+  </main>
+</body>
+</html>

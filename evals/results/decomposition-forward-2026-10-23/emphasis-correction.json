@@ -1,0 +1,9 @@
+{
+  "finding": "V4",
+  "origin": "analyst reconstruction decision flattened import emphasis",
+  "status": "correction-required",
+  "observation": "Source import label visually bolder than body; current v3 inherited500",
+  "decision": "E-import700,16px, no geometry or palette change",
+  "original_native_font_weight": "unknown",
+  "first_and_v3_results_preserved": true
+}

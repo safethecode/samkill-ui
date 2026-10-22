@@ -1,0 +1,2 @@
+Second visual review correction V4: the actual source import-button text is visibly heavier than metadata/body copy. The earlier catch-all other_weight500 flattened this role. Retain the500 body minimum, but use700 for E-import only, size16px and same geometry/colors. Weight700 is a declared reconstruction choice preserving observed emphasis, not recovered native CSS/font. Do not change other text or layout.
+Refresh interpretation only and stop before implementation.

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decomposition_sha256": "ce92934443bff2d6fca404c342cb440f64e6efd0a524c300e4a0f4ccc91af0c8",
+  "interpretation_sha256": "38396fbe5518285d2931378a7a8f0e1d77d9cb000d68c2ac2a759770afe88110",
+  "source_snapshot": {
+    "path": "implementation.html",
+    "sha256": "08709a01ee71aae2b9935728d0f062b6a987676e70cbbf01fae5799e2bbfa088"
+  },
+  "capture": {
+    "path": "render.png",
+    "sha256": "3a61ea0484316de8eae97e07bd8532216d06cc22bc7278d7e82d0b0b566b698a"
+  },
+  "status": "adapted-and-verified",
+  "reason": "Inspected source and final side-by-side: left heading/right heavier import action, equal three gray cards with common106.875px top and203.125px height, titles/status/footer hierarchy, label-then-dot order, exact mapped role colors and native initial states preserved. User-required internal-rule removal, white canvas and14px/500 minimum are scoped adaptations. Source font is not recovered."
+}

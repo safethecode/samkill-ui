@@ -1,0 +1,197 @@
+{
+  "stage": "before_receiver_implementation",
+  "files": [
+    {
+      "path": "analyst/cards/decomposition.json",
+      "sha256": "46578d76ae5c85b4c2e25b3f9c1db79eb51062a5f0b5fb5109277161d08fcb89"
+    },
+    {
+      "path": "analyst/cards/raw.md",
+      "sha256": "e0bdb57ea07647c719461ba2728add3b610f59c8a6f03b28af8cdf80bcb5afd2"
+    },
+    {
+      "path": "analyst/cards/source.png",
+      "sha256": "705e7baf7ecad4ddfd6661e17f9df0fcf3aa4efab2899f654cc0d8e0f09d682e"
+    },
+    {
+      "path": "analyst/cards/text-input.md",
+      "sha256": "0646f58b4973d102afe6014e3479782524654c467b9f3173dfb390e19bb5eed2"
+    },
+    {
+      "path": "analyst/form/decomposition.json",
+      "sha256": "7147dd667d98522343530c7056200bc43f7429881bd720246060d3b45a4657d4"
+    },
+    {
+      "path": "analyst/form/raw.md",
+      "sha256": "340b633db0c8e0f0c2b451dba09ecd6d91c3ba16e1bf95373746f6cf8f31d0bf"
+    },
+    {
+      "path": "analyst/form/source.png",
+      "sha256": "a8acc95376cfd2c3c3fb69ce7a4b5903d9c9f19d325ef4645d355d91ff4b6c90"
+    },
+    {
+      "path": "analyst/form/text-input.md",
+      "sha256": "df6284c6b8ce7fabee1d85deb625120530f09ee105d9f97c9005bcf4d4e41eff"
+    },
+    {
+      "path": "json/TASK.md",
+      "sha256": "af64b2312be51d7981abbea70c7edd942eda240491b9836e2c24ef9d5baa0cc1"
+    },
+    {
+      "path": "json/cards/DESIGN.md",
+      "sha256": "bf5ce496d38e194b08c6efbd81c59240a9878e9ca8ef6a7e892fbd4a639352af"
+    },
+    {
+      "path": "json/cards/INPUT.md",
+      "sha256": "5d8342b564c2d30e840fd23faeb06b4c29f437d4cfd0720a55574996d3dc1973"
+    },
+    {
+      "path": "json/cards/assets/icons/CircleHelp.svg",
+      "sha256": "690410d09311e77345440a0ca5a81f71009b994e8e0538229656e62121107fd5"
+    },
+    {
+      "path": "json/cards/assets/icons/EllipsisVertical.svg",
+      "sha256": "2c7c31424668dbcbb11a6b0cb8ff66af3149d458f6272e3cab671251ab664d3a"
+    },
+    {
+      "path": "json/cards/assets/icons/LICENSE",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "json/cards/assets/icons/Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f"
+    },
+    {
+      "path": "json/cards/assets/icons/inline.json",
+      "sha256": "f8a6136d46682af0a7e634961cee1ba74f84cac1f03ee9b1e98376ae3d433feb"
+    },
+    {
+      "path": "json/cards/assets/icons/manifest.json",
+      "sha256": "94cbf1db8ee47585144fc7a52f64207ee337c0c781f17a62fa63c00c3e3788c2"
+    },
+    {
+      "path": "json/cards/decomposition.json",
+      "sha256": "46578d76ae5c85b4c2e25b3f9c1db79eb51062a5f0b5fb5109277161d08fcb89"
+    },
+    {
+      "path": "json/cards/raw.md",
+      "sha256": "e0bdb57ea07647c719461ba2728add3b610f59c8a6f03b28af8cdf80bcb5afd2"
+    },
+    {
+      "path": "json/form/DESIGN.md",
+      "sha256": "bf5ce496d38e194b08c6efbd81c59240a9878e9ca8ef6a7e892fbd4a639352af"
+    },
+    {
+      "path": "json/form/INPUT.md",
+      "sha256": "5d8342b564c2d30e840fd23faeb06b4c29f437d4cfd0720a55574996d3dc1973"
+    },
+    {
+      "path": "json/form/assets/icons/CircleHelp.svg",
+      "sha256": "690410d09311e77345440a0ca5a81f71009b994e8e0538229656e62121107fd5"
+    },
+    {
+      "path": "json/form/assets/icons/EllipsisVertical.svg",
+      "sha256": "2c7c31424668dbcbb11a6b0cb8ff66af3149d458f6272e3cab671251ab664d3a"
+    },
+    {
+      "path": "json/form/assets/icons/LICENSE",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "json/form/assets/icons/Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f"
+    },
+    {
+      "path": "json/form/assets/icons/inline.json",
+      "sha256": "f8a6136d46682af0a7e634961cee1ba74f84cac1f03ee9b1e98376ae3d433feb"
+    },
+    {
+      "path": "json/form/assets/icons/manifest.json",
+      "sha256": "94cbf1db8ee47585144fc7a52f64207ee337c0c781f17a62fa63c00c3e3788c2"
+    },
+    {
+      "path": "json/form/decomposition.json",
+      "sha256": "7147dd667d98522343530c7056200bc43f7429881bd720246060d3b45a4657d4"
+    },
+    {
+      "path": "json/form/raw.md",
+      "sha256": "340b633db0c8e0f0c2b451dba09ecd6d91c3ba16e1bf95373746f6cf8f31d0bf"
+    },
+    {
+      "path": "text/TASK.md",
+      "sha256": "af64b2312be51d7981abbea70c7edd942eda240491b9836e2c24ef9d5baa0cc1"
+    },
+    {
+      "path": "text/cards/DESIGN.md",
+      "sha256": "bf5ce496d38e194b08c6efbd81c59240a9878e9ca8ef6a7e892fbd4a639352af"
+    },
+    {
+      "path": "text/cards/INPUT.md",
+      "sha256": "0646f58b4973d102afe6014e3479782524654c467b9f3173dfb390e19bb5eed2"
+    },
+    {
+      "path": "text/cards/INTERPRETATION-TASK.md",
+      "sha256": "a1d54f4bec3f7bf057e26d19c0ad508a40ccd9a23d3e1bf5322417950ef1c928"
+    },
+    {
+      "path": "text/cards/assets/icons/CircleHelp.svg",
+      "sha256": "690410d09311e77345440a0ca5a81f71009b994e8e0538229656e62121107fd5"
+    },
+    {
+      "path": "text/cards/assets/icons/EllipsisVertical.svg",
+      "sha256": "2c7c31424668dbcbb11a6b0cb8ff66af3149d458f6272e3cab671251ab664d3a"
+    },
+    {
+      "path": "text/cards/assets/icons/LICENSE",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "text/cards/assets/icons/Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f"
+    },
+    {
+      "path": "text/cards/assets/icons/inline.json",
+      "sha256": "f8a6136d46682af0a7e634961cee1ba74f84cac1f03ee9b1e98376ae3d433feb"
+    },
+    {
+      "path": "text/cards/assets/icons/manifest.json",
+      "sha256": "94cbf1db8ee47585144fc7a52f64207ee337c0c781f17a62fa63c00c3e3788c2"
+    },
+    {
+      "path": "text/form/DESIGN.md",
+      "sha256": "bf5ce496d38e194b08c6efbd81c59240a9878e9ca8ef6a7e892fbd4a639352af"
+    },
+    {
+      "path": "text/form/INPUT.md",
+      "sha256": "df6284c6b8ce7fabee1d85deb625120530f09ee105d9f97c9005bcf4d4e41eff"
+    },
+    {
+      "path": "text/form/INTERPRETATION-TASK.md",
+      "sha256": "a1d54f4bec3f7bf057e26d19c0ad508a40ccd9a23d3e1bf5322417950ef1c928"
+    },
+    {
+      "path": "text/form/assets/icons/CircleHelp.svg",
+      "sha256": "690410d09311e77345440a0ca5a81f71009b994e8e0538229656e62121107fd5"
+    },
+    {
+      "path": "text/form/assets/icons/EllipsisVertical.svg",
+      "sha256": "2c7c31424668dbcbb11a6b0cb8ff66af3149d458f6272e3cab671251ab664d3a"
+    },
+    {
+      "path": "text/form/assets/icons/LICENSE",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "text/form/assets/icons/Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f"
+    },
+    {
+      "path": "text/form/assets/icons/inline.json",
+      "sha256": "f8a6136d46682af0a7e634961cee1ba74f84cac1f03ee9b1e98376ae3d433feb"
+    },
+    {
+      "path": "text/form/assets/icons/manifest.json",
+      "sha256": "94cbf1db8ee47585144fc7a52f64207ee337c0c781f17a62fa63c00c3e3788c2"
+    }
+  ]
+}

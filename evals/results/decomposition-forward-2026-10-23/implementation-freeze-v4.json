@@ -1,0 +1,22 @@
+{
+  "stage": "final import emphasis correction before parent render",
+  "files": [
+    {
+      "path": "text/form/index.html",
+      "sha256": "e5800e44941c41c868684cd44bbfa908c0ebf933766b98b557a5685f9473e083"
+    },
+    {
+      "path": "text/cards/index.html",
+      "sha256": "23e464197c424d1ec7e572cac5bd9fcd9ca59d4964d8e5c0262ae59fbdbbd807"
+    },
+    {
+      "path": "json/form/index.html",
+      "sha256": "d91b2bb4efd6cdab92f561c6c3fe194932f2ebc41978c0134865ff9ebdcfa5cd"
+    },
+    {
+      "path": "json/cards/index.html",
+      "sha256": "08709a01ee71aae2b9935728d0f062b6a987676e70cbbf01fae5799e2bbfa088"
+    }
+  ],
+  "supplied_v4_inputs_unchanged": true
+}

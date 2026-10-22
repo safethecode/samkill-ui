@@ -1,0 +1,22 @@
+{
+  "stage": "corrected implementation before parent final render",
+  "files": [
+    {
+      "path": "text/form/index.html",
+      "sha256": "e5800e44941c41c868684cd44bbfa908c0ebf933766b98b557a5685f9473e083"
+    },
+    {
+      "path": "text/cards/index.html",
+      "sha256": "82cbc2c404f56c2df95d45a77acc9bab7099a24e1871950d8eaf471076cabf38"
+    },
+    {
+      "path": "json/form/index.html",
+      "sha256": "d91b2bb4efd6cdab92f561c6c3fe194932f2ebc41978c0134865ff9ebdcfa5cd"
+    },
+    {
+      "path": "json/cards/index.html",
+      "sha256": "c32620ed6f5f16f875ae216a6317449ec7351c7741ffe5ed2f9c4159135e349e"
+    }
+  ],
+  "supplied_v3_inputs_unchanged": true
+}

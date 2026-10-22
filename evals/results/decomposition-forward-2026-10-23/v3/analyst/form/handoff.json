@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "decomposition": {
+    "path": "decomposition.json",
+    "sha256": "8b456ac7f47ead6e8f116846a328a532e66dd7e8b809a08d787c2ded5d044841"
+  },
+  "interpretation": {
+    "path": "interpretation.json",
+    "sha256": "f85249a76222d72b6b0260d7b481d5dbd27c60a9af2e3bfe438f4803532620ad"
+  },
+  "anchors": [
+    {
+      "id": "Q-panel-width",
+      "observation_id": "O2",
+      "feature": "Preserve the reference panel width at declared experimental mapping",
+      "source": {
+        "path": "source.png",
+        "sha256": "a8acc95376cfd2c3c3fb69ce7a4b5903d9c9f19d325ef4645d355d91ff4b6c90"
+      },
+      "observed": {
+        "value": 464,
+        "unit": "image-px",
+        "basis": "measured",
+        "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+      },
+      "target": "[data-eid=E-panel]",
+      "expected": {
+        "value": 464,
+        "unit": "image-px",
+        "tolerance": 2
+      }
+    }
+  ]
+}

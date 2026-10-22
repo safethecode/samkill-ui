@@ -1,0 +1,14 @@
+{
+  "product_gate": "UNVERIFIED; full75-rule contract not executed for these bounded static specimens",
+  "known_product_accessibility_issue": {
+    "foreground": "#A2A2A2",
+    "background": "#F5F5F8",
+    "contrast_ratio": 2.346,
+    "reading_text": "14px date metadata",
+    "status": "below4.5:1 reading-text criterion; deliberately retained source color for this transmission experiment; not product approval"
+  },
+  "model": "No local Qwen/Ollama inference. Independent current-default Codex receivers only; no statistical format superiority or general success-rate claim.",
+  "source_scope": "Raster-crop transmission experiment; receiver images intentionally withheld. Full skill workflow should supply original images/assets too. Original native CSS/font/DPR not recovered here.",
+  "stress_method": "390px viewport;200% text by snapshotting each computed font size then doubling it. Not browser zoom, unseen mobile design approval or real-device coverage.",
+  "static_behaviors": "Native labelled input and initial toggle states/keyboard changes checked; import/add/menu/help product flows, server submission, async/loading/error states, real devices and screen-reader speech not implemented or approved."
+}

@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "document_id": "form",
+  "revision": "readback-corrected-v2",
+  "sources": [
+    {
+      "id": "R1",
+      "kind": "image",
+      "artifact": {
+        "path": "source.png",
+        "sha256": "a8acc95376cfd2c3c3fb69ce7a4b5903d9c9f19d325ef4645d355d91ff4b6c90"
+      },
+      "description": "Existing real reference crop; full raster (1440, 900); original crop (488, 287, 952, 788). Not seen by receiver."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "S1",
+      "source_id": "R1",
+      "unit": "image-px",
+      "width": 464,
+      "height": 501,
+      "origin": "top-left",
+      "dpr": null
+    }
+  ],
+  "raw": [
+    {
+      "id": "RAW1",
+      "artifact": {
+        "path": "raw.md",
+        "sha256": "9aaf45349758661d96b4ed08e8f74e9e5815633901059c44a63047bda2863afa"
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": "E-panel",
+      "parent_id": null,
+      "role": "contact-info-section",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O1",
+          "kind": "bounds",
+          "status": "measured",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "width": 464,
+            "height": 501
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1"
+        },
+        "width": {
+          "id": "O2",
+          "kind": "length",
+          "status": "measured",
+          "value": 464,
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1"
+        },
+        "layout": {
+          "id": "O3",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "flow": "vertical",
+            "background_role": "canvas",
+            "render_font_sizes_css": {
+              "heading": 16,
+              "label": 15,
+              "hint": 14,
+              "input": 15
+            },
+            "heading_weight": 700,
+            "other_weight": 500,
+            "heading_line_height": 24,
+            "label_line_height": 22,
+            "hint_line_height": 20,
+            "field_outer_height": 40,
+            "field_inner_padding": {
+              "block": 7,
+              "inline": 12
+            },
+            "field_radius": 10,
+            "label_to_field_gap": 6,
+            "field_to_hint_gap": 4
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery. Gap6 is the analyst correction after receiver readback, preserving declared22px label and field-top anchors; it is not recovered source CSS."
+        },
+        "canvas": {
+          "id": "O21",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#FFFFFF",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "heading_color": {
+          "id": "O22",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#36383A",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "label_color": {
+          "id": "O23",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#515359",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "hint_color": {
+          "id": "O24",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#72777D",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "field_border": {
+          "id": "O25",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#E9EBED",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "required_dot": {
+          "id": "O26",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#EF3846",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Repeated flat raster RGB sample; composited raster color, not recovered original CSS token"
+        },
+        "original_font": {
+          "id": "O27",
+          "kind": "typography",
+          "status": "unknown",
+          "value": null,
+          "unknown_reason": "Font family and source hint CSS are not established; use shared system family and14px/500 minimum.",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ]
+        }
+      }
+    },
+    {
+      "id": "E-heading",
+      "parent_id": "E-panel",
+      "role": "section-heading",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O4",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "width": 464,
+            "height": 24
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O5",
+          "kind": "content",
+          "status": "measured",
+          "value": "담당자 정보를 알려주세요.",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        }
+      }
+    },
+    {
+      "id": "E-company",
+      "parent_id": "E-panel",
+      "role": "label-field-and-example",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O6",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 0,
+            "y": 42,
+            "width": 464,
+            "height": 90
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O7",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "label": "고객사명",
+            "required": true,
+            "hint": "예) 토스페이먼츠",
+            "input_type": "text"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O8",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "label_top": 42,
+            "field_top": 70,
+            "hint_top": 114,
+            "label_width": "auto",
+            "input_full_width": true
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-business",
+      "parent_id": "E-panel",
+      "role": "label-and-field",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O9",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 0,
+            "y": 153,
+            "width": 464,
+            "height": 68
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O10",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "label": "사업자번호",
+            "required": true,
+            "input_type": "text"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O11",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "label_top": 153,
+            "field_top": 181
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-person",
+      "parent_id": "E-panel",
+      "role": "label-and-field",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O12",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 0,
+            "y": 239,
+            "width": 464,
+            "height": 68
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O13",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "label": "담당자명",
+            "required": true,
+            "input_type": "text"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O14",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "label_top": 239,
+            "field_top": 267
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-email",
+      "parent_id": "E-panel",
+      "role": "label-and-field",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O15",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 0,
+            "y": 325,
+            "width": 464,
+            "height": 68
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O16",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "label": "e-mail",
+            "required": true,
+            "input_type": "email"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O17",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "label_top": 325,
+            "field_top": 353
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    },
+    {
+      "id": "E-phone",
+      "parent_id": "E-panel",
+      "role": "label-field-and-hint",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "bounds": {
+          "id": "O18",
+          "kind": "bounds",
+          "status": "estimated",
+          "value": {
+            "x": 0,
+            "y": 411,
+            "width": 464,
+            "height": 90
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "unit": "image-px",
+          "space_id": "S1",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        },
+        "content": {
+          "id": "O19",
+          "kind": "content",
+          "status": "measured",
+          "value": {
+            "label": "연락처",
+            "required": false,
+            "hint": "담당자 연락처 또는 회사 대표 번호를 입력해 주세요.",
+            "input_type": "tel"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout"
+        },
+        "layout": {
+          "id": "O20",
+          "kind": "layout",
+          "status": "estimated",
+          "value": {
+            "label_top": 411,
+            "field_top": 439,
+            "hint_top": 483
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Inspect stored raster region/visible text; visual relationship inference for layout",
+          "uncertainty": "Source CSS/line boxes are not known. Values are a declared reconstruction decision, not native CSS recovery."
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "L1",
+      "kind": "shared-alignment",
+      "from": "E-company",
+      "to": "E-phone",
+      "description": "All outer fields share full464 width and x=0; hints belong to their field, not the following field.",
+      "raw_refs": [
+        "RAW1"
+      ]
+    },
+    {
+      "id": "L2",
+      "kind": "order",
+      "from": "E-company",
+      "to": "E-business",
+      "description": "Example hint comes before the second label; second-to-fifth field pitch86image-px.",
+      "raw_refs": [
+        "RAW1"
+      ]
+    }
+  ],
+  "adaptations": [
+    {
+      "id": "D1",
+      "element_ids": [
+        "E-company",
+        "E-phone"
+      ],
+      "requirement": "User text minimum14px/500",
+      "reason": "Raise small helper text for this experiment; keep geometry and content as close as possible",
+      "raw_refs": [
+        "RAW1"
+      ]
+    }
+  ],
+  "required": [
+    "O1",
+    "O2",
+    "O3",
+    "E-panel",
+    "O4",
+    "O5",
+    "E-heading",
+    "O6",
+    "O7",
+    "O8",
+    "E-company",
+    "O9",
+    "O10",
+    "O11",
+    "E-business",
+    "O12",
+    "O13",
+    "O14",
+    "E-person",
+    "O15",
+    "O16",
+    "O17",
+    "E-email",
+    "O18",
+    "O19",
+    "O20",
+    "E-phone",
+    "O21",
+    "O22",
+    "O23",
+    "O24",
+    "O25",
+    "O26",
+    "L1",
+    "L2",
+    "D1",
+    "/extensions/experiment:rendering"
+  ],
+  "extensions": {
+    "experiment:rendering": {
+      "scale": 1,
+      "viewport_width": 464,
+      "viewport_height": 501,
+      "mapping": "test reconstruction choice: CSS-px = image-px * scale; not recovered source CSS",
+      "source_image_available_to_receiver": false,
+      "font": "Arial, Apple SD Gothic Neo, sans-serif",
+      "default_text_weight": 500,
+      "no_javascript": true,
+      "assets": [
+        "assets/icons/Plus.svg",
+        "assets/icons/EllipsisVertical.svg",
+        "assets/icons/CircleHelp.svg"
+      ]
+    }
+  }
+}
