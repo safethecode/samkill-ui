@@ -18,6 +18,8 @@
 
 레퍼런스 기반 UI 작업은 `uibowl-research → reference-decompose → reference-to-ui → reference-review` 순서다. 조사 결과를 확인한 뒤 [reference-decompose](skills/reference-decompose/SKILL.md)로 관찰을 요소·관계·조립 언어로 번역하고, 그다음 제품에 적용한다. 기존 자료는 각 단계에서 확인해 재사용하며 구현을 먼저 시작하지 않는다. 프롬프트 재현 실험의 사례별 값과 사용자 교정은 [별도 실험 기준](design/reference-language/DESIGN.md)에 둔다.
 
+[수치 인계와 원본 비교](skills/reference-review/references/reference-evidence.md)를 실제 실행 검사에 연결한다. 핵심 치수·비율·단위·근거를 확인한 prepare READY 후 구현하고, RUI-16/17은 원본→계약→결과의 수치와 전체 시각 판독을 함께 검증한다. READY나 숫자 일치가 디자인 품질 승인은 아니다. 원본 관찰은 제약 적용 전에 보존하며 기본 배경·장식 기준 때문에 모든 내부 표현을 초기화하지 않는다.
+
 [요소 구성](skills/reference-to-ui/references/ui-composition.md), [토큰과 패딩 소유권](skills/reference-to-ui/references/design-tokens.md), [레퍼런스 결합](skills/reference-to-ui/references/reference-synthesis.md)을 적용한다. 공통 역할은 일관되게 연결하며 묶기·분리·이동·삭제는 사용자의 과제와 요소 관계로 판단한다.
 
 간격 설계·수정·리듬 점검은 [Spacing Audit](skills/reference-to-ui/references/spacing-audit.md)으로 구조8단위·촘촘한 내부4단위를 중심으로 판단한다. 내부20은 제공 기준의 허용값, 구조20/28 등은 검토 의견이다. 기존 변수/토큰·광학 보정·가변 배치는 보존하고 수정 전 전체 요약과 실제 전후 검증을 남긴다. 이 기준으로 기존 제품·Round 데모의 토큰을 일괄 변경하지 않는다.

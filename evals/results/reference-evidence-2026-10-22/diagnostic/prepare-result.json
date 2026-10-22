@@ -1,0 +1,8 @@
+{
+  "exitCode": 0,
+  "result": {
+    "status": "READY",
+    "handoff_sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074",
+    "scope": "Measurement handoff only; not implementation or visual approval"
+  }
+}

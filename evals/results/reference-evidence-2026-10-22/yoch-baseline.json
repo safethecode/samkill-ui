@@ -1,0 +1,251 @@
+{
+  "sourceProject": "yoch.cc",
+  "capturedAtUtc": "2026-10-22T13:02:28.630835+00:00",
+  "scope": "Read-only diagnosis of initial saved evidence; current correction branch not modified",
+  "artifacts": [
+    {
+      "path": "design/reference-brief.md",
+      "sha256": "1ac1d4be5a0b422f61dbb9a2b04fbd5911afde38fb3dfed88bf38178f62a1369",
+      "bytes": 8648
+    },
+    {
+      "path": "design/design-contract.md",
+      "sha256": "b035538b034fdc4772d936832869e21660b6e60ccb2d6ab7bf163de35c7eebeb",
+      "bytes": 5480
+    },
+    {
+      "path": "design/review.md",
+      "sha256": "a4aa4cff8395361c4a3d5775bed46f8b9e1aead5fed691fd61eb05e42dfe19ab",
+      "bytes": 11709
+    },
+    {
+      "path": "design/reference-correction.md",
+      "sha256": "f42a61cffbbfa806b45054ecd8f4c169559a757f4ebf89abcb5384f15578ad18",
+      "bytes": 4651
+    },
+    {
+      "path": "design/gate-contract.json",
+      "sha256": "47d4957253c65a753a1b5eb7e2f05d4c1a2014eb7aa571fc23dd40e9b215127d",
+      "bytes": 37701
+    },
+    {
+      "path": "design/gate-report.json",
+      "sha256": "5fe2a4d2b4b2a822201d8b2efa97401a18349f1b2170efa257542780b719400f",
+      "bytes": 101536
+    },
+    {
+      "path": "design/evidence/dom-metrics.json",
+      "sha256": "294fd92e692303a300153f96c179a8995f3c9987334cff8a46be10f5095949bc",
+      "bytes": 879
+    },
+    {
+      "path": "design/evidence/reference-toss.png",
+      "sha256": "755109708fb0ee507a90aee8a3a5319e81dbdb941d86be7f9a263f4a9c8018a6",
+      "bytes": 32777
+    },
+    {
+      "path": "design/evidence/public-1440.png",
+      "sha256": "0f02793cc9cf2c30ab10ffe7fbd56f712b2c8cd02f83068305de67725504d9d8",
+      "bytes": 44594
+    },
+    {
+      "path": "design/evidence/source-lovable.jpg",
+      "sha256": "83c1ac090f18bb144518e276114b971de5ba013e4a01f26398cd1ee73bfe0618",
+      "bytes": 2133
+    },
+    {
+      "path": "design/evidence/landing-1440.png",
+      "sha256": "7d63df3e24fe327d11eda81548919030d701e54623d1fe4470942ae78e98ad4e",
+      "bytes": 124481
+    }
+  ],
+  "initialReferenceResults": [
+    {
+      "id": "RUI-16",
+      "status": "pass",
+      "reason": "R/O/E→Q/D→구현 selector/route→V 비교를 review에 연결했다. source-lovable/admin/responses와 실제 크기별 출력, 직접 제공 토스 캡처를 비교했다.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/design-contract.md",
+          "sha256": "b035538b034fdc4772d936832869e21660b6e60ccb2d6ab7bf163de35c7eebeb"
+        },
+        {
+          "kind": "spec",
+          "path": "design/reference-brief.md",
+          "sha256": "1ac1d4be5a0b422f61dbb9a2b04fbd5911afde38fb3dfed88bf38178f62a1369"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/landing-1440.png",
+          "sha256": "7d63df3e24fe327d11eda81548919030d701e54623d1fe4470942ae78e98ad4e"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editor-1440.png",
+          "sha256": "b5ef23b041ec6597911ad4ea9b4567c7ebdacb1f2b6abce59b1f1c1d2d0755aa"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/dashboard-390.png",
+          "sha256": "22b7cc80040f667bf53ff2fb3209af1abbd828a1501e53053ff1a4e4c4b2c286"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/public-390.png",
+          "sha256": "b25e1fd20bbd231b53dde3a71e048f7af5167baa681a1000a6ca810e17c6009d"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/source-lovable.jpg",
+          "sha256": "83c1ac090f18bb144518e276114b971de5ba013e4a01f26398cd1ee73bfe0618"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/source-admin.jpg",
+          "sha256": "4a5b1f12b107ffa37b7c301e465b126d9595a91f4b08146b5aad47a7158c7ca1"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/source-responses.jpg",
+          "sha256": "4371c0cae86f7648069ed314a8fd4d1fdf308cfc583f83950e72d4ad4afaf923"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reference-toss.png",
+          "sha256": "755109708fb0ee507a90aee8a3a5319e81dbdb941d86be7f9a263f4a9c8018a6"
+        }
+      ]
+    },
+    {
+      "id": "RUI-17",
+      "status": "pass",
+      "reason": "중심 입력 위계/좁은 공개 열/문서형 캔버스/관리 표를 실제 이미지로 비교했다. 원본 행동을 미관찰한 부분은 복제 완료라고 기록하지 않았다.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/design-contract.md",
+          "sha256": "b035538b034fdc4772d936832869e21660b6e60ccb2d6ab7bf163de35c7eebeb"
+        },
+        {
+          "kind": "spec",
+          "path": "design/reference-brief.md",
+          "sha256": "1ac1d4be5a0b422f61dbb9a2b04fbd5911afde38fb3dfed88bf38178f62a1369"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/landing-1440.png",
+          "sha256": "7d63df3e24fe327d11eda81548919030d701e54623d1fe4470942ae78e98ad4e"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editor-1440.png",
+          "sha256": "b5ef23b041ec6597911ad4ea9b4567c7ebdacb1f2b6abce59b1f1c1d2d0755aa"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/dashboard-390.png",
+          "sha256": "22b7cc80040f667bf53ff2fb3209af1abbd828a1501e53053ff1a4e4c4b2c286"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/public-390.png",
+          "sha256": "b25e1fd20bbd231b53dde3a71e048f7af5167baa681a1000a6ca810e17c6009d"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/source-lovable.jpg",
+          "sha256": "83c1ac090f18bb144518e276114b971de5ba013e4a01f26398cd1ee73bfe0618"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/source-admin.jpg",
+          "sha256": "4a5b1f12b107ffa37b7c301e465b126d9595a91f4b08146b5aad47a7158c7ca1"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/source-responses.jpg",
+          "sha256": "4371c0cae86f7648069ed314a8fd4d1fdf308cfc583f83950e72d4ad4afaf923"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reference-toss.png",
+          "sha256": "755109708fb0ee507a90aee8a3a5319e81dbdb941d86be7f9a263f4a9c8018a6"
+        }
+      ]
+    }
+  ],
+  "oldImplementationMetrics": {
+    "divs": 6,
+    "elements": 30,
+    "input": {
+      "height": 49.59375,
+      "padding": "12px 16px",
+      "width": 638
+    },
+    "mainWidth": 640,
+    "scrollWidth": 1440,
+    "sizes": [
+      "14px",
+      "32px",
+      "16px"
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "weights": [
+      "500",
+      "700",
+      "600"
+    ]
+  },
+  "currentSourceObservation": {
+    "capturedAt": "2026-10-22T12:59:33.945Z",
+    "url": "https://builder.tosspayments.com/to/74870bfabe844157b613bdbe9b3c8d59",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "headings": [
+      {
+        "text": "[토스페이먼츠] CMS 서비스 이용  체크리스트",
+        "width": 464,
+        "fontSize": "24px",
+        "fontWeight": "700"
+      }
+    ],
+    "inputs": [
+      {
+        "width": 440,
+        "height": 24,
+        "parentWidth": 440,
+        "parentHeight": 24,
+        "fontSize": "15px",
+        "padding": "0px"
+      },
+      {
+        "width": 440,
+        "height": 24,
+        "parentWidth": 440,
+        "parentHeight": 24,
+        "fontSize": "15px",
+        "padding": "0px"
+      },
+      {
+        "width": 440,
+        "height": 24,
+        "parentWidth": 440,
+        "parentHeight": 24,
+        "fontSize": "15px",
+        "padding": "0px"
+      }
+    ]
+  },
+  "limitations": [
+    "Current source DOM is newly observed; not a backdated observation of the original run",
+    "Saved initial implementation is compared, not the actively changing correction branch",
+    "No approval of the corrected product or its current gate"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "handoff_sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074",
+  "target_sha256": "717cb6a3fef98c9d14873511d76075241e6306f5ec2cbca8da7b28f785176fef",
+  "results": [
+    {
+      "id": "Q3-column-width",
+      "capture": {
+        "path": "initial-output.png",
+        "sha256": "0f02793cc9cf2c30ab10ffe7fbd56f712b2c8cd02f83068305de67725504d9d8"
+      },
+      "actual": {
+        "value": 640,
+        "unit": "CSS-px",
+        "method": "Saved initial dom-metrics.json public.mainWidth; not the current correction branch"
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "regressed",
+    "reason": "Same displayed 1440px source and saved initial output differ in column width, title hierarchy and field rhythm. Diagnostic after implementation, not original frozen input."
+  }
+}

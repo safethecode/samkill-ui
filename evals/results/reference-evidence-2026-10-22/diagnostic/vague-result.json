@@ -1,0 +1,11 @@
+{
+  "scope": "Diagnostic counterexample derived from the yoch failure, not a new product run",
+  "exitCode": 2,
+  "result": {
+    "status": "UNVERIFIED",
+    "errors": [
+      "Q3-column-width observation must be a finite nonnegative measurement"
+    ],
+    "failures": []
+  }
+}

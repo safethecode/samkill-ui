@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "catalog_version": 1,
+  "targets": [
+    "initial-public.css",
+    "initial-metrics.json"
+  ],
+  "rules": [
+    {
+      "id": "RUI-16",
+      "applicable": true,
+      "scope": "Diagnostic of the saved initial public-form width only",
+      "reason": "Verify source-derived column geometry instead of the arbitrary 640px choice",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    }
+  ],
+  "reference_handoff": {
+    "path": "vague-handoff.json",
+    "sha256": "b8e7bcba3f2d3aaeb17eccf0a77bb4c2eb959dfb6f753db1d3fb70a1f2648164"
+  }
+}

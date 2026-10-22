@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-22T12:59:33.945Z",
+  "url": "https://builder.tosspayments.com/to/74870bfabe844157b613bdbe9b3c8d59",
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1,
+  "headings": [
+    {
+      "text": "[토스페이먼츠] CMS 서비스 이용  체크리스트",
+      "width": 464,
+      "fontSize": "24px",
+      "fontWeight": "700"
+    }
+  ],
+  "inputs": [
+    {
+      "width": 440,
+      "height": 24,
+      "parentWidth": 440,
+      "parentHeight": 24,
+      "fontSize": "15px",
+      "padding": "0px"
+    },
+    {
+      "width": 440,
+      "height": 24,
+      "parentWidth": 440,
+      "parentHeight": 24,
+      "fontSize": "15px",
+      "padding": "0px"
+    },
+    {
+      "width": 440,
+      "height": 24,
+      "parentWidth": 440,
+      "parentHeight": 24,
+      "fontSize": "15px",
+      "padding": "0px"
+    }
+  ]
+}

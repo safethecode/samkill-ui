@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-22T13:26:14.386956+00:00",
+  "source_base_commit": "cde9efbc116bd6a64bb27020ee27c2a9294b84d1",
+  "state": "Working changes; not committed or pushed",
+  "files": [
+    {
+      "path": "skills/reference-review/scripts/design_gate.py",
+      "sha256": "2efc8c8b2a62c9651b2515ffde790470f9b9b04c6fe9b1a900ba690f6d54ea6d"
+    },
+    {
+      "path": "skills/reference-review/scripts/reference_check.py",
+      "sha256": "c3aafa9e5c932efbaabc18091d6486d443701601c35c36855922ccc35030c881"
+    },
+    {
+      "path": "skills/reference-review/references/reference-evidence.md",
+      "sha256": "39deb7fd15ef55ee8efe60251508d5239119ef2cbaef4f070785088665f60077"
+    },
+    {
+      "path": "evals/test_design_gate.py",
+      "sha256": "06961f73b70646424577f550b2355bc7ddc5965dd1bddbb37163a61f8fa65bd7"
+    },
+    {
+      "path": "skills/reference-decompose/SKILL.md",
+      "sha256": "3c1552adfa340f9ef67f42f2b2d335fa6fd57273f786adf72623766be9ddcb18"
+    },
+    {
+      "path": "skills/reference-to-ui/SKILL.md",
+      "sha256": "bd49f32b354c12f7525aed11f2e4dd1146348d0a31692af72e2681a8b0b07879"
+    },
+    {
+      "path": "skills/reference-review/SKILL.md",
+      "sha256": "2677c04232c6f1df24246f11c4e6febb545b2031cf783e61aa2d7fff8843a557"
+    },
+    {
+      "path": "skills/samkill-ui/SKILL.md",
+      "sha256": "789bb63a14e698a617006b65f045bc9af4ad7620cc6efaa31f4e12380f97ef7b"
+    }
+  ],
+  "tests": [
+    {
+      "scope": "source design gate",
+      "command": "python3 -m unittest discover -s evals -p test_design_gate.py -v",
+      "passed": 38
+    },
+    {
+      "scope": "Qwen copied gate",
+      "command": "DESIGN_GATE_SCRIPT=<Qwen bundled design_gate.py> python3 -m unittest discover -s evals -p test_design_gate.py -v",
+      "passed": 38
+    },
+    {
+      "scope": "PDP copied gate",
+      "command": "DESIGN_GATE_SCRIPT=<PDP bundled design_gate.py> python3 -m unittest discover -s evals -p test_design_gate.py -v",
+      "passed": 38
+    },
+    {
+      "scope": "Qwen existing Node suite",
+      "command": "TMPDIR=/private/tmp npm test",
+      "passed": 213
+    },
+    {
+      "scope": "Qwen existing Python lock tests",
+      "command": "python3 -m unittest discover -s test",
+      "passed": 2
+    },
+    {
+      "scope": "PDP platform and concurrent ledger tests on current host",
+      "command": "python3 -m unittest discover -s tests -p test_design_gate_windows.py -v",
+      "passed": 8
+    },
+    {
+      "scope": "PDP dependency links",
+      "command": "python3 -m pdp_learning audit-links",
+      "missing": []
+    }
+  ],
+  "diagnostic": {
+    "before": {
+      "path": "evals/results/reference-evidence-2026-10-22/diagnostic/before-result.json",
+      "sha256": "ef172bb34f37dd9e1ab1ba4ff48fda21703820ccef24e9ab668d0e3e688a996e",
+      "record": {
+        "exitCode": 0,
+        "result": {
+          "status": "PASS",
+          "errors": [],
+          "failures": [],
+          "catalog_version": 1,
+          "catalog_sha256": "cc233f5f426f664e29ac6d38f504803c49a4a96e89464b50fad44e9f29f37e08",
+          "contract_sha256": "8008be078658b14f7d46c4cc048397cac6e4d41ab9b9ab968d5d8d107320682c",
+          "target_sha256": "717cb6a3fef98c9d14873511d76075241e6306f5ec2cbca8da7b28f785176fef",
+          "results": [
+            {
+              "id": "RUI-16",
+              "status": "pass",
+              "reason": "Preserve the earlier self-reported pass to test whether actual drift overrides it",
+              "evidence": [
+                {
+                  "kind": "spec",
+                  "path": "handoff.json",
+                  "sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074"
+                },
+                {
+                  "kind": "visual",
+                  "path": "initial-output.png",
+                  "sha256": "0f02793cc9cf2c30ab10ffe7fbd56f712b2c8cd02f83068305de67725504d9d8"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "prepare": {
+      "path": "evals/results/reference-evidence-2026-10-22/diagnostic/prepare-result.json",
+      "sha256": "7430050f6c97dac2e19bff0ca4900bd87ddc1e777fc54af7f8053dcb346f1edb",
+      "record": {
+        "exitCode": 0,
+        "result": {
+          "status": "READY",
+          "handoff_sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074",
+          "scope": "Measurement handoff only; not implementation or visual approval"
+        }
+      }
+    },
+    "check": {
+      "path": "evals/results/reference-evidence-2026-10-22/diagnostic/check-result.json",
+      "sha256": "11ad7a3851386064bcff08ad1fe0a25e4d1bad615e112b8b6f35bf837102a4e8",
+      "record": {
+        "exitCode": 1,
+        "result": {
+          "status": "FAIL",
+          "errors": [],
+          "failures": [
+            "RUI-16"
+          ],
+          "catalog_version": 1,
+          "catalog_sha256": "cc233f5f426f664e29ac6d38f504803c49a4a96e89464b50fad44e9f29f37e08",
+          "contract_sha256": "8008be078658b14f7d46c4cc048397cac6e4d41ab9b9ab968d5d8d107320682c",
+          "target_sha256": "717cb6a3fef98c9d14873511d76075241e6306f5ec2cbca8da7b28f785176fef",
+          "results": [
+            {
+              "id": "RUI-16",
+              "status": "pass",
+              "reason": "Preserve the earlier self-reported pass to test whether actual drift overrides it",
+              "evidence": [
+                {
+                  "kind": "spec",
+                  "path": "handoff.json",
+                  "sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074"
+                },
+                {
+                  "kind": "visual",
+                  "path": "initial-output.png",
+                  "sha256": "0f02793cc9cf2c30ab10ffe7fbd56f712b2c8cd02f83068305de67725504d9d8"
+                }
+              ]
+            }
+          ],
+          "reference_findings": [
+            {
+              "id": "Q3-column-width",
+              "expected": 464,
+              "actual": 640,
+              "delta": 176,
+              "tolerance": 8,
+              "unit": "CSS-px"
+            },
+            {
+              "id": "overall-reference",
+              "reason": "Same displayed 1440px source and saved initial output differ in column width, title hierarchy and field rhythm. Diagnostic after implementation, not original frozen input."
+            }
+          ]
+        }
+      }
+    },
+    "vague": {
+      "path": "evals/results/reference-evidence-2026-10-22/diagnostic/vague-result.json",
+      "sha256": "bd912fb5c619560d8cb1f24e307d346333cc22c86337114adfbc008fef7823ed",
+      "record": {
+        "scope": "Diagnostic counterexample derived from the yoch failure, not a new product run",
+        "exitCode": 2,
+        "result": {
+          "status": "UNVERIFIED",
+          "errors": [
+            "Q3-column-width observation must be a finite nonnegative measurement"
+          ],
+          "failures": []
+        }
+      }
+    },
+    "unit-mismatch": {
+      "path": "evals/results/reference-evidence-2026-10-22/diagnostic/unit-mismatch-result.json",
+      "sha256": "8b007d042ff495d5ad3a31016eff47211a06fc1262c063cf52265e1d569979f9",
+      "record": {
+        "scope": "Diagnostic counterexample derived from the yoch failure, not a new product run",
+        "exitCode": 2,
+        "result": {
+          "status": "UNVERIFIED",
+          "errors": [
+            "Q3-column-width: source and implementation units differ; observe a common ratio or verified coordinate system"
+          ],
+          "failures": []
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Isolated one-rule replay is not the complete yoch product gate. Original whole gate was UNVERIFIED; RUI-16/17 records were pass.",
+    "Current source measured after the saved implementation; the diagnostic handoff is retrospective, not evidence of sufficient original prompts.",
+    "No new model inference, final corrected yoch visual approval, Goodnotes PDF or device test.",
+    "Number and hash checks do not prove honest observations, anchor completeness, correct bounding boxes or aesthetics.",
+    "No yoch application files changed by this task; active correction work preserved."
+  ],
+  "file_validation": {
+    "skills_valid": 10,
+    "markdown": {
+      "results": [
+        {
+          "markdown_files": 12,
+          "local_links": 262,
+          "anchors": 15,
+          "scope": "samkill"
+        },
+        {
+          "markdown_files": 11,
+          "local_links": 77,
+          "anchors": 8,
+          "scope": "qwen3.6-35b-a3b-coding-samkill-ui"
+        },
+        {
+          "markdown_files": 8,
+          "local_links": 35,
+          "anchors": 3,
+          "scope": "samkill-pdp-push-sync"
+        },
+        {
+          "markdown_files": 5,
+          "local_links": 17,
+          "anchors": 0,
+          "scope": "samkill-goodnotes-diary"
+        }
+      ],
+      "errors": []
+    },
+    "git_diff_check": "passed in all four repositories",
+    "source_adapted_hash_pairs": 8,
+    "helper_equivalence": "source/PDP/Goodnotes bytes identical; Qwen functions identical with module docstring omitted",
+    "platform_preservation": "Qwen/PDP functions outside judge/main unchanged by AST comparison",
+    "new_json": "parsed successfully",
+    "python": "changed files parsed; behavioral suites listed above"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "catalog_version": 1,
+  "targets": [
+    "initial-public.css",
+    "initial-metrics.json"
+  ],
+  "rules": [
+    {
+      "id": "RUI-16",
+      "applicable": true,
+      "scope": "Diagnostic of the saved initial public-form width only",
+      "reason": "Verify source-derived column geometry instead of the arbitrary 640px choice",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    }
+  ],
+  "reference_handoff": {
+    "path": "unit-mismatch-handoff.json",
+    "sha256": "61e8296569938e9205829341e3f56bd363e5b6a736c24bd2a903244657eaa579"
+  }
+}

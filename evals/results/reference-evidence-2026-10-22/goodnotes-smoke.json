@@ -1,0 +1,34 @@
+{
+  "scope": "Portable preflight CLI only; no PDF or Goodnotes engine run",
+  "checks": [
+    {
+      "input": "handoff.json",
+      "exitCode": 0,
+      "result": {
+        "status": "READY",
+        "handoff_sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074",
+        "scope": "Measurement handoff only; not implementation or visual approval"
+      }
+    },
+    {
+      "input": "vague-handoff.json",
+      "exitCode": 2,
+      "result": {
+        "status": "UNVERIFIED",
+        "errors": [
+          "Q3-column-width observation must be a finite nonnegative measurement"
+        ]
+      }
+    },
+    {
+      "input": "unit-mismatch-handoff.json",
+      "exitCode": 2,
+      "result": {
+        "status": "UNVERIFIED",
+        "errors": [
+          "Q3-column-width: source and implementation units differ; observe a common ratio or verified coordinate system"
+        ]
+      }
+    }
+  ]
+}

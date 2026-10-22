@@ -1,0 +1,47 @@
+{
+  "exitCode": 1,
+  "result": {
+    "status": "FAIL",
+    "errors": [],
+    "failures": [
+      "RUI-16"
+    ],
+    "catalog_version": 1,
+    "catalog_sha256": "cc233f5f426f664e29ac6d38f504803c49a4a96e89464b50fad44e9f29f37e08",
+    "contract_sha256": "8008be078658b14f7d46c4cc048397cac6e4d41ab9b9ab968d5d8d107320682c",
+    "target_sha256": "717cb6a3fef98c9d14873511d76075241e6306f5ec2cbca8da7b28f785176fef",
+    "results": [
+      {
+        "id": "RUI-16",
+        "status": "pass",
+        "reason": "Preserve the earlier self-reported pass to test whether actual drift overrides it",
+        "evidence": [
+          {
+            "kind": "spec",
+            "path": "handoff.json",
+            "sha256": "07b0341efab9d1533d5789d1295fc33ef88193e5d8b5ca3aa3b9c8535b9d3074"
+          },
+          {
+            "kind": "visual",
+            "path": "initial-output.png",
+            "sha256": "0f02793cc9cf2c30ab10ffe7fbd56f712b2c8cd02f83068305de67725504d9d8"
+          }
+        ]
+      }
+    ],
+    "reference_findings": [
+      {
+        "id": "Q3-column-width",
+        "expected": 464,
+        "actual": 640,
+        "delta": 176,
+        "tolerance": 8,
+        "unit": "CSS-px"
+      },
+      {
+        "id": "overall-reference",
+        "reason": "Same displayed 1440px source and saved initial output differ in column width, title hierarchy and field rhythm. Diagnostic after implementation, not original frozen input."
+      }
+    ]
+  }
+}

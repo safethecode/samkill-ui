@@ -1,6 +1,7 @@
 """Behavioral CLI checks; fixture image bytes do not constitute visual review."""
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -8,7 +9,8 @@ import tempfile
 import unittest
 
 
-SCRIPT = Path(__file__).resolve().parents[1] / "skills/reference-review/scripts/design_gate.py"
+SCRIPT = Path(os.environ.get("DESIGN_GATE_SCRIPT", str(
+    Path(__file__).resolve().parents[1] / "skills/reference-review/scripts/design_gate.py")))
 
 
 class DesignGateTests(unittest.TestCase):
@@ -201,6 +203,162 @@ class DesignGateTests(unittest.TestCase):
         self.assertEqual(len(final.splitlines()), 3)
         for line in final.splitlines():
             self.assertIsInstance(json.loads(line), dict)
+
+    def reference_fixture(self):
+        self.catalog["rules"][0]["id"] = "RUI-16"
+        self.contract["rules"][0]["id"] = "RUI-16"
+        self.report["results"][0]["id"] = "RUI-16"
+        self.write("catalog.json", self.catalog)
+        handoff = {"schema_version": 1, "anchors": [{
+            "id": "Q3-width", "feature": "public form column width",
+            "source": self.evidence("visual", "evidence/screen.png"),
+            "observed": {"value": 464, "unit": "CSS-px", "basis": "measured",
+                         "method": "fixture DOM column bounding box"},
+            "target": ".public-form", "expected": {"value": 464, "unit": "CSS-px", "tolerance": 8}}]}
+        self.write("handoff.json", handoff)
+        self.contract["reference_handoff"] = self.evidence("spec", "handoff.json")
+        self.refresh_contract()
+        comparison = {"schema_version": 1,
+            "handoff_sha256": self.contract["reference_handoff"]["sha256"],
+            "target_sha256": self.report["target_sha256"],
+            "results": [{"id": "Q3-width", "capture": self.evidence("visual", "evidence/screen.png"),
+                "actual": {"value": 464, "unit": "CSS-px", "method": "fixture output DOM column bounding box"}}],
+            "visual_review": {"status": "retained", "reason": "Fixture only; not a real image assessment"}}
+        self.write("comparison.json", comparison)
+        self.report["reference_comparison"] = self.evidence("spec", "comparison.json")
+        return handoff, comparison
+
+    def refresh_reference(self, handoff, comparison):
+        self.write("handoff.json", handoff)
+        self.contract["reference_handoff"] = self.evidence("spec", "handoff.json")
+        self.refresh_contract()
+        comparison["handoff_sha256"] = self.contract["reference_handoff"]["sha256"]
+        self.write("comparison.json", comparison)
+        self.report["reference_comparison"] = self.evidence("spec", "comparison.json")
+
+    def test_reference_pass_requires_a_measured_handoff(self):
+        self.reference_fixture()
+        del self.contract["reference_handoff"]
+        self.refresh_contract()
+        self.check("UNVERIFIED")
+
+    def test_reference_prepare_rejects_vague_dimensions(self):
+        handoff, comparison = self.reference_fixture()
+        handoff["anchors"][0]["observed"]["value"] = "narrow column"
+        self.refresh_reference(handoff, comparison)
+        self.assertEqual(self.run_cli("prepare", expected_exit=2)["status"], "UNVERIFIED")
+
+    def test_reference_prepare_does_not_require_implementation_files(self):
+        self.reference_fixture()
+        (self.root / "src/button.css").unlink()
+        (self.root / "src").rmdir()
+        self.assertEqual(self.run_cli("prepare", expected_exit=0)["status"], "READY")
+
+    def test_reference_pass_requires_source_to_output_comparison(self):
+        self.reference_fixture()
+        del self.report["reference_comparison"]
+        self.check("UNVERIFIED")
+
+    def test_reference_width_regression_overrides_self_reported_pass(self):
+        handoff, comparison = self.reference_fixture()
+        comparison["results"][0]["actual"]["value"] = 640
+        self.refresh_reference(handoff, comparison)
+        self.assertIn("RUI-16", self.check("FAIL")["failures"])
+
+    def test_reference_cannot_equate_image_pixels_with_css_pixels(self):
+        handoff, comparison = self.reference_fixture()
+        handoff["anchors"][0]["observed"]["unit"] = "image-px"
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_reference_chosen_value_needs_an_observation(self):
+        handoff, comparison = self.reference_fixture()
+        handoff["anchors"][0]["observed"]["basis"] = "chosen"
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_reference_changed_source_invalidates_review(self):
+        self.reference_fixture()
+        (self.root / "evidence/screen.png").write_bytes(b"changed reference")
+        self.report["results"][0]["evidence"][1] = self.evidence("visual", "evidence/screen.png")
+        self.check("UNVERIFIED")
+
+    def test_reference_numeric_match_does_not_replace_visual_review(self):
+        handoff, comparison = self.reference_fixture()
+        comparison["visual_review"]["status"] = "unverified"
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_reference_visual_regression_cannot_pass_from_matching_numbers(self):
+        handoff, comparison = self.reference_fixture()
+        comparison["visual_review"]["status"] = "regressed"
+        self.refresh_reference(handoff, comparison)
+        self.check("FAIL")
+
+    def test_reference_changed_target_cannot_reuse_comparison(self):
+        self.reference_fixture()
+        (self.root / "src/button.css").write_text("button { width: 640px; }\n")
+        self.refresh_contract()
+        self.report["results"][0]["evidence"][0] = self.evidence("code", "src/button.css")
+        self.check("UNVERIFIED")
+
+    def test_reference_valid_bound_comparison(self):
+        self.reference_fixture()
+        self.check("PASS")
+
+    def test_reference_adaptation_needs_a_scoped_requirement(self):
+        handoff, comparison = self.reference_fixture()
+        handoff["anchors"][0]["expected"]["value"] = 640
+        comparison["results"][0]["actual"]["value"] = 640
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+        handoff["anchors"][0]["adaptation"] = {
+            "requirement": "Fixture user asks for a wider response column", "reason": "Preserve the requested writing area"}
+        self.refresh_reference(handoff, comparison)
+        self.check("PASS")
+
+    def test_reference_invalid_numbers_and_units_are_unverified(self):
+        for value in [True, float("nan"), float("inf"), -1, None]:
+            with self.subTest(value=value):
+                handoff, comparison = self.reference_fixture()
+                handoff["anchors"][0]["observed"]["value"] = value
+                self.refresh_reference(handoff, comparison)
+                self.check("UNVERIFIED")
+
+    def test_reference_missing_anchor_and_capture_are_unverified(self):
+        handoff, comparison = self.reference_fixture()
+        comparison["results"] = []
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+        handoff, comparison = self.reference_fixture()
+        comparison["results"][0]["capture"]["sha256"] = "0" * 64
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+
+    def test_reference_estimate_needs_uncertainty(self):
+        handoff, comparison = self.reference_fixture()
+        handoff["anchors"][0]["observed"]["basis"] = "estimated"
+        self.refresh_reference(handoff, comparison)
+        self.check("UNVERIFIED")
+        handoff["anchors"][0]["observed"]["uncertainty"] = 4
+        self.refresh_reference(handoff, comparison)
+        self.check("PASS")
+
+    def test_standalone_preflight_preserves_read_only_inputs(self):
+        handoff, comparison = self.reference_fixture()
+        args = [sys.executable, str(SCRIPT.with_name("reference_check.py")), "prepare",
+                "--root", str(self.root), "--handoff", "handoff.json"]
+        before = {str(p.relative_to(self.root)): p.read_bytes() for p in self.root.rglob("*") if p.is_file()}
+        result = subprocess.run(args, capture_output=True, text=True, timeout=10)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(json.loads(result.stdout)["status"], "READY")
+        after = {str(p.relative_to(self.root)): p.read_bytes() for p in self.root.rglob("*") if p.is_file()}
+        self.assertEqual(before, after)
+        handoff["anchors"][0]["observed"]["value"] = "wide margins"
+        self.refresh_reference(handoff, comparison)
+        result = subprocess.run(args, capture_output=True, text=True, timeout=10)
+        self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
+        self.assertEqual(json.loads(result.stdout)["status"], "UNVERIFIED")
 
 
 if __name__ == "__main__":

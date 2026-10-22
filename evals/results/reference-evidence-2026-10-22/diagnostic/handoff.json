@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "anchors": [
+    {
+      "id": "Q3-column-width",
+      "feature": "Toss source form column width",
+      "source": {
+        "path": "reference-metrics.json",
+        "sha256": "d5d8d6e385ff1002984f474d9ba5c284c2ce54d9534c8fd369c5f040b4182b8a"
+      },
+      "observed": {
+        "value": 464,
+        "unit": "CSS-px",
+        "basis": "measured",
+        "method": "Current 1440x900/DPR1 live DOM heading bounding box; source-toss-current.json"
+      },
+      "target": ".public-form",
+      "expected": {
+        "value": 464,
+        "unit": "CSS-px",
+        "tolerance": 8
+      }
+    }
+  ]
+}

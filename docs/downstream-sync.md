@@ -48,3 +48,17 @@ Qwen 첫 Node 검사는 macOS 임시 폴더의 symlink/realpath 표기 차이로
 PDP는 원격 `da89a39`에190개 선행 커밋이 있어 첫 푸시가 거절됐다. 기존 원격 이력과 이번 `9a9e387`을 `35595f7`로 충돌 없이 병합하고 승인·검증 기록을 추가한 `8944165`를 원격 main으로 푸시했다. 두 이력이 모두 최종 결과에 포함됨을 확인했다. 통합 후 스킬 형식·audit-links(missing없음)·변경 문서 링크28개(Git tree 기준)·공백을 검증했다. 추가된 원격 스킬 보완과 제품 기록은 보존했고 실제 상품 제작이나 새 품질 승인은 수행하지 않았다.
 
 PDP의 원래 main 작업 폴더와 미추적 파일은 그대로이며 통합 반영본은 별도 worktree의 `codex/pdp-samkill-ui-sync` 브랜치다. 후속 작업은 원래 로컬 main을 최신 원격이라고 가정하지 말고 실제 브랜치·원격·사용처를 다시 확인한다. 앞선 개인 설치8파일 검증은 당시 버전의 결과이며 최신 원격 전체 패키지의 재설치를 뜻하지 않는다. 원본의 이번 푸시 결과 기록은 별도 문서 커밋으로 반영한다.
+
+## 2026-10-22 수치 인계·원본 비교의 실행 검사
+
+원본 기준은 `cde9efbc116bd6a64bb27020ee27c2a9294b84d1` 위의 **미커밋 작업 변경**이다. 신규 원본 커밋이나 원격 반영으로 기록하지 않는다. [yoch 재현과 검증](../evals/results/reference-evidence-2026-10-22/README.md), [검증 기록](../evals/results/reference-evidence-2026-10-22/validation.json)에 변경과 한계를 연결한다.
+
+| 대상 | 실제 로컬 반영 | 검증·기록 |
+|---|---|---|
+| Qwen (`bf372d7` 위) | 가공 가이드6개·수치 helper·prepare/최종 check, 로컬 진입점·공통 전달 프롬프트·AGENTS. 기존 Windows/sidecar 잠금 보존 | 원본 회귀38개·Node213개·Python2개. `docs/upstream-sync-20261022.md`, `evals/results/reference-evidence-20261022/sync.json`에 원본/가공 해시 |
+| PDP (`8944165` 위 통합 worktree) | 전용 Gen 인계·handoff, 기존 분해/검수의 관련 문단, 수치 helper·prepare/최종 check. 제품별 내용·플랫폼/동시기록 보존 | 원본 회귀38개·플랫폼/동시기록8개·audit-links missing없음. 대상 `docs/upstream-sync.md`, `docs/session-context.md` |
+| Goodnotes (`32bacde` 위) | 자체 PDF 조사/분해·품질 검수와 전용 측정 안내, 독립 prepare helper. 앱75규칙과 최종 게이트를 PDF에 강제하지 않음 | prepare 유효/정성만/단위혼용3경우. `docs/context/upstream-sync-2026-10-22.md`. PDF·설치 릴리스·고정 영수증 변경 없음 |
+
+개인 samkill-ui/reference-review 등은 원본 심볼릭 링크다. 별도 개인 pdp-design 복사본에는 이번 진입점/handoff 문단만 반영했고 최신 원격 패키지 전체를 설치하지 않았다. 신규 Goodnotes 설치는 하지 않았다. 생성 전 prepare는 작업 절차이며 모든 모델 추론을 자동 가로채는 기능이 아니다. Qwen/PDP의 기존 최종 check는 갱신한 판독기를 사용한다.
+
+세 대상과 원본 모두 이번 변경은 로컬 상태이며 커밋·푸시하지 않았다. 새 모델 추론·제품 렌더/행동·PDF/실기기 검증으로 확대하지 않는다. yoch의 진행 중인 교정 코드는 읽기 전용으로 확인했고 수정하지 않았다.

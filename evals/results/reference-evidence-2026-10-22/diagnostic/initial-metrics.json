@@ -1,0 +1,25 @@
+{
+  "divs": 6,
+  "elements": 30,
+  "input": {
+    "height": 49.59375,
+    "padding": "12px 16px",
+    "width": 638
+  },
+  "mainWidth": 640,
+  "scrollWidth": 1440,
+  "sizes": [
+    "14px",
+    "32px",
+    "16px"
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "weights": [
+    "500",
+    "700",
+    "600"
+  ]
+}
