@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-11",
+  "scope": "Korean discovery descriptions and missing decomposition UI metadata; independent source version pins",
+  "repositories": {
+    "samkill-ui": {
+      "local_commit": "54879dcc869eacccb22a68b79d397e6c32f88c99",
+      "remote_main": "54879dcc869eacccb22a68b79d397e6c32f88c99",
+      "match": true
+    },
+    "qwen": {
+      "local_commit": "75c193b4d3188ede080851d7cfd8f1f8d524dcf9",
+      "remote_main": "75c193b4d3188ede080851d7cfd8f1f8d524dcf9",
+      "match": true
+    },
+    "pdp": {
+      "local_commit": "a4d36fb112ccb51b415cca9d0d02bf11db54210a",
+      "remote_main": "a4d36fb112ccb51b415cca9d0d02bf11db54210a",
+      "match": true
+    },
+    "goodnotes": {
+      "modified": false,
+      "reason": "Principle-only PDF consumer; no copied metadata among these8skills, no body changes to propagate"
+    }
+  }
+}

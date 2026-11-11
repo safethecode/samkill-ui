@@ -98,3 +98,10 @@ PDP의 원래 main 작업 폴더와 미추적 파일은 그대로이며 통합 �
 | samkill-goodnotes-diary | `809ab4c7abe378a52d2cb272a58a68807ef87430` |
 
 Goodnotes의 첫 푸시는 원격2353cf4에15개 선행 커밋이 있어 거절됐다. 이번aa5f734와 원격을2421960으로 충돌 없이 병합하고 새 reconstruction-loop에도 인계를 연결한809ab4c를 푸시했다. 두 기존 이력을 보존했고 병합 후 helper14개·스킬 형식/문서 연결을 다시 확인했다. 기존 수집/재현/PDF·실패·소스 픽셀 비공개 기준을 새 승인으로 바꾸지 않았다. [전체 원격·검사 기록](../evals/results/decomposition-json-2026-10-23/push-result.json)에 연결한다. 이 결과 기록은 원본의 후속 문서 커밋으로 반영한다.
+
+
+## 2026-11-11 한국어 스킬 설명의 종속 반영
+
+원본 설명 변경은 `54879dcc869eacccb22a68b79d397e6c32f88c99`이며 SKILL.md의 description8개와 분해 UI 메타데이터를 한국어로 제공한다. 이름·본문·정책·판독기는 보존했다. Qwen은8개 guide 헤더와 분해 UI 메타데이터를 `75c193b4d3188ede080851d7cfd8f1f8d524dcf9`에, PDP는 분해/리뷰 헤더와 분해 UI 메타데이터를 `a4d36fb112ccb51b415cca9d0d02bf11db54210a`에 반영하고 각 원격 main 해시와 일치함을 확인했다. Goodnotes는 자체 PDF 절차에 원칙을 반영하는 관계이며 해당8개 설명 복사본과 바뀐 본문이 없어 이번 언어 변경의 수정 대상이 없다.
+
+원본8개/PDP2개 스킬 형식,8개 frontmatter·UI YAML·본문/이름 불변·개인 심볼릭 링크, Qwen8개 가공 헤더/본문 불변·복사한 UI 바이트, 새 문서 링크와 세 저장소 공백을 검사했다. 기존 사용자 작업·DS_Store·PDP 원래 main과 수집 HTML은 보존했다. 새 sparse worktree에서 PDP 메타데이터만 반영했으며 상품 생성·전체 suite·Qwen 추론·현재 앱의 실제 스킬 선택 UI/캐시 갱신은 미검증이다. [검증](../evals/results/korean-skill-descriptions-2026-11-11.json)·[실제 원격 해시](../evals/results/korean-skill-descriptions-2026-11-11-push.json).

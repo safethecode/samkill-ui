@@ -671,3 +671,8 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 - 실제 검증: 스킬8개 quick_validate,8개 frontmatter/UI YAML·짧은 설명 길이·기본 프롬프트·이름/본문 불변·개인 설치 심볼릭 링크 일치를 확인했다. [검증 기록](../evals/results/korean-skill-descriptions-2026-11-11.json). UI 목록 문구는 ux-copy 기준으로 의미·호출 행동·과장 없는 표현을 검토했다. 현재 앱의 실제 `$` 메뉴 표시/캐시 갱신과 암묵 호출 동작은 미검증이다.
 - 종속 범위: Qwen의8개 guide 설명과 분해 UI 메타데이터, PDP의 분해/리뷰 설명과 분해 UI 메타데이터를 원문 본문 변경 없이 맞췄다. Goodnotes는 자체 PDF 절차의 원칙 반영 관계이고 해당8개 설명 복사본이 없어 수정 영향이 없다. PDP는 새 sparse worktree에서 작업하며 원래 main·수집 HTML을 보존했다. 실제 반영 커밋/원격은 후속 동기화 기록으로 확정한다.
 - 권한/보존: 같은 samkill-ui 변경에 대한 “계속 커밋하고 푸시” 지시 범위에서 목적별로 반영한다. screen-spec·Round07/11·output과 공유 문서의 기존 무관한 변경, 종속 프로젝트 DS_Store는 제외한다. 언어 변경을 새 UI/PDF 품질 승인이나 모델 추론 검증으로 확대하지 않는다.
+
+
+### 2026-11-11 한국어 설명 커밋·푸시 확인
+
+원본 `54879dcc869eacccb22a68b79d397e6c32f88c99`·Qwen `75c193b4d3188ede080851d7cfd8f1f8d524dcf9`·PDP `a4d36fb112ccb51b415cca9d0d02bf11db54210a`를 각각 원격 main에 반영하고 실제 refs/heads/main과 일치함을 확인했다. 원본12/Qwen12/PDP5파일만 목적별로 반영했고 Goodnotes와 기존 사용자 작업은 보존했다. [동기화 범위](downstream-sync.md)와 [원격 기록](../evals/results/korean-skill-descriptions-2026-11-11-push.json)을 연결한다. 이번 원격 확인 기록은 후속 문서 커밋으로 반영하며 실제 `$` 메뉴 갱신을 확인했다고 하지 않는다.
