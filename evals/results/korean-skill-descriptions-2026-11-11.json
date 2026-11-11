@@ -1,0 +1,303 @@
+{
+  "changes": [
+    {
+      "skill": "samkill-ui",
+      "before_description": "Use when the user invokes samkill-ui or wants the samkill UI workflow for reference research, interface design, implementation, Korean product copy, onboarding, or review without selecting individual skills.",
+      "description": "samkill-ui를 직접 호출하거나 개별 스킬을 고르지 않고 레퍼런스 조사, UI 설계·구현, 한국어 제품 문구, 온보딩, 검수를 진행할 때 사용한다.",
+      "body_sha256_before": "55852b65796498936a546c374b327d56e883cce8381930d74fe8082698974bb2",
+      "body_sha256_after": "55852b65796498936a546c374b327d56e883cce8381930d74fe8082698974bb2"
+    },
+    {
+      "skill": "uibowl-research",
+      "before_description": "Use when UIbowl references, screen patterns, components, screen copy, or app comparisons are requested, including multi-feature research, accumulated references, detailed padding, color pairings, typography, and icon analysis, or when research lacks visual evidence.",
+      "description": "UIbowl 레퍼런스, 화면 패턴·컴포넌트·문구, 앱 비교를 조사할 때 사용한다. 복합 기능 조사와 자료 누적, 상세 여백·배색·타이포그래피·아이콘 분석, 이미지 근거가 부족한 조사에도 적용한다.",
+      "body_sha256_before": "94db764831dbe26ec98bfeab8baa267d9386fc3b282ea9528fbdf5aaa7fdbec7",
+      "body_sha256_after": "94db764831dbe26ec98bfeab8baa267d9386fc3b282ea9528fbdf5aaa7fdbec7"
+    },
+    {
+      "skill": "reference-decompose",
+      "before_description": "Use when a UI reference or screenshot has been obtained for design or implementation, when translating visual elements into implementation prompts, or when user feedback identifies a mismatch between a reference and its reconstruction.",
+      "description": "UI 레퍼런스를 요소·좌표·HEX·관계로 분해해 확장 JSON과 전체 원문으로 전달한다. 설계·구현용 레퍼런스 분석, 구현 프롬프트 작성, 원본과 재현 결과의 불일치 교정에 사용한다.",
+      "body_sha256_before": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b",
+      "body_sha256_after": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b"
+    },
+    {
+      "skill": "reference-to-ui",
+      "before_description": "Use when building, redesigning, or tokenizing UI from references, screenshots, or a UIbowl brief, or when requested UI must avoid generic AI-looking layouts and decoration.",
+      "description": "레퍼런스·스크린샷·UIbowl 브리프를 바탕으로 UI를 제작·리디자인하거나 디자인 토큰을 정리할 때 사용한다. 전형적인 AI풍 레이아웃과 장식을 피해야 하는 UI 작업에도 적용한다.",
+      "body_sha256_before": "41ea2ea35d948769bf79baaa912e88f16f9587f50ba08ce89f4ed16217a76d8e",
+      "body_sha256_after": "41ea2ea35d948769bf79baaa912e88f16f9587f50ba08ce89f4ed16217a76d8e"
+    },
+    {
+      "skill": "reference-review",
+      "before_description": "Use when reviewing implemented UI against references or a design contract, auditing design-token usage and component detail, checking generic AI-looking design drift, or assessing claimed visual completion after a build passes.",
+      "description": "구현된 UI를 레퍼런스·디자인 계약과 비교하고 토큰 사용·컴포넌트 디테일·전형적인 AI풍 디자인을 검토할 때 사용한다. 빌드 통과 후 실제 시각적 완성도를 판단할 때도 적용한다.",
+      "body_sha256_before": "60a7bb67ca7d9e1f84fb4ec1ccaea3823a4a9da01d4588901559d0f438dae4dd",
+      "body_sha256_after": "60a7bb67ca7d9e1f84fb4ec1ccaea3823a4a9da01d4588901559d0f438dae4dd"
+    },
+    {
+      "skill": "design-md",
+      "before_description": "Analyze existing UI, design tokens, references, and product requirements to create or update a repository-root DESIGN.md; use when establishing persistent design context or reconciling design documentation with implementation, not for implementing UI itself.",
+      "description": "기존 UI·디자인 토큰·레퍼런스·제품 요구를 분석해 저장소 루트의 DESIGN.md를 작성·갱신한다. 지속적인 디자인 맥락을 정리하거나 문서와 구현의 차이를 맞추는 작업에 사용하며, UI 자체의 구현은 별도다.",
+      "body_sha256_before": "9e93153240a4d1a075413c99a1a11671300093c9e125878798945bae60b3954f",
+      "body_sha256_after": "9e93153240a4d1a075413c99a1a11671300093c9e125878798945bae60b3954f"
+    },
+    {
+      "skill": "ux-copy",
+      "before_description": "Use when writing or reviewing UI labels, onboarding copy, empty states, errors, or Korean product microcopy, including 번역투 제거 and 토스 라이팅 원칙 적용; not for general article rewriting.",
+      "description": "UI 라벨, 온보딩, 빈 화면, 오류 안내 등 한국어 제품 문구를 작성·검토할 때 사용한다. 번역투를 줄이고 토스의 글쓰기 원칙을 적용하며, 일반 글의 윤문은 별도다.",
+      "body_sha256_before": "544ab5c8efb3ad7c651ada0efe184e4ad8b659c6eb7b0646bb60306f9535ffaa",
+      "body_sha256_after": "544ab5c8efb3ad7c651ada0efe184e4ad8b659c6eb7b0646bb60306f9535ffaa"
+    },
+    {
+      "skill": "onboarding-flow",
+      "before_description": "Use when designing or reviewing reference-based onboarding, signup, first-run setup, consent steps, or their failure, back-navigation, and re-entry paths.",
+      "description": "레퍼런스를 바탕으로 온보딩·가입·첫 사용·동의 절차와 실패·뒤로 가기·재진입 흐름을 설계하거나 검토할 때 사용한다.",
+      "body_sha256_before": "fdf9a9f8acecf96833c0f797e52b5d68ca7bd555f96c9b504e8391477437989e",
+      "body_sha256_after": "fdf9a9f8acecf96833c0f797e52b5d68ca7bd555f96c9b504e8391477437989e"
+    }
+  ],
+  "date": "2026-11-11",
+  "scope": "8skill descriptions translated; missing reference-decompose UI metadata added. No body/policy/gate changes.",
+  "source_base_commit": "4a08e415849e7b4cd5aa1334cd65eecf4ae47687",
+  "checks": [
+    {
+      "skill": "samkill-ui",
+      "description": "samkill-ui를 직접 호출하거나 개별 스킬을 고르지 않고 레퍼런스 조사, UI 설계·구현, 한국어 제품 문구, 온보딩, 검수를 진행할 때 사용한다.",
+      "ui_description": "UI 작업에 필요한 레퍼런스·구현·문구·검수 스킬을 연결해요",
+      "ui_description_characters": 33,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "uibowl-research",
+      "description": "UIbowl 레퍼런스, 화면 패턴·컴포넌트·문구, 앱 비교를 조사할 때 사용한다. 복합 기능 조사와 자료 누적, 상세 여백·배색·타이포그래피·아이콘 분석, 이미지 근거가 부족한 조사에도 적용한다.",
+      "ui_description": "UIbowl 실제 화면을 관찰하고 채택·배제 근거를 정리해요",
+      "ui_description_characters": 33,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "reference-decompose",
+      "description": "UI 레퍼런스를 요소·좌표·HEX·관계로 분해해 확장 JSON과 전체 원문으로 전달한다. 설계·구현용 레퍼런스 분석, 구현 프롬프트 작성, 원본과 재현 결과의 불일치 교정에 사용한다.",
+      "ui_description": "레퍼런스의 요소·좌표·색·관계를 분해해 JSON과 전체 원문으로 전달해요",
+      "ui_description_characters": 40,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "reference-to-ui",
+      "description": "레퍼런스·스크린샷·UIbowl 브리프를 바탕으로 UI를 제작·리디자인하거나 디자인 토큰을 정리할 때 사용한다. 전형적인 AI풍 레이아웃과 장식을 피해야 하는 UI 작업에도 적용한다.",
+      "ui_description": "레퍼런스 근거와 제품 요구를 연결해 개성 있는 UI를 구현해요",
+      "ui_description_characters": 34,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "reference-review",
+      "description": "구현된 UI를 레퍼런스·디자인 계약과 비교하고 토큰 사용·컴포넌트 디테일·전형적인 AI풍 디자인을 검토할 때 사용한다. 빌드 통과 후 실제 시각적 완성도를 판단할 때도 적용한다.",
+      "ui_description": "구현 화면의 차이를 근거와 사용자 영향에 따라 검토해요",
+      "ui_description_characters": 30,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "design-md",
+      "description": "기존 UI·디자인 토큰·레퍼런스·제품 요구를 분석해 저장소 루트의 DESIGN.md를 작성·갱신한다. 지속적인 디자인 맥락을 정리하거나 문서와 구현의 차이를 맞추는 작업에 사용하며, UI 자체의 구현은 별도다.",
+      "ui_description": "기존 UI와 레퍼런스를 분석해 레포 루트의 DESIGN.md를 만들고 갱신해요",
+      "ui_description_characters": 43,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "ux-copy",
+      "description": "UI 라벨, 온보딩, 빈 화면, 오류 안내 등 한국어 제품 문구를 작성·검토할 때 사용한다. 번역투를 줄이고 토스의 글쓰기 원칙을 적용하며, 일반 글의 윤문은 별도다.",
+      "ui_description": "실제 상태와 가능한 행동에 맞춰 자연스러운 제품 문구를 작성해요",
+      "ui_description_characters": 35,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    },
+    {
+      "skill": "onboarding-flow",
+      "description": "레퍼런스를 바탕으로 온보딩·가입·첫 사용·동의 절차와 실패·뒤로 가기·재진입 흐름을 설계하거나 검토할 때 사용한다.",
+      "ui_description": "가입부터 실패 복구와 재진입까지 근거 있는 온보딩 흐름을 설계해요",
+      "ui_description_characters": 36,
+      "body_unchanged": true,
+      "name_and_other_frontmatter_unchanged": true,
+      "personal_symlink_matches_source": true
+    }
+  ],
+  "quick_validate": [
+    {
+      "skill": "samkill-ui",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "uibowl-research",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "reference-decompose",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "reference-to-ui",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "reference-review",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "design-md",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "ux-copy",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "onboarding-flow",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    }
+  ],
+  "downstream": {
+    "qwen": {
+      "files": [
+        {
+          "source": "skills/samkill-ui/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+          "source_sha256": "e5957c5f364039126d86a821d161e2bba0a78a7244fd64a84001a1f179e33c3d",
+          "adapted_sha256": "196c606c829cec338e12b63ab59fbcbc374c327874fa2754321595f24ee47fd2",
+          "body_sha256_before": "49146b9dc306f261491ad38c923e65617ae3a3a217fc83778f95ae8b02d0c967",
+          "body_sha256_after": "49146b9dc306f261491ad38c923e65617ae3a3a217fc83778f95ae8b02d0c967"
+        },
+        {
+          "source": "skills/uibowl-research/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+          "source_sha256": "cba21bb9de17f9437c729a2454de62468bfe6128694b88ce7f15729d770b9c18",
+          "adapted_sha256": "d6a40114e65ddc22e53193ff6ed9999c8f203c9110b8417387ea60944ba45a1e",
+          "body_sha256_before": "00aa2f4e472da167f7a09f00cd20e494ff83591398bd9bd8b66c157810d5b73d",
+          "body_sha256_after": "00aa2f4e472da167f7a09f00cd20e494ff83591398bd9bd8b66c157810d5b73d"
+        },
+        {
+          "source": "skills/reference-decompose/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+          "source_sha256": "4b62d66b795921ca39139331b7f05df434c78901db070b3eb8643926dd3aa328",
+          "adapted_sha256": "4b62d66b795921ca39139331b7f05df434c78901db070b3eb8643926dd3aa328",
+          "body_sha256_before": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b",
+          "body_sha256_after": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b"
+        },
+        {
+          "source": "skills/reference-to-ui/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+          "source_sha256": "92aaaf86e1bb5d2cffaa37e70ad5b4ac8274b9b1bd8e1cd406e3682da82d7801",
+          "adapted_sha256": "0c6357670e33e835fa769c6c67c778446895c613e348aa3672c2610932be1802",
+          "body_sha256_before": "8e2acd3f9bc143ab3eb656c7acd867f1ef561daf1f12175625d3ed589b206eff",
+          "body_sha256_after": "8e2acd3f9bc143ab3eb656c7acd867f1ef561daf1f12175625d3ed589b206eff"
+        },
+        {
+          "source": "skills/reference-review/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+          "source_sha256": "02d49963f6597fa71db626926490a39add32f3ef28a0f8e06d39c3eac76f111f",
+          "adapted_sha256": "e785810b703382be94477516be24bab31e9e104e94ac1b3e7c8e5f99916fa9dd",
+          "body_sha256_before": "05ad88256b5c409fae7b56f39287b5c85beb27aa5217e1b82480a1e736937800",
+          "body_sha256_after": "05ad88256b5c409fae7b56f39287b5c85beb27aa5217e1b82480a1e736937800"
+        },
+        {
+          "source": "skills/design-md/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/design-md/guide.md",
+          "source_sha256": "b22decc4d5f96117da54cd610e88449d799bd2ce3692a4f6ff697f93a601ba19",
+          "adapted_sha256": "b22decc4d5f96117da54cd610e88449d799bd2ce3692a4f6ff697f93a601ba19",
+          "body_sha256_before": "9e93153240a4d1a075413c99a1a11671300093c9e125878798945bae60b3954f",
+          "body_sha256_after": "9e93153240a4d1a075413c99a1a11671300093c9e125878798945bae60b3954f"
+        },
+        {
+          "source": "skills/ux-copy/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md",
+          "source_sha256": "487f6c33a235883b3dec125eefff68fec0b709bbf2426da8857d8a2ebaa83a30",
+          "adapted_sha256": "487f6c33a235883b3dec125eefff68fec0b709bbf2426da8857d8a2ebaa83a30",
+          "body_sha256_before": "544ab5c8efb3ad7c651ada0efe184e4ad8b659c6eb7b0646bb60306f9535ffaa",
+          "body_sha256_after": "544ab5c8efb3ad7c651ada0efe184e4ad8b659c6eb7b0646bb60306f9535ffaa"
+        },
+        {
+          "source": "skills/onboarding-flow/SKILL.md",
+          "target": "skills/qwen-samkill-ui/references/upstream/onboarding-flow/guide.md",
+          "source_sha256": "ef446f1ac9a7fd525e0d62724b079974db695960bd8e9387294ec7d8693cc931",
+          "adapted_sha256": "ef446f1ac9a7fd525e0d62724b079974db695960bd8e9387294ec7d8693cc931",
+          "body_sha256_before": "fdf9a9f8acecf96833c0f797e52b5d68ca7bd555f96c9b504e8391477437989e",
+          "body_sha256_after": "fdf9a9f8acecf96833c0f797e52b5d68ca7bd555f96c9b504e8391477437989e"
+        },
+        {
+          "source": "skills/reference-decompose/agents/openai.yaml",
+          "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/agents/openai.yaml",
+          "source_sha256": "6306f13cd93d79281cacaf0bd47c9ca7ce10c2d7f308715d4995ea79139c27a3",
+          "adapted_sha256": "6306f13cd93d79281cacaf0bd47c9ca7ce10c2d7f308715d4995ea79139c27a3"
+        }
+      ],
+      "scope": "Descriptions and missing UI metadata only; guide filenames and all existing bodies preserved"
+    },
+    "pdp": {
+      "changes": [
+        {
+          "file": "skills/reference-decompose/SKILL.md",
+          "body_sha256_before": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b",
+          "body_sha256_after": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b",
+          "source_description_equal": true
+        },
+        {
+          "file": "skills/reference-review/SKILL.md",
+          "body_sha256_before": "7b9232c72832bb316674ca5e9dd84c740634a049419d46bd96939f9553088121",
+          "body_sha256_after": "7b9232c72832bb316674ca5e9dd84c740634a049419d46bd96939f9553088121",
+          "source_description_equal": true
+        },
+        {
+          "skill": "reference-decompose",
+          "validation": "Skill is valid!",
+          "exit_code": 0
+        },
+        {
+          "skill": "reference-review",
+          "validation": "Skill is valid!",
+          "exit_code": 0
+        }
+      ],
+      "new_ui_metadata": "skills/reference-decompose/agents/openai.yaml",
+      "scope": "Only copied descriptions; PDP body/product contracts unchanged"
+    },
+    "goodnotes": {
+      "effect": "none",
+      "reason": "Its own PDF skill reflects workflow principles; none of these8metadata files are copied. Body/workflow contracts unchanged."
+    }
+  },
+  "ui_copy": {
+    "id": "C-skill-decompose-blurb",
+    "exposure": "Skill selector/list metadata",
+    "text": "레퍼런스의 요소·좌표·색·관계를 분해해 JSON과 전체 원문으로 전달해요",
+    "action": "Invoke reference-decompose; name/default prompt preserved",
+    "facts": "Existing source SKILL.md decomposition JSON/raw workflow",
+    "state": "ready text",
+    "language_review": "Scope/exclusions preserved; common acronyms kept; no performance or automatic-compliance claims",
+    "layout_and_live_picker": "not verified"
+  },
+  "official_reference": "https://learn.chatgpt.com/docs/build-skills",
+  "limits": [
+    "Live $picker display/cache refresh and implicit invocation behavior not independently tested.",
+    "No new product rendering/inference/full design gate; parser unchanged."
+  ]
+}
