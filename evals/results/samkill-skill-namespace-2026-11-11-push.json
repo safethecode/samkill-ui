@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-11",
+  "source_implementation": "db236d3ffc14c99165616170b5f179a42f1307bb",
+  "remote_main": {
+    "source": {
+      "implementation_or_integration_commit": "db236d3ffc14c99165616170b5f179a42f1307bb",
+      "verified_equal": true
+    },
+    "qwen": {
+      "implementation_or_integration_commit": "e5569ab7d3f3816a12eeca0b73a85c4b3f48eb10",
+      "verified_equal": true
+    },
+    "pdp": {
+      "implementation_or_integration_commit": "3ebb7bef89d7a099ac3e853ebb3185e844e0ab79",
+      "verified_equal": true
+    },
+    "goodnotes": {
+      "implementation_or_integration_commit": "8818883b09b9aead0f4bd771cdb5159a819c7092",
+      "verified_equal": true
+    },
+    "private_spec": {
+      "implementation_or_integration_commit": "c677ba38712c71ef152dd25bc2d333c53b85bdbc",
+      "verified_equal": true
+    }
+  },
+  "goodnotes_integration": {
+    "initial_push": "rejected: remote ahead",
+    "remote_integrated": "a7d455b",
+    "ahead_commits_preserved": 195,
+    "local_task_commit_preserved": "3d187b2",
+    "conflicts": 1,
+    "resolution": "Remote refactored entry removed old workflow source list. Kept that current entry byte-for-byte instead of restoring the removed old entry. Current skill/reference old-ID scan: zero matches.",
+    "after_merge": {
+      "decomposition_tests": 14,
+      "skill_validation": "PASS",
+      "current_entry_links": 9,
+      "missing": []
+    },
+    "whitespace": {
+      "merged_full_diff_exit": 2,
+      "upstream_baseline_exit": 2,
+      "same_diagnostics": true,
+      "upstream_trailing_whitespace_occurrences": 178,
+      "task_diff_against_upstream_exit": 0,
+      "scope": "Remote frozen prompts and font licenses preserved; task-only changes have no whitespace errors"
+    }
+  },
+  "links": {
+    "source_staged_local_targets": 390,
+    "qwen_staged_local_targets": 182,
+    "pdp_staged_local_targets": 86,
+    "goodnotes_before_merge_local_targets": 15,
+    "private_spec_local_targets": 25,
+    "missing": [],
+    "qwen_additional_repair": "Two pre-existing source-relative spacing evaluation links now resolve to source Git objects at the exact source commit. Current manifest records this adaptation, in addition to existing Python helper adaptations."
+  },
+  "hash_checks": {
+    "qwen_source_at_committed_revision_and_adapted": 54,
+    "pdp_lock": 10
+  },
+  "remaining_validation_limits": [
+    "Qwen lint: FAIL, 3 diagnostics identical to pre-migration baseline",
+    "Qwen CheckJS: FAIL, 14 diagnostics identical to pre-migration baseline",
+    "Goodnotes merged full diff whitespace: FAIL, 178 pre-existing remote diagnostics identical to upstream; task-only diff PASS",
+    "Live picker/cache refresh, implicit selection, new inference and product UI/PDF/device quality not verified"
+  ],
+  "unrelated_work_preserved": {
+    "source_tracked_remaining_diff_lines": {
+      "DESIGN.md": 7,
+      "README.md": 3,
+      "docs/session-context.md": 41,
+      "evals/cases.md": 18
+    },
+    "source_untracked": "Existing screen-spec, Round07/11, output and result artifacts excluded; local screen-spec callers alone patched",
+    "qwen_and_goodnotes": "Existing DS_Store files excluded",
+    "pdp": "Separate worktree clean; original checkout and two untracked research HTML files untouched",
+    "private_spec": "Private visibility and exact origin checked immediately before push; no private reference content exported"
+  }
+}

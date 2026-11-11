@@ -110,3 +110,16 @@ Goodnotes의 첫 푸시는 원격2353cf4에15개 선행 커밋이 있어 거절�
 ## 2026-11-11 Samkill 호출 namespace 동기화
 
 사용자가 영문 Samkill 표시 제목·한국어 설명·samkill- 호출 ID와 다른 스킬의 참조까지 갱신하도록 요청했다. [이름 대응](skill-namespace-migration.md)과 [검증](../evals/results/samkill-skill-namespace-2026-11-11.json)에 범위/실패/한계를 남긴다. Qwen 가공 guide와 실제 loader, PDP 부분 복사본/의존 lock·전용 진입점, Goodnotes 호출을 반영한다. 별도 화면설계서 기술 참조와 개인 PDP 호출도 포함하며 제품별 내용·과거 증거·설치 범위를 보존한다. 원본 구현 커밋을 확정한 뒤 각 대상의 현재 반영 기록과 해시를 연결한다. 이 기록은 커밋 전 상태이며 실제 원격 결과는 후속 receipt로 구별한다.
+
+
+### 2026-11-11 namespace 원격 확정
+
+| 대상 | 실제 구현/통합 커밋 |
+|---|---|
+| 원본 | `db236d3ffc14c99165616170b5f179a42f1307bb` |
+| Qwen | `e5569ab7d3f3816a12eeca0b73a85c4b3f48eb10` |
+| PDP | `3ebb7bef89d7a099ac3e853ebb3185e844e0ab79` |
+| Goodnotes | `8818883b09b9aead0f4bd771cdb5159a819c7092` |
+| 별도 화면설계서 | `c677ba38712c71ef152dd25bc2d333c53b85bdbc` |
+
+각 원격 main 해시와 일치함을 확인했다. Goodnotes는 선행195개 커밋을 병합하고 이미 workflow 목록을 제거한 최신 진입점을 그대로 보존했다. 삭제된 예전 문단을 새 이름으로 복원하지 않았으며 최종 활성 참조에는 예전 호출이 없다. 개인 연결/설치의 해당 호출도 반영했고 전체 패키지 신규 설치로 확대하지 않았다. [원격·검사·기존 실패와 보존 범위](../evals/results/samkill-skill-namespace-2026-11-11-push.json)를 따른다. 이 결과 기록은 후속 문서 커밋으로 반영한다.

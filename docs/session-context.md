@@ -685,3 +685,11 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 - 실제 반영: Qwen의8개 가공 guide와6개 stage/component/catalog 호출, PDP의 복사·부분 의존 폴더/lock/전용 인계, Goodnotes 호출, 개인 PDP2파일, 별도 화면설계서 기술 참조를 수정했다. 제품별 계약·helper 동작·75규칙 의미는 보존했고 catalog v6에는 현재 namespace 포인터만 반영했다. 과거 평가·해시·날짜별 서술은 보존했다. 기존 미추적 screen-spec은 관련 호출만 로컬 수정하고 이번 커밋에서 제외한다.
 - 검증: 원본46+14개·Qwen213+2개·PDP69개·Goodnotes helper14개 통과, 형식/설치 연결·현재 링크·실제 Qwen context 로딩과 독립 검토를 확인했다. Qwen lint3건·CheckJS14건은 변경 전과 같은 FAIL로 남겼다. PDP 기본 Python의 PIL 누락과 Goodnotes의 최초 잘못된 discovery 경로도 [검증](../evals/results/samkill-skill-namespace-2026-11-11.json)에 보존한다.
 - 미확인: 현재 앱의 메뉴/캐시 갱신·자동 선택·새 모델 추론·새 UI/PDF/실기기 품질은 수행하지 않았다. 승인된 이번 변경만 목적별 커밋·푸시하며 원본·종속 구현 해시와 실제 원격 확인은 후속 기록으로 확정한다.
+
+
+### 2026-11-11 namespace 커밋·푸시와 원격 확인
+
+- 실제 결과: 원본 구현 `db236d3`, Qwen `e5569ab`, PDP `3ebb7be`, Goodnotes 통합 `8818883`, 별도 화면설계서 `c677ba3`가 각 원격 main과 같음을 확인했다. [전체 해시와 검사](../evals/results/samkill-skill-namespace-2026-11-11-push.json)에 연결한다. 화면설계서는 푸시 직전 비공개/정확한 origin을 확인했고 비공개 본문·에셋을 외부 기록에 복제하지 않았다.
+- Goodnotes 교정: 원격195개 선행 커밋 때문에 첫 푸시가 거절됐다. 최신 원격은 이전 workflow source 목록을 이미 삭제한 진입점 개편을 포함했다. 충돌1개는 최신 진입점을 그대로 보존해 해결했으며 삭제된 문단을 되살리지 않았다. 최종 스킬은 원격 a7d455b와 같고 예전 호출 토큰0개·helper14개·형식·진입점 링크9개를 재검증했다. 원래 호출 변경3d187b2와 원격 이력은 병합 조상으로 보존된다.
+- 추가 확인: Qwen의 기존 원본 상대 평가 링크2개를 source commit에 고정된 외부 링크로 연결하고 manifest에 가공 차이를 기록했다. 현재 로컬 링크는 Qwen182/PDP86/Goodnotes병합전15/화면설계서25개에서 누락이 없다. 원본390개 링크·Qwen54개 원본/가공 해시·PDP lock10개도 확인했다.
+- 한계: Qwen lint3/CheckJS14개는 변경 전과 동일한 FAIL다. Goodnotes 병합 전체 공백 검사에는 원격 font license/frozen raw의 기존178건이 남았고 원격 진단과 같음을 확인했다. 이번 변경만 원격과 비교한 공백 검사는 PASS다. 과거 원문·해시를 고쳐 이 검사를 통과시키지 않았다. 메뉴/추론/제품 품질의 새 승인으로 확대하지 않는다. 기존 사용자 작업은 커밋에서 제외했고 이 후속 결과 기록도 별도 문서 커밋으로 푸시한다.
