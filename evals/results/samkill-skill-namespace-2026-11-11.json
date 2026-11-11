@@ -1,0 +1,360 @@
+{
+  "date": "2026-11-11",
+  "scope": "Samkill UI skill invocation namespace and active callers",
+  "source_base_revision": "e25abe8f963123015c2f8e2f2049b81f1e7c80d1",
+  "mapping": {
+    "uibowl-research": "samkill-uibowl-research",
+    "reference-decompose": "samkill-reference-decompose",
+    "reference-to-ui": "samkill-reference-to-ui",
+    "reference-review": "samkill-reference-review",
+    "design-md": "samkill-design-md",
+    "ux-copy": "samkill-ux-copy",
+    "onboarding-flow": "samkill-onboarding-flow"
+  },
+  "metadata": {
+    "core": [
+      {
+        "skill": "samkill-ui",
+        "display_name": "Samkill UI",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-uibowl-research",
+        "display_name": "Samkill UIbowl Research",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-reference-decompose",
+        "display_name": "Samkill Reference Decompose",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-reference-to-ui",
+        "display_name": "Samkill Reference to UI",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-reference-review",
+        "display_name": "Samkill Reference Review",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-design-md",
+        "display_name": "Samkill Design MD",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-ux-copy",
+        "display_name": "Samkill UX Copy",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-onboarding-flow",
+        "display_name": "Samkill Onboarding",
+        "korean_description": true,
+        "default_prompt_correct": true,
+        "personal_alias_correct": true,
+        "quick_validate": "Skill is valid!"
+      }
+    ],
+    "other_skills": [
+      {
+        "skill": "samkill-reference-decompose",
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-reference-review",
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "qwen-samkill-ui",
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-goodnotes-design",
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "samkill-ui-spec",
+        "quick_validate": "Skill is valid!"
+      },
+      {
+        "skill": "pdp-design",
+        "quick_validate": "Skill is valid!"
+      }
+    ],
+    "catalog": {
+      "version": 6,
+      "active_rules": 75,
+      "only_namespace_pointers_changed": true
+    },
+    "live_picker": "not inspected"
+  },
+  "independent_audit": {
+    "audit": "independent-read-only-samkill-namespace-migration",
+    "date": "2026-11-11",
+    "generated_at_utc": "2026-11-11T09:39:32.931650+00:00",
+    "status": "no-open-issues-found-in-inspected-scope",
+    "source_changes_by_auditor": false,
+    "request": "Core Samkill UI display titles start with Samkill and are English; descriptions remain Korean; invocation IDs and active callers use the samkill namespace.",
+    "inspected_scope": {
+      "source": "8 skill directories/frontmatter, 8 agents metadata files, active skill/reference/README/AGENTS/DESIGN/template/evaluation caller files and nonhistorical documentation.",
+      "qwen": "8 adapted guide directories and metadata, active runner/catalog/stage/component callers and current documentation; guide text delivery exercised without model inference.",
+      "pdp": "2 copied callable skills, renamed reference-only dependency directories, active pdp entry/handoff/Windows gate test, dependency lock paths and current callers.",
+      "goodnotes": "Active skill, validation tests, current documentation and entry files scanned; dated experiments and context logs treated as historical evidence.",
+      "private_spec": "Active technical entry/rules, scripts, tests and skill reference Markdown were checked for namespace tokens only. No private prose, assets or URLs are included in this report.",
+      "installation": "All 8 expected codex aliases resolve to source. Seven legacy aliases absent. Agents skill root contains neither expected nor legacy aliases; no stale registration found."
+    },
+    "checks": {
+      "metadata": {
+        "source": 8,
+        "qwen": 8,
+        "pdp": 2,
+        "directory_frontmatter_id_match": true,
+        "english_Samkill_display_titles": true,
+        "korean_descriptions_preserved": true,
+        "default_prompt_new_id_match": true,
+        "short_description_lengths_range": [
+          30,
+          43
+        ]
+      },
+      "qwen_runtime": {
+        "all_stage_contexts_load": 6,
+        "component_context_loads": true,
+        "inventory_guide_count": 8,
+        "active_rule_count": 75,
+        "model_inference_run": false
+      },
+      "namespace_markdown_local_targets": {
+        "source": 155,
+        "qwen": 81,
+        "pdp": 40,
+        "goodnotes": 4,
+        "missing_targets": 0,
+        "scope": "Nonhistorical Markdown links containing samkill-; fenced examples excluded."
+      },
+      "qwen_source_adaptation": {
+        "copied_files_compared": 54,
+        "nonhelper_files_match_source_after_SKILL_md_to_guide_md": 52,
+        "helper_files_differ_for_existing_local_adaptation": 2,
+        "DS_Store_excluded": true
+      },
+      "helper_preservation": {
+        "source_Qwen_PDP_helpers_checked": 6,
+        "all_byte_identical_to_repo_pre_migration_HEAD": true
+      },
+      "installed_static_stale_namespace_scan": {
+        "codex_and_agents_real_text_files": "No old namespace token matches; symlink targets audited separately."
+      }
+    },
+    "resolved_during_audit_by_parent": [
+      {
+        "id": "NS-01",
+        "repository": "source, qwen, pdp",
+        "file": "samkill-reference-review/references/failure-catalog.json",
+        "line": 1115,
+        "detail": "Active RUI-09 amendment.criteria pointed to removed skills/reference-to-ui path; now uses skills/samkill-reference-to-ui. Original amendment semantics retained."
+      },
+      {
+        "id": "NS-02",
+        "repository": "source",
+        "file": "skills/screen-spec/SKILL.md",
+        "line": 29,
+        "detail": "Legacy nonregistered local screen-spec linked four removed sibling paths. Parent narrowly renamed the callers while preserving unrelated skill changes."
+      },
+      {
+        "id": "NS-03",
+        "repository": "source",
+        "file": "templates/skill-blueprint.md",
+        "line": 27,
+        "detail": "Current template guidance named the old onboarding-flow skill; parent renamed it."
+      },
+      {
+        "id": "NS-04",
+        "repository": "qwen",
+        "file": "docs/COMPONENT-GENERATION.md",
+        "line": 25,
+        "detail": "Parent updated the current guide reference to samkill-reference-decompose; auditor independently re-read line 25 and confirmed the old guide ID is absent.",
+        "verified_at_utc": "2026-11-11T09:40:03.470625+00:00"
+      }
+    ],
+    "findings": [],
+    "historical_exclusions": "Dated result/evidence/research/experiment/context logs, source design/reference-language, frozen hashes/manifests and origin-analysis descriptions retain prior IDs. Old names in these artifacts were not treated as active registration/runtime failures.",
+    "not_verified": [
+      "Current Codex skill picker/cache refresh",
+      "Actual implicit skill selection",
+      "Model inference",
+      "UI/PDF generation or product quality",
+      "Parent-run regression suite results"
+    ],
+    "finding_history": [
+      {
+        "id": "NS-04",
+        "severity": "low",
+        "repository": "qwen",
+        "file": "docs/COMPONENT-GENERATION.md",
+        "line": 25,
+        "kind": "active-documentation-name",
+        "consequence": "Current component-generation instructions still name the removed reference-decompose guide ID. Runtime path loading succeeds, but the active guide reference is inconsistent with the new callable namespace.",
+        "recommended_change": "Rename the active guide reference to samkill-reference-decompose."
+      }
+    ],
+    "final_active_findings": [],
+    "final_resolution_verification": {
+      "scope": "NS-04 target line only; no source edits or broad retesting",
+      "resolved": true,
+      "active_findings_count": 0
+    }
+  },
+  "regressions": {
+    "source_design_gate": {
+      "tests": 46,
+      "status": "PASS"
+    },
+    "source_decomposition": {
+      "tests": 14,
+      "status": "PASS"
+    },
+    "qwen_node": {
+      "tests": 213,
+      "status": "PASS",
+      "environment": "TMPDIR=/private/tmp"
+    },
+    "qwen_python": {
+      "tests": 2,
+      "status": "PASS"
+    },
+    "pdp": {
+      "tests": 69,
+      "status": "PASS",
+      "environment": "Python 3.12, TMPDIR=/private/tmp"
+    },
+    "pdp_links": {
+      "missing": []
+    },
+    "goodnotes_decomposition": {
+      "tests": 14,
+      "status": "PASS",
+      "method": "source evals/test_decomposition.py with DESIGN_GATE_SCRIPT selecting the unchanged Goodnotes reference_check.py sibling"
+    }
+  },
+  "unsuccessful_attempts": [
+    {
+      "scope": "PDP initial suite",
+      "environment": "default Python 3.15",
+      "result": "52 discovered tests; 3 module import errors because PIL is unavailable; reran with existing Python 3.12, no source/test changes"
+    },
+    {
+      "scope": "Goodnotes initial selected suite",
+      "result": "wrong evals discovery directory; no tests ran; corrected by selecting the source decomposition suite against the Goodnotes helper"
+    }
+  ],
+  "qwen_code_checks": {
+    "syntax": [
+      {
+        "path": "scripts/catalog-gate.mjs",
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "path": "scripts/catalog-plan.mjs",
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "path": "scripts/catalog.mjs",
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "path": "scripts/skill-context.mjs",
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "path": "test/component-plan.test.mjs",
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "path": "test/skill-context.test.mjs",
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "lint": {
+      "exit_code": 1,
+      "output": "{ \"diagnostics\": [{\"message\": \"Identifier 'readFile' is imported but never used.\",\"code\": \"eslint(no-unused-vars)\",\"severity\": \"error\",\"causes\": [],\"url\": \"https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-vars.html\",\"help\": \"Consider removing this import.\",\"filename\": \"qwen/scripts/catalog.mjs\",\"labels\": [{\"label\": \"'readFile' is imported here\",\"span\": {\"offset\": 9,\"length\": 8,\"line\": 1,\"column\": 10}}],\"related\": []},\n{\"message\": \"A `typeof` check narrows a representation without establishing its contract. Parse input at its I/O boundary, then branch on the domain value.\",\"code\": \"anti-slop(no-runtime-typeof)\",\"severity\": \"error\",\"causes\": [],\"filename\": \"qwen/scripts/catalog-gate.mjs\",\"labels\": [{\"span\": {\"offset\": 1020,\"length\": 20,\"line\": 17,\"column\": 103}}],\"related\": []},\n{\"message\": \"A `typeof` check narrows a representation without establishing its contract. Parse input at its I/O boundary, then branch on the domain value.\",\"code\": \"anti-slop(no-runtime-typeof)\",\"severity\": \"error\",\"causes\": [],\"filename\": \"qwen/scripts/catalog-gate.mjs\",\"labels\": [{\"span\": {\"offset\": 1169,\"length\": 13,\"line\": 17,\"column\": 252}}],\"related\": []}],\n              \"number_of_files\": 6,\n              \"number_of_rules\": 111,\n              \"threads_count\": 12,\n              \"start_time\": 0.13684575\n            }\n            "
+    },
+    "checkJs": {
+      "exit_code": 2,
+      "output": "qwen/scripts/component-plan.mjs(16,65): error TS2339: Property 'tagName' does not exist on type 'ChildNode'.\n  Property 'tagName' does not exist on type 'CommentNode'.\nqwen/scripts/component-plan.mjs(17,26): error TS2339: Property 'attrs' does not exist on type 'ChildNode'.\n  Property 'attrs' does not exist on type 'CommentNode'.\nqwen/scripts/component-plan.mjs(18,20): error TS2339: Property 'attrs' does not exist on type 'ChildNode'.\n  Property 'attrs' does not exist on type 'CommentNode'.\nqwen/scripts/component-plan.mjs(27,17): error TS2339: Property 'tagName' does not exist on type 'ChildNode'.\n  Property 'tagName' does not exist on type 'CommentNode'.\nqwen/scripts/component-plan.mjs(27,48): error TS2339: Property 'tagName' does not exist on type 'ChildNode'.\n  Property 'tagName' does not exist on type 'CommentNode'.\nqwen/scripts/component-plan.mjs(27,130): error TS2339: Property 'tagName' does not exist on type 'ChildNode'.\n  Property 'tagName' does not exist on type 'CommentNode'.\nqwen/scripts/component-plan.mjs(53,86): error TS2339: Property 'value' does not exist on type 'Element | TextNode'.\n  Property 'value' does not exist on type 'Element'.\nqwen/scripts/component-plan.mjs(54,38): error TS2339: Property 'attrs' does not exist on type 'ChildNode'.\n  Property 'attrs' does not exist on type 'CommentNode'.\nqwen/scripts/component-scope.mjs(6,119): error TS2339: Property 'tagName' does not exist on type 'ChildNode'.\n  Property 'tagName' does not exist on type 'CommentNode'.\nqwen/scripts/component-scope.mjs(22,63): error TS2339: Property 'tagName' does not exist on type 'ChildNode'.\n  Property 'tagName' does not exist on type 'CommentNode'.\nqwen/scripts/generate-components.mjs(53,46): error TS2741: Property 'html' is missing in type '{ css: { type: string; }; }' but required in type '{ html: { type: string; }; css: { type: string; }; }'.\nqwen/scripts/inference-options.mjs(7,37): error TS2365: Operator '<' cannot be applied to types 'number' and 'string | number'.\nqwen/scripts/inference-options.mjs(7,52): error TS2365: Operator '>' cannot be applied to types 'number' and 'string | number'.\nqwen/scripts/local-font.mjs(38,41): error TS2339: Property 'style' does not exist on type 'Element'.\n"
+    }
+  },
+  "baseline_comparison": {
+    "checks": {
+      "lint": {
+        "baseline_exit": 1,
+        "current_exit": 1,
+        "baseline_diagnostics": 3,
+        "current_diagnostics": 3,
+        "same_diagnostics": true
+      },
+      "checkJs": {
+        "baseline_exit": 2,
+        "current_exit": 2,
+        "baseline_diagnostics": 14,
+        "current_diagnostics": 14,
+        "same_diagnostics": true
+      }
+    },
+    "modified_js_are_exact_namespace_substitutions": true,
+    "limitation": "Lint and type checks remain FAIL in baseline and current; not reported as PASS."
+  },
+  "installation": {
+    "source_symlinks": 8,
+    "old_aliases_removed": 7,
+    "personal_pdp_copy": "Only SKILL.md and references/handoff.md identifiers patched; not a full package refresh",
+    "legacy_screen_spec": "Only stale local callers patched in existing untracked work; excluded from commits",
+    "qwen_project_install_scan": "No active installed copy found in inspected Documents scope; no new project installation"
+  },
+  "preserved": [
+    "75 catalog rules and helper behavior; catalog version 6 changes namespace pointers only",
+    "Historical result manifests, evidence hashes and dated narratives",
+    "Product-specific constraints, private specification content and unrelated work"
+  ],
+  "not_verified": [
+    "Live skill picker/cache refresh",
+    "Implicit model selection",
+    "New model inference",
+    "New product UI, PDF or device quality"
+  ],
+  "push_receipt": "samkill-skill-namespace-2026-11-11-push.json (created after remote verification)",
+  "source_staged_markdown_links": {
+    "checked": 390,
+    "missing": [],
+    "scope": "Local targets in staged changed Markdown; fenced examples, external URLs and literal returned-ui-url placeholder excluded"
+  }
+}

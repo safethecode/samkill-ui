@@ -6,9 +6,9 @@
 
 | 프로젝트 | 확인한 관계 | 변경 시 확인할 실제 사용처 |
 |---|---|---|
-| [samkill-pdp-design](https://github.com/safethecode/samkill-pdp-design) | samkill-ui의 PDP 라우팅, 분해/검수 스킬 복사본, PDP 전용 제작 절차 | `skills/pdp-design/`, `skills/reference-decompose/`, `skills/reference-review/`, README·DESIGN, 별도 개인 pdp-design 설치본 |
+| [samkill-pdp-design](https://github.com/safethecode/samkill-pdp-design) | samkill-ui의 PDP 라우팅, 분해/검수 스킬 복사본, PDP 전용 제작 절차 | `skills/pdp-design/`, `skills/samkill-reference-decompose/`, `skills/samkill-reference-review/`, README·DESIGN, 별도 개인 pdp-design 설치본 |
 | [qwen3.6-35b-a3b-coding-samkill-ui](https://github.com/safethecode/qwen3.6-35b-a3b-coding-samkill-ui) | 8개 공통 스킬을 guide.md로 가공한 스냅샷과 로컬 Qwen 실행 계약 | `skills/qwen-samkill-ui/`, `scripts/skill-context.mjs`의 실제 전달 경로, AGENTS·UPSTREAM·출처 해시, 설치기 소비 경로 |
-| [samkill-goodnotes-diary](https://github.com/safethecode/samkill-goodnotes-diary) | reference-decompose 사용 기록과 자체 PDF 조사·분해·제작·검수에 반영한 원칙 | `skills/samkill-goodnotes-design/`의 해당 본문/참고 기준, DESIGN·README·맥락 기록 |
+| [samkill-goodnotes-diary](https://github.com/safethecode/samkill-goodnotes-diary) | samkill-reference-decompose 사용 기록과 자체 PDF 조사·분해·제작·검수에 반영한 원칙 | `skills/samkill-goodnotes-design/`의 해당 본문/참고 기준, DESIGN·README·맥락 기록 |
 
 프로젝트는 각각 별도 저장소다. 개인 설치본과 저장소 원본, 과거 실험 산출물을 구별한다. 찾을 수 없는 프로젝트는 접근 가능 여부를 확인하고 남은 일로 기록한다. 수정 권한을 푸시·배포·새 설치 권한으로 확대하지 않는다.
 
@@ -105,3 +105,8 @@ Goodnotes의 첫 푸시는 원격2353cf4에15개 선행 커밋이 있어 거절�
 원본 설명 변경은 `54879dcc869eacccb22a68b79d397e6c32f88c99`이며 SKILL.md의 description8개와 분해 UI 메타데이터를 한국어로 제공한다. 이름·본문·정책·판독기는 보존했다. Qwen은8개 guide 헤더와 분해 UI 메타데이터를 `75c193b4d3188ede080851d7cfd8f1f8d524dcf9`에, PDP는 분해/리뷰 헤더와 분해 UI 메타데이터를 `a4d36fb112ccb51b415cca9d0d02bf11db54210a`에 반영하고 각 원격 main 해시와 일치함을 확인했다. Goodnotes는 자체 PDF 절차에 원칙을 반영하는 관계이며 해당8개 설명 복사본과 바뀐 본문이 없어 이번 언어 변경의 수정 대상이 없다.
 
 원본8개/PDP2개 스킬 형식,8개 frontmatter·UI YAML·본문/이름 불변·개인 심볼릭 링크, Qwen8개 가공 헤더/본문 불변·복사한 UI 바이트, 새 문서 링크와 세 저장소 공백을 검사했다. 기존 사용자 작업·DS_Store·PDP 원래 main과 수집 HTML은 보존했다. 새 sparse worktree에서 PDP 메타데이터만 반영했으며 상품 생성·전체 suite·Qwen 추론·현재 앱의 실제 스킬 선택 UI/캐시 갱신은 미검증이다. [검증](../evals/results/korean-skill-descriptions-2026-11-11.json)·[실제 원격 해시](../evals/results/korean-skill-descriptions-2026-11-11-push.json).
+
+
+## 2026-11-11 Samkill 호출 namespace 동기화
+
+사용자가 영문 Samkill 표시 제목·한국어 설명·samkill- 호출 ID와 다른 스킬의 참조까지 갱신하도록 요청했다. [이름 대응](skill-namespace-migration.md)과 [검증](../evals/results/samkill-skill-namespace-2026-11-11.json)에 범위/실패/한계를 남긴다. Qwen 가공 guide와 실제 loader, PDP 부분 복사본/의존 lock·전용 진입점, Goodnotes 호출을 반영한다. 별도 화면설계서 기술 참조와 개인 PDP 호출도 포함하며 제품별 내용·과거 증거·설치 범위를 보존한다. 원본 구현 커밋을 확정한 뒤 각 대상의 현재 반영 기록과 해시를 연결한다. 이 기록은 커밋 전 상태이며 실제 원격 결과는 후속 receipt로 구별한다.

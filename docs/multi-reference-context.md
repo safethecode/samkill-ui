@@ -10,7 +10,7 @@
 
 Todo 목록/완료, 대화 입력/결과, 모바일 화면 전환을 각각 조사한다. 실제로 필요한 분기의 자료가 없으면 추가 호출과 페이지 탐색을 진행한다. 이미 적합한 자료가 있으면 확인해서 재사용하되 과거에 앱 이름을 적었다는 사실만으로 충분하다고 하지 않는다. 반환 결과가 많아도 핵심 분기가 비어 있으면 조사 완료가 아니다. 접근 제한을 우회하거나 소진된 검색을 무한 반복하지 않는다.
 
-[검색 계획](../skills/uibowl-research/references/research-plan.md)에 누적 표와 종료 기준을, [검색 예시](../skills/uibowl-research/references/search-examples.md)에 Todo와 채팅의 별도 호출을 넣었다. RUI-18로 분기 누락·누적 유실·마지막 출처만 적용하는 실패를 추가했다.
+[검색 계획](../skills/samkill-uibowl-research/references/research-plan.md)에 누적 표와 종료 기준을, [검색 예시](../skills/samkill-uibowl-research/references/search-examples.md)에 Todo와 채팅의 별도 호출을 넣었다. RUI-18로 분기 누락·누적 유실·마지막 출처만 적용하는 실패를 추가했다.
 
 ## 실제 MCP 확인 범위
 

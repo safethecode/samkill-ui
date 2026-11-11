@@ -6,9 +6,9 @@
 
 사용자가 지정한 공통 배경 제약은 예외 없이 기본 화면의 순백색 `#FFFFFF`다. 다크모드는 명시 요청 때만 적용한다. 오프화이트·크림·연회색·브랜드 틴트·어두운 레퍼런스·기기 설정은 대체 근거가 아니다. 내부 요소의 기능색·사진을 보존하되 넓은 표면으로 기본 배경을 우회하지 않는다. 이 요구는 제품별 Primary를 고정하는 팔레트 프리셋과 구별한다.
 
-사용자의 과제와 요소의 필요성·관계·적용 범위·판단 순서에 따라 배치와 강조를 정한다. [제품 판단 기준](skills/reference-to-ui/references/product-reasoning.md)과 [기본 작업 지침](AGENTS.md)을 적용한다.
+사용자의 과제와 요소의 필요성·관계·적용 범위·판단 순서에 따라 배치와 강조를 정한다. [제품 판단 기준](skills/samkill-reference-to-ui/references/product-reasoning.md)과 [기본 작업 지침](AGENTS.md)을 적용한다.
 
-현재 패키지 기준의 진입점으로 작성했다. 각 제품 레포는 [design-md](skills/design-md/SKILL.md)로 분석한 별도 DESIGN.md를 유지한다. 이 레포에는 제품 팔레트·글자 체계·반경 스케일이 없으므로 해당 섹션과 YAML 토큰은 생략한다. 실제 제품 UI 검증을 뜻하지 않는다.
+현재 패키지 기준의 진입점으로 작성했다. 각 제품 레포는 [samkill-design-md](skills/samkill-design-md/SKILL.md)로 분석한 별도 DESIGN.md를 유지한다. 이 레포에는 제품 팔레트·글자 체계·반경 스케일이 없으므로 해당 섹션과 YAML 토큰은 생략한다. 실제 제품 UI 검증을 뜻하지 않는다.
 
 ## Layout
 
@@ -16,34 +16,34 @@
 
 통합 진입에서 해당하는 모든 분기의 실제 SKILL.md와 필수 참고 기준을 읽고 적용한다. 설계·구현·핵심 화면 확장·최종 전달 시점의 산출물과 검증 근거로 누락을 확인하며, 스킬 이름 나열이나 파일 읽기만으로 적용 완료를 판단하지 않는다.
 
-레퍼런스 기반 UI 작업은 `uibowl-research → reference-decompose → reference-to-ui → reference-review` 순서다. 조사 결과를 확인한 뒤 [reference-decompose](skills/reference-decompose/SKILL.md)로 관찰을 요소·관계·조립 언어로 번역하고, 그다음 제품에 적용한다. 기존 자료는 각 단계에서 확인해 재사용하며 구현을 먼저 시작하지 않는다. 프롬프트 재현 실험의 사례별 값과 사용자 교정은 [별도 실험 기준](design/reference-language/DESIGN.md)에 둔다.
+레퍼런스 기반 UI 작업은 `samkill-uibowl-research → samkill-reference-decompose → samkill-reference-to-ui → samkill-reference-review` 순서다. 조사 결과를 확인한 뒤 [samkill-reference-decompose](skills/samkill-reference-decompose/SKILL.md)로 관찰을 요소·관계·조립 언어로 번역하고, 그다음 제품에 적용한다. 기존 자료는 각 단계에서 확인해 재사용하며 구현을 먼저 시작하지 않는다. 프롬프트 재현 실험의 사례별 값과 사용자 교정은 [별도 실험 기준](design/reference-language/DESIGN.md)에 둔다.
 
-[수치 인계와 원본 비교](skills/reference-review/references/reference-evidence.md)를 실제 실행 검사에 연결한다. 핵심 치수·비율·단위·근거를 확인한 prepare READY 후 구현하고, RUI-16/17은 원본→계약→결과의 수치와 전체 시각 판독을 함께 검증한다. READY나 숫자 일치가 디자인 품질 승인은 아니다. 원본 관찰은 제약 적용 전에 보존하며 기본 배경·장식 기준 때문에 모든 내부 표현을 초기화하지 않는다.
+[수치 인계와 원본 비교](skills/samkill-reference-review/references/reference-evidence.md)를 실제 실행 검사에 연결한다. 핵심 치수·비율·단위·근거를 확인한 prepare READY 후 구현하고, RUI-16/17은 원본→계약→결과의 수치와 전체 시각 판독을 함께 검증한다. READY나 숫자 일치가 디자인 품질 승인은 아니다. 원본 관찰은 제약 적용 전에 보존하며 기본 배경·장식 기준 때문에 모든 내부 표현을 초기화하지 않는다.
 
-분해의 관리 원본은 [확장 JSON과 전체 raw](skills/reference-decompose/references/decomposition-json.md)다. 좌표계·요소·HEX/투명도·레이아웃 관계·상태·제품별 확장을 보존하고 구현 담당의 해석, 핵심 화면의 첫 비교, 최종 처리 기록까지 연결한다. 색/배치의 실측·추정·미확인을 구별하고 구조 검사로 실제 이해·미관을 승인하지 않는다.
+분해의 관리 원본은 [확장 JSON과 전체 raw](skills/samkill-reference-decompose/references/decomposition-json.md)다. 좌표계·요소·HEX/투명도·레이아웃 관계·상태·제품별 확장을 보존하고 구현 담당의 해석, 핵심 화면의 첫 비교, 최종 처리 기록까지 연결한다. 색/배치의 실측·추정·미확인을 구별하고 구조 검사로 실제 이해·미관을 승인하지 않는다.
 
-[요소 구성](skills/reference-to-ui/references/ui-composition.md), [토큰과 패딩 소유권](skills/reference-to-ui/references/design-tokens.md), [레퍼런스 결합](skills/reference-to-ui/references/reference-synthesis.md)을 적용한다. 공통 역할은 일관되게 연결하며 묶기·분리·이동·삭제는 사용자의 과제와 요소 관계로 판단한다.
+[요소 구성](skills/samkill-reference-to-ui/references/ui-composition.md), [토큰과 패딩 소유권](skills/samkill-reference-to-ui/references/design-tokens.md), [레퍼런스 결합](skills/samkill-reference-to-ui/references/reference-synthesis.md)을 적용한다. 공통 역할은 일관되게 연결하며 묶기·분리·이동·삭제는 사용자의 과제와 요소 관계로 판단한다.
 
-간격 설계·수정·리듬 점검은 [Spacing Audit](skills/reference-to-ui/references/spacing-audit.md)으로 구조8단위·촘촘한 내부4단위를 중심으로 판단한다. 내부20은 제공 기준의 허용값, 구조20/28 등은 검토 의견이다. 기존 변수/토큰·광학 보정·가변 배치는 보존하고 수정 전 전체 요약과 실제 전후 검증을 남긴다. 이 기준으로 기존 제품·Round 데모의 토큰을 일괄 변경하지 않는다.
+간격 설계·수정·리듬 점검은 [Spacing Audit](skills/samkill-reference-to-ui/references/spacing-audit.md)으로 구조8단위·촘촘한 내부4단위를 중심으로 판단한다. 내부20은 제공 기준의 허용값, 구조20/28 등은 검토 의견이다. 기존 변수/토큰·광학 보정·가변 배치는 보존하고 수정 전 전체 요약과 실제 전후 검증을 남긴다. 이 기준으로 기존 제품·Round 데모의 토큰을 일괄 변경하지 않는다.
 
-형식 미지정 UI 디자인은 수정·렌더 가능한 화면을 기본으로 한다. [핵심 화면의 첫 비교](skills/reference-to-ui/references/reference-synthesis.md#핵심-화면의-첫-비교)에서 원본의 구조·위계·밀도를 확인하고 핵심 퇴보를 수정한 뒤 의존 화면으로 확장한다. 명시된 이미지 시안·명세·읽기 전용 범위는 유지한다.
+형식 미지정 UI 디자인은 수정·렌더 가능한 화면을 기본으로 한다. [핵심 화면의 첫 비교](skills/samkill-reference-to-ui/references/reference-synthesis.md#핵심-화면의-첫-비교)에서 원본의 구조·위계·밀도를 확인하고 핵심 퇴보를 수정한 뒤 의존 화면으로 확장한다. 명시된 이미지 시안·명세·읽기 전용 범위는 유지한다.
 
 ## Components
 
 
-아이콘은 [표시·슬롯·조작 영역 계약](skills/reference-to-ui/references/icon-controls.md), 레이아웃은 [전환 조건·읽기 순서](skills/reference-to-ui/references/ui-composition.md#레이아웃의-전환-조건과-읽기-순서)를 연결한다. 아이콘의 선행/후행은 역할·관례·명시 요구로 정하고 터치 영역과 그림 크기를 구별한다.
+아이콘은 [표시·슬롯·조작 영역 계약](skills/samkill-reference-to-ui/references/icon-controls.md), 레이아웃은 [전환 조건·읽기 순서](skills/samkill-reference-to-ui/references/ui-composition.md#레이아웃의-전환-조건과-읽기-순서)를 연결한다. 아이콘의 선행/후행은 역할·관례·명시 요구로 정하고 터치 영역과 그림 크기를 구별한다.
 
-제품별 관찰과 선택에서 토큰·상태·사용처를 연결한다. [UX 문구](skills/ux-copy/SKILL.md), [모바일](skills/reference-to-ui/references/mobile.md), 토큰 계약의 모션·경계·포커스 기준을 관련 작업에 적용한다. 정지 이미지로 상호작용을 검증하지 않는다. 입력의 실제 초점은 input/textarea에 유지하고 시각적 포커스는 필드 컨테이너의 inset box-shadow로 표현한다. border 변경이나 내부 입력 링으로 대체하지 않으며 고대비 대체 표시는 보존한다.
+제품별 관찰과 선택에서 토큰·상태·사용처를 연결한다. [UX 문구](skills/samkill-ux-copy/SKILL.md), [모바일](skills/samkill-reference-to-ui/references/mobile.md), 토큰 계약의 모션·경계·포커스 기준을 관련 작업에 적용한다. 정지 이미지로 상호작용을 검증하지 않는다. 입력의 실제 초점은 input/textarea에 유지하고 시각적 포커스는 필드 컨테이너의 inset box-shadow로 표현한다. border 변경이나 내부 입력 링으로 대체하지 않으며 고대비 대체 표시는 보존한다.
 
-새 Primary 선택과 색 적합성·강조 교정에는 [색 선택 기준](skills/reference-to-ui/references/primary-color.md)을 적용한다. 기존 브랜드·명시 색을 보존하고 제품 내용과 레퍼런스의 색상·명도·채도·표면·면적 관계를 실제 화면에서 확인한다. 익숙한 색·업종별 고정관념·토큰 예시를 자동 채택하지 않으며 특정 팔레트를 공통 정답으로 배포하지 않는다.
+새 Primary 선택과 색 적합성·강조 교정에는 [색 선택 기준](skills/samkill-reference-to-ui/references/primary-color.md)을 적용한다. 기존 브랜드·명시 색을 보존하고 제품 내용과 레퍼런스의 색상·명도·채도·표면·면적 관계를 실제 화면에서 확인한다. 익숙한 색·업종별 고정관념·토큰 예시를 자동 채택하지 않으며 특정 팔레트를 공통 정답으로 배포하지 않는다.
 
 팔레트는 브랜드 가치·구별할 대상과 기본/주요/보조/강조 역할을 연결해 흰 바탕에서 구성한다. 단색·유사색·보색과 60-30-10 초기 비중을 과제에 맞게 검토하고, 주요색을 별도 강조색으로도 사용할 수 있다. 배색 비율 때문에 기본 바탕을 칠하거나 필요 없는 보조색을 추가하지 않는다.
 
 ## Do's and Don'ts
 
-읽는 UI 텍스트 굵기는 최소 medium(500)으로 정한다. 모든 텍스트를 500으로 통일하지 않으며 제목·강조의 semibold/bold를 유지한다. 적용 범위와 상태별 검증은 [글자 굵기 하한](skills/reference-to-ui/references/ui-composition.md#글자-굵기-하한)을 따른다.
+읽는 UI 텍스트 굵기는 최소 medium(500)으로 정한다. 모든 텍스트를 500으로 통일하지 않으며 제목·강조의 semibold/bold를 유지한다. 적용 범위와 상태별 검증은 [글자 굵기 하한](skills/samkill-reference-to-ui/references/ui-composition.md#글자-굵기-하한)을 따른다.
 
-[실패 목록](skills/reference-review/references/failure-catalog.json)과 [리뷰 기준](skills/reference-review/references/review-criteria.md)을 적용한다. [맥락과 교정 이력](docs/session-context.md), [평가 사례](evals/cases.md)는 보존한다. 금지 목록 통과나 외형 일부 복제로 품질을 확정하지 않는다.
+[실패 목록](skills/samkill-reference-review/references/failure-catalog.json)과 [리뷰 기준](skills/samkill-reference-review/references/review-criteria.md)을 적용한다. [맥락과 교정 이력](docs/session-context.md), [평가 사례](evals/cases.md)는 보존한다. 금지 목록 통과나 외형 일부 복제로 품질을 확정하지 않는다.
 
 읽는 글자 기본14 CSS px와 검증된 보조정보의 제한적12px 예외, 임의 로고/아이콘 제작 방지 등 명시된 사용자 기준을 유지한다. 제품 색·배치·타이포그래피는 해당 제품 근거에서 정한다. 미실행 lint·렌더·행동 검증을 통과했다고 하지 않는다.
 
@@ -51,9 +51,9 @@
 
 ## 사용자 교정의 재사용
 
-[외부 스킬 분석과 적용 결정](docs/external-skills-analysis.md)에 Jakub 중심의 보완과 Yetone 탐지 신호의 채택/배제 범위를 기록한다. 현재 제품 기준에 따라 [타이포그래피](skills/reference-to-ui/references/typography.md), [내용·상태 검증](skills/reference-review/references/state-stress.md), [변경 리뷰](skills/reference-review/references/change-review.md), [탐지 판독](skills/reference-review/references/deslop-triage.md)을 사용한다. 외부 스타일 프리셋이나 검사 축소 절차를 루트 기준으로 가져오지 않는다.
+[외부 스킬 분석과 적용 결정](docs/external-skills-analysis.md)에 Jakub 중심의 보완과 Yetone 탐지 신호의 채택/배제 범위를 기록한다. 현재 제품 기준에 따라 [타이포그래피](skills/samkill-reference-to-ui/references/typography.md), [내용·상태 검증](skills/samkill-reference-review/references/state-stress.md), [변경 리뷰](skills/samkill-reference-review/references/change-review.md), [탐지 판독](skills/samkill-reference-review/references/deslop-triage.md)을 사용한다. 외부 스타일 프리셋이나 검사 축소 절차를 루트 기준으로 가져오지 않는다.
 
-사용자 교정이 누적된 화면과 관련 패턴 확장에는 [재발 점검](skills/reference-review/references/feedback-regression.md)을 적용한다. 요구→원인→현재 기준→적용처→검증/미완료를 연결하며 사례의 고정값을 공통 프리셋으로 만들지 않는다. Round4부터 P12까지의 [피드백별 대응표](evals/results/round4-feedback-coverage.md)는 누락 점검 근거이며 다른 앱의 구현 계약을 대신하지 않는다.
+사용자 교정이 누적된 화면과 관련 패턴 확장에는 [재발 점검](skills/samkill-reference-review/references/feedback-regression.md)을 적용한다. 요구→원인→현재 기준→적용처→검증/미완료를 연결하며 사례의 고정값을 공통 프리셋으로 만들지 않는다. Round4부터 P12까지의 [피드백별 대응표](evals/results/round4-feedback-coverage.md)는 누락 점검 근거이며 다른 앱의 구현 계약을 대신하지 않는다.
 
 ## Round8 냉장고 재료 앱
 
@@ -67,7 +67,7 @@ Round8의 반복 교정은 [평가 기록](evals/results/round8-feedback.md)에 
 
 Round9은 사용자 요청에 따라 [랜딩 계약](design/reference-language/round-09/landing-contract.md)을 추가했다. 첫 진입은 서비스 소개와 실제 문서 예시이며 작성 도구는 workspace.html로 분리한다. 기존 밝은 문서 표면과 파랑 행동색을 유지하되 소개 화면의 제목 위계와 여백은 편집 도구와 구별한다.
 
-Round8·9의 [종합 학습](evals/results/round8-9-learning.md)은 아이콘·표면·행동 대상·실제 진입·랜딩 마무리를 함께 다룬다. 랜딩은 [적용 계약](skills/reference-to-ui/references/application-format.md)의 영역·목적지로 전체 구성을 확인하며, 고정 간격이나 다열 푸터를 모든 제품에 전파하지 않는다.
+Round8·9의 [종합 학습](evals/results/round8-9-learning.md)은 아이콘·표면·행동 대상·실제 진입·랜딩 마무리를 함께 다룬다. 랜딩은 [적용 계약](skills/samkill-reference-to-ui/references/application-format.md)의 영역·목적지로 전체 구성을 확인하며, 고정 간격이나 다열 푸터를 모든 제품에 전파하지 않는다.
 
 ## Round10 모바일 청첩장
 

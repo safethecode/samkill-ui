@@ -7,12 +7,12 @@
 | 스킬 | 호출 예시 | 결과 |
 |---|---|---|
 | `samkill-ui` | `$samkill-ui 이 레퍼런스로 가입 화면을 만들어줘` | 요청에 맞는 스킬 선택부터 실제 작업·검증까지 연결 |
-| `uibowl-research` | `$uibowl-research 한국 커머스 결제 바텀시트 레퍼런스를 분석해줘` | 출처, 실제 관찰, 후보별 채택·배제, 미확인 사항 |
-| `design-md` | `$design-md 기존 UI와 레퍼런스를 분석해 루트 DESIGN.md를 만들어줘` | 현재 디자인 기준, 토큰 연결, 판단 근거와 미확인 사항 |
-| `reference-to-ui` | `$reference-to-ui 이 레퍼런스로 주문 관리 화면을 구현해줘. 우리 보라색 브랜드는 유지해` | 적용 계약, 코드, 검증 결과 |
-| `reference-review` | `$reference-review 구현 화면을 레퍼런스와 비교하고 중요한 차이를 고쳐줘` | 근거별 차이, 수정 우선순위, 재검증 |
-| `ux-copy` | `$ux-copy 이 결제 실패 화면의 문구와 노출 조건을 정리해줘` | 문자열 ID, 문구, 사실·행동 계약, 검증 |
-| `onboarding-flow` | `$onboarding-flow 이 레퍼런스로 이메일 가입 흐름과 실패 복구를 설계해줘` | 관찰/제안 구분, 상태·전이 표, 검증 경로 |
+| `samkill-uibowl-research` | `$samkill-uibowl-research 한국 커머스 결제 바텀시트 레퍼런스를 분석해줘` | 출처, 실제 관찰, 후보별 채택·배제, 미확인 사항 |
+| `samkill-design-md` | `$samkill-design-md 기존 UI와 레퍼런스를 분석해 루트 DESIGN.md를 만들어줘` | 현재 디자인 기준, 토큰 연결, 판단 근거와 미확인 사항 |
+| `samkill-reference-to-ui` | `$samkill-reference-to-ui 이 레퍼런스로 주문 관리 화면을 구현해줘. 우리 보라색 브랜드는 유지해` | 적용 계약, 코드, 검증 결과 |
+| `samkill-reference-review` | `$samkill-reference-review 구현 화면을 레퍼런스와 비교하고 중요한 차이를 고쳐줘` | 근거별 차이, 수정 우선순위, 재검증 |
+| `samkill-ux-copy` | `$samkill-ux-copy 이 결제 실패 화면의 문구와 노출 조건을 정리해줘` | 문자열 ID, 문구, 사실·행동 계약, 검증 |
+| `samkill-onboarding-flow` | `$samkill-onboarding-flow 이 레퍼런스로 이메일 가입 흐름과 실패 복구를 설계해줘` | 관찰/제안 구분, 상태·전이 표, 검증 경로 |
 
 ## 작업 연결
 
@@ -22,11 +22,11 @@
 
 통합 호출에서는 해당하는 모든 스킬의 본문과 필수 참고 기준을 단계별로 읽고, 실제 적용·검증 근거를 확인해요. 원본 분해·구현 계약·핵심 화면 비교·최종 게이트 중 필요한 단계를 빠뜨렸다면 완료로 보고하지 않아요. 기존 분석을 재사용할 때도 적용 기준을 확인해요.
 
-레퍼런스 기반 UI 작업은 `uibowl-research → reference-decompose → reference-to-ui → reference-review` 순서로 진행해요. 충분한 자료는 각 단계에서 적합성을 확인해 재사용해요. 문구·온보딩 스킬은 해당 과제가 있을 때만 사용해요. 작업에 필요한 스킬만 읽어요. 루트 `DESIGN.md`가 있으면 먼저 반영하고, 없으면 `design-md`가 분석해 작성해요.
+레퍼런스 기반 UI 작업은 `samkill-uibowl-research → samkill-reference-decompose → samkill-reference-to-ui → samkill-reference-review` 순서로 진행해요. 충분한 자료는 각 단계에서 적합성을 확인해 재사용해요. 문구·온보딩 스킬은 해당 과제가 있을 때만 사용해요. 작업에 필요한 스킬만 읽어요. 루트 `DESIGN.md`가 있으면 먼저 반영하고, 없으면 `samkill-design-md`가 분석해 작성해요.
 
 공통 기준을 바꾸면 PDP·Qwen·Goodnotes 프로젝트의 관련 호출·복사본·적용 원칙도 함께 확인해요. 대상과 반영 범위는 [종속 프로젝트 동기화](docs/downstream-sync.md)에서 관리해요.
 
-분해는 [확장 가능한 JSON과 전체 원문](skills/reference-decompose/references/decomposition-json.md)으로 전달해요. 좌표·HEX 색·요소 관계를 근거와 연결하고, 받은 쪽의 해석 → 핵심 화면 비교 → 최종 처리 기록을 확인해요. [합성 예제](skills/reference-decompose/references/json-example/decomposition.json)는 실제 파일로 검사할 수 있어요.
+분해는 [확장 가능한 JSON과 전체 원문](skills/samkill-reference-decompose/references/decomposition-json.md)으로 전달해요. 좌표·HEX 색·요소 관계를 근거와 연결하고, 받은 쪽의 해석 → 핵심 화면 비교 → 최종 처리 기록을 확인해요. [합성 예제](skills/samkill-reference-decompose/references/json-example/decomposition.json)는 실제 파일로 검사할 수 있어요.
 
 프로젝트에 기존 문서 위치가 있으면 그 위치를 써요. 없으면 아래 결과물을 필요한 것만 만들어요.
 
@@ -52,19 +52,19 @@ design/
 - 정지 화면에서 hover, fixed, 스와이프, 다음 단계를 확인했다고 하지 않아요.
 - 관찰값과 추정값, 새로 정한 구현값을 구분해요.
 - 실제 렌더와 동작을 확인해요. 빌드 통과를 시각 검증 통과로 쓰지 않아요.
-- 한국어 문구는 사용자가 제공한 토스의 8가지 원칙을 적용해요. 번역투·중복 설명을 줄이고, 누른 직후의 행동·비용·선택권을 명확하게 써요. [한국어 글쓰기 기준](skills/ux-copy/references/korean-writing.md)에 전후 예시가 있어요.
-- 세부 UI 분석에서는 [컴포넌트 상세 분석](skills/uibowl-research/references/component-anatomy.md)으로 상하좌우 여백·간격·글자·버튼 배경/글자/아이콘 색·아이콘 선과 채움까지 기록해요. 이미지 픽셀과 CSS 단위, 관찰과 추정은 구분해요.
-- 디자인과 구현에 [토큰 계약](skills/reference-to-ui/references/design-tokens.md)을 적용해요. 기존 토큰을 재사용하고 기본값·역할·필요한 컴포넌트 변형을 연결해요. 실제 사용처와 상태별 색 조합까지 확인하며, 직접값 예외는 이유를 남겨요.
+- 한국어 문구는 사용자가 제공한 토스의 8가지 원칙을 적용해요. 번역투·중복 설명을 줄이고, 누른 직후의 행동·비용·선택권을 명확하게 써요. [한국어 글쓰기 기준](skills/samkill-ux-copy/references/korean-writing.md)에 전후 예시가 있어요.
+- 세부 UI 분석에서는 [컴포넌트 상세 분석](skills/samkill-uibowl-research/references/component-anatomy.md)으로 상하좌우 여백·간격·글자·버튼 배경/글자/아이콘 색·아이콘 선과 채움까지 기록해요. 이미지 픽셀과 CSS 단위, 관찰과 추정은 구분해요.
+- 디자인과 구현에 [토큰 계약](skills/samkill-reference-to-ui/references/design-tokens.md)을 적용해요. 기존 토큰을 재사용하고 기본값·역할·필요한 컴포넌트 변형을 연결해요. 실제 사용처와 상태별 색 조합까지 확인하며, 직접값 예외는 이유를 남겨요.
 
-- [제품의 본질에서 배치하기](skills/reference-to-ui/references/product-reasoning.md)를 먼저 적용해요. Douglas 자료의 고객 문제·가치 관점을 사용자 행동과 각 요소의 배치 이유로 연결해요.
-- 생성 코드에는 [anti-slop 기준](skills/reference-to-ui/references/anti-slop-code.md)을 적용해요. TS/JS 검사와 다른 언어의 검증을 구분해요.
-- [디자인 게이트](skills/reference-review/references/design-gate.md)는 orc 원본 50개와 추가 기준 25개, 프로젝트별 제외 항목을 검사해요. 실패를 일반론으로 해제하지 않고 예외와 과거 결과를 보존해요. 스크립트는 판독 기록과 증거를 검사하므로 실제 화면 비교도 필요해요.
+- [제품의 본질에서 배치하기](skills/samkill-reference-to-ui/references/product-reasoning.md)를 먼저 적용해요. Douglas 자료의 고객 문제·가치 관점을 사용자 행동과 각 요소의 배치 이유로 연결해요.
+- 생성 코드에는 [anti-slop 기준](skills/samkill-reference-to-ui/references/anti-slop-code.md)을 적용해요. TS/JS 검사와 다른 언어의 검증을 구분해요.
+- [디자인 게이트](skills/samkill-reference-review/references/design-gate.md)는 orc 원본 50개와 추가 기준 25개, 프로젝트별 제외 항목을 검사해요. 실패를 일반론으로 해제하지 않고 예외와 과거 결과를 보존해요. 스크립트는 판독 기록과 증거를 검사하므로 실제 화면 비교도 필요해요.
 
-- [UI 구성 기준](skills/reference-to-ui/references/ui-composition.md)은 Todo 실사용 피드백을 반영해요. 임의 로고 금지, 글자 14px 하한, CTA/필터 구분, 불필요한 문구·구분선·스크롤 제거, 목록과 대화의 화면 분리를 다뤄요.
+- [UI 구성 기준](skills/samkill-reference-to-ui/references/ui-composition.md)은 Todo 실사용 피드백을 반영해요. 임의 로고 금지, 글자 14px 하한, CTA/필터 구분, 불필요한 문구·구분선·스크롤 제거, 목록과 대화의 화면 분리를 다뤄요.
 
-- [레퍼런스 결합 품질](skills/reference-to-ui/references/reference-synthesis.md)은 채택한 장점이 실제 구현에 남았는지 나란히 비교해요. 제외 항목을 지킨 것과 원본에 견줄 만한 품질을 별도로 판단해요.
+- [레퍼런스 결합 품질](skills/samkill-reference-to-ui/references/reference-synthesis.md)은 채택한 장점이 실제 구현에 남았는지 나란히 비교해요. 제외 항목을 지킨 것과 원본에 견줄 만한 품질을 별도로 판단해요.
 
-- [여러 검색의 누적](skills/uibowl-research/references/research-plan.md): Todo와 채팅처럼 다른 과제는 각각 조사하고, 추가 페이지·후보·구현 적용을 누적해요. 모바일 탭도 별도 레퍼런스로 검토해요.
+- [여러 검색의 누적](skills/samkill-uibowl-research/references/research-plan.md): Todo와 채팅처럼 다른 과제는 각각 조사하고, 추가 페이지·후보·구현 적용을 누적해요. 모바일 탭도 별도 레퍼런스로 검토해요.
 
 ## 위치와 사용
 
@@ -80,4 +80,4 @@ UIbowl MCP 인증과 연결은 실행 환경에서 제공해야 해요. 이 패�
 
 ## 레퍼런스 언어 번역 실험
 
-[reference-decompose](skills/reference-decompose/SKILL.md)는 설계용 원본을 확보한 직후 요소·관계·조립 조건으로 번역하는 스킬이다. 사용자가 재현 실험을 요청하면 요소별 프롬프트와 실제 구현을 비교하고 교정을 쌓는다. [첫 실험](design/reference-language/round-01/index.html)은 셀레트립 일정 편집 화면이며 사용자가 재현 품질을 확인했다. [두번째 디맨드 실험](design/reference-language/round-02/index.html)에서는 멘토 검색의 카드·배지·상태 관계를 검증한다.
+[samkill-reference-decompose](skills/samkill-reference-decompose/SKILL.md)는 설계용 원본을 확보한 직후 요소·관계·조립 조건으로 번역하는 스킬이다. 사용자가 재현 실험을 요청하면 요소별 프롬프트와 실제 구현을 비교하고 교정을 쌓는다. [첫 실험](design/reference-language/round-01/index.html)은 셀레트립 일정 편집 화면이며 사용자가 재현 품질을 확인했다. [두번째 디맨드 실험](design/reference-language/round-02/index.html)에서는 멘토 검색의 카드·배지·상태 관계를 검증한다.

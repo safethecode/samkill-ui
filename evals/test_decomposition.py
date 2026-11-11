@@ -11,7 +11,7 @@ from reference_json_fixture import binding, decomposition_fixture, write
 
 
 SCRIPT = Path(os.environ.get("DESIGN_GATE_SCRIPT", str(
-    Path(__file__).resolve().parents[1] / "skills/reference-review/scripts/design_gate.py"))).with_name("reference_check.py")
+    Path(__file__).resolve().parents[1] / "skills/samkill-reference-review/scripts/design_gate.py"))).with_name("reference_check.py")
 
 
 class DecompositionTests(unittest.TestCase):

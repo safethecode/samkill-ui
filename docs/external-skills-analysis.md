@@ -14,21 +14,21 @@ Jakub의 상세 확인 범위는 `break/scenarios.md`, `interface-review/removed
 
 | 원본 스킬 | 기존 samkill과의 비교 | 반영 결정 |
 |---|---|---|
-| better-interface | samkill도 실제 증거와 사용자 영향을 보지만 공통 원인의 보고 단위가 덜 구체적 | [변경 리뷰](../skills/reference-review/references/change-review.md)에 원인 하나와 전체 사용처를 묶고 변경 귀속·제품 게이트를 구별 |
+| better-interface | samkill도 실제 증거와 사용자 영향을 보지만 공통 원인의 보고 단위가 덜 구체적 | [변경 리뷰](../skills/samkill-reference-review/references/change-review.md)에 원인 하나와 전체 사용처를 묶고 변경 귀속·제품 게이트를 구별 |
 | interface-review | 삭제된 접근성·상태 신호를 diff 양쪽에서 추적하는 절차가 유용 | 위 문서에 기준 ref, 변경 전후, 동등한 대체, 공유 토큰 영향 범위 추가 |
-| better-layout | 관계별 간격·패딩 소유권은 이미 강함 | 고정 배수 추가 없이 [상태 검증](../skills/reference-review/references/state-stress.md)에 형제 압축과 컨테이너/실제 viewport 차이 보완 |
-| better-typography | 글자 하한은 있으나 실제 폰트와 대체 폰트·변수 길이 검토가 분산됨 | [타이포그래피](../skills/reference-to-ui/references/typography.md)에 로딩·혼합문자·전체 값 접근·숫자 정렬 통합 |
-| better-colors | 토큰 정의→참조→사용처는 있음 | [토큰 계약](../skills/reference-to-ui/references/design-tokens.md)에 역할 오용, 합성 배경, 테마·사진별 대비 기록 추가 |
+| better-layout | 관계별 간격·패딩 소유권은 이미 강함 | 고정 배수 추가 없이 [상태 검증](../skills/samkill-reference-review/references/state-stress.md)에 형제 압축과 컨테이너/실제 viewport 차이 보완 |
+| better-typography | 글자 하한은 있으나 실제 폰트와 대체 폰트·변수 길이 검토가 분산됨 | [타이포그래피](../skills/samkill-reference-to-ui/references/typography.md)에 로딩·혼합문자·전체 값 접근·숫자 정렬 통합 |
+| better-colors | 토큰 정의→참조→사용처는 있음 | [토큰 계약](../skills/samkill-reference-to-ui/references/design-tokens.md)에 역할 오용, 합성 배경, 테마·사진별 대비 기록 추가 |
 | better-accessibility | 키보드·포커스·동작 줄이기는 있음 | 상태 검증에 오류 연결·알림의 수명·초점 복귀·입력 도구 호환을 구체화 |
 | better-ui | 모션 중단·광학 정렬 기준은 있음 | 토큰 계약에 반경 소유권과 스피너 중심·전환 중단 판독 보완. 고정 모션 프리셋은 채택하지 않음 |
-| better-writing | 토스 8원칙과 사실 보존은 유지할 강점 | [한국어 문구](../skills/ux-copy/references/korean-writing.md)에 켠 상태의 토글 문구, 완전한 번역 문자열, 반복 오류의 흐름 문제 구별 추가 |
-| explain-interface | 관찰/추정 구별은 있음 | [분해 스킬](../skills/reference-decompose/SKILL.md)에 실측/계산/가설과 겹친 레이어의 작동 설명 추가 |
-| variant | Q-ID 비교는 원본과 결과에 집중 | [결합 기준](../skills/reference-to-ui/references/reference-synthesis.md)에 필요할 때 한 판단 축으로 대안을 실맥락에서 비교 |
+| better-writing | 토스 8원칙과 사실 보존은 유지할 강점 | [한국어 문구](../skills/samkill-ux-copy/references/korean-writing.md)에 켠 상태의 토글 문구, 완전한 번역 문자열, 반복 오류의 흐름 문제 구별 추가 |
+| explain-interface | 관찰/추정 구별은 있음 | [분해 스킬](../skills/samkill-reference-decompose/SKILL.md)에 실측/계산/가설과 겹친 레이어의 작동 설명 추가 |
+| variant | Q-ID 비교는 원본과 결과에 집중 | [결합 기준](../skills/samkill-reference-to-ui/references/reference-synthesis.md)에 필요할 때 한 판단 축으로 대안을 실맥락에서 비교 |
 | break | 실제 사용자 실패 평가가 풍부하지만 재사용할 입력 축이 분산됨 | 상태 검증에 실제 컴포넌트·제품 데이터 경계에 따른 표본과 연속 전이 추가 |
 
 ## Yetone: 35개 신호를 적용하는 방법
 
-35개 항목을 새로운 필수 금지 목록으로 복제하지 않았다. 색/타이포/문구/컴포넌트/모션/구조/새 유행이라는 관찰 묶음으로 읽고 [장식·문구 탐지의 판독](../skills/reference-review/references/deslop-triage.md)에 적용 조건과 반례를 연결했다.
+35개 항목을 새로운 필수 금지 목록으로 복제하지 않았다. 색/타이포/문구/컴포넌트/모션/구조/새 유행이라는 관찰 묶음으로 읽고 [장식·문구 탐지의 판독](../skills/samkill-reference-review/references/deslop-triage.md)에 적용 조건과 반례를 연결했다.
 
 - 01–06 색·그라디언트: 기존 색 역할·실패 목록과 대조. 단색·중립색으로 일괄 변경하지 않는다.
 - 07–12 글자·강조: 정보 위계와 의미 없는 kicker/강조를 확인. 14px 하한을 어기는 예시값은 가져오지 않는다.
@@ -64,7 +64,7 @@ scanner는 문자열 위치를 찾는 도구다. CSS 토큰·런타임·이미�
 
 사용자가 아이콘/레이아웃 반영 여부를 확인한 뒤 추가 보완을 요청했다. 앞선 분석 범위에서 빠졌던 동일 revision의 `better-ui/icons.md`, `better-ui/icon-transitions.md`, `better-accessibility/hit-areas.md`, `better-layout/grouping-and-alignment.md`, `better-layout/spacing-and-adaptivity.md`를 전문 대조했다.
 
-[아이콘 영역 계약](../skills/reference-to-ui/references/icon-controls.md)을 추가해 실제 그림·슬롯·유효 클릭 영역·초점, 이웃 충돌/가림, stroke/상태/방향을 연결했다. [요소 구성](../skills/reference-to-ui/references/ui-composition.md#레이아웃의-전환-조건과-읽기-순서)에 컨테이너 전환·시각/DOM 순서·숨은 내용 단서를 보완했다. 기존 토큰 문서에 남아 있던 label→icon 기본 규칙은 최신 사용자 기준과 모순이므로 역할·관례 중심 기준을 참조하도록 수정했다. 앞선 독립 리뷰가 이 모순을 발견하지 못한 사실을 후속 평가에 보존한다.
+[아이콘 영역 계약](../skills/samkill-reference-to-ui/references/icon-controls.md)을 추가해 실제 그림·슬롯·유효 클릭 영역·초점, 이웃 충돌/가림, stroke/상태/방향을 연결했다. [요소 구성](../skills/samkill-reference-to-ui/references/ui-composition.md#레이아웃의-전환-조건과-읽기-순서)에 컨테이너 전환·시각/DOM 순서·숨은 내용 단서를 보완했다. 기존 토큰 문서에 남아 있던 label→icon 기본 규칙은 최신 사용자 기준과 모순이므로 역할·관례 중심 기준을 참조하도록 수정했다. 앞선 독립 리뷰가 이 모순을 발견하지 못한 사실을 후속 평가에 보존한다.
 
 그대로 채택하지 않은 상세 처방: 고정 stroke값/모든 상태의 fill, 모든 교체의 scale·blur, 세트의 grid와 다른 크기는 무조건 흐리다는 주장, 클릭 영역 충돌 시 무조건 축소, 그룹 간격2배·조작 간격12/24px, 무조건 늦게 접기·행동 개수로 메뉴화. 대신 실제 사용 크기·제품 데이터·이벤트 대상·읽기 순서로 검증한다. WCAG 최소 클릭 기준은 [W3C 원문](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html)에서 예외를 포함해 확인했다. 이 다섯 문서의 추가 분석을 upstream의 모든 보조 문서 분석 완료로 확대하지 않는다.
 

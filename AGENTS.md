@@ -12,48 +12,48 @@
 
 어떤 디자인이든 기본 화면 배경은 순백색 `#FFFFFF`로 적용한다. 다크모드는 사용자가 명시적으로 요청할 때만 적용한다. 오프화이트·크림·연회색·브랜드 틴트·어두운 레퍼런스·기기 테마로 대체하거나 자동 전환하지 않는다. 내부 컨트롤·사진·상태색과 기본 배경 역할을 구별하고 넓은 표면으로 요구를 우회하지 않는다. 기존 기준과 충돌하면 현재 요구를 우선하고 원래 관찰·변경 이유·범위를 보존한다.
 
-작업 시작 시 대상 레포 루트의 `DESIGN.md`를 읽고 관련 기준을 적용한다. 없으면 [design-md](skills/design-md/SKILL.md)로 기존 자료를 분석해 만든다. 기존 파일은 보존하며 현재 사용자 요구와 다른 부분은 이유·범위를 남겨 갱신한다. 읽기 전용 요청에서는 누락/변경안을 보고한다. UI가 없는 레포는 적용 범위를 설명하고 임의 팔레트나 폰트를 만들지 않는다.
+작업 시작 시 대상 레포 루트의 `DESIGN.md`를 읽고 관련 기준을 적용한다. 없으면 [samkill-design-md](skills/samkill-design-md/SKILL.md)로 기존 자료를 분석해 만든다. 기존 파일은 보존하며 현재 사용자 요구와 다른 부분은 이유·범위를 남겨 갱신한다. 읽기 전용 요청에서는 누락/변경안을 보고한다. UI가 없는 레포는 적용 범위를 설명하고 임의 팔레트나 폰트를 만들지 않는다.
 
 루트 문서는 현재 디자인 기준, 기존 계약·레퍼런스·실패 기록은 상세 근거로 연결한다. 실제 구현/토큰과 동기화하고 제품별 차이를 유지한다. 작업 대상 레포와 이 스킬 저장소를 혼동하지 않는다. 이 지침과 설치된 스킬을 사용하는 작업에 적용하며 다른 모든 세션의 전역 자동 로딩을 보장하는 설정은 아니다.
 
 ## 작업별 기본 행동
 
-- 설계·구현용 레퍼런스 확보 직후: [reference-decompose](skills/reference-decompose/SKILL.md)로 요소·관계·조립 계약을 먼저 작성한다. 재현 실험 요청에서는 프롬프트를 구현 전에 고정하고 요소별 표본/조립 화면을 비교한다. 사용자 교정을 수정 프롬프트·재검증과 함께 누적한다. 검색만 요청한 범위에 제작을 추가하지 않는다.
+- 설계·구현용 레퍼런스 확보 직후: [samkill-reference-decompose](skills/samkill-reference-decompose/SKILL.md)로 요소·관계·조립 계약을 먼저 작성한다. 재현 실험 요청에서는 프롬프트를 구현 전에 고정하고 요소별 표본/조립 화면을 비교한다. 사용자 교정을 수정 프롬프트·재검증과 함께 누적한다. 검색만 요청한 범위에 제작을 추가하지 않는다.
 
-- UI 설계·구현·토큰 변경: [reference-to-ui](skills/reference-to-ui/SKILL.md)를 읽는다. 사용자 문제, 핵심 행동, 필요한 정보를 먼저 정의하고 요소별 위치·크기·강조 이유를 연결한다. 기존 요구로 알 수 있는 내용을 반복해서 묻지 않는다.
-- 레퍼런스 조사·상세 분석: [uibowl-research](skills/uibowl-research/SKILL.md)를 읽는다. 실제 이미지 근거를 남기고 사방 패딩·간격·타이포그래피·버튼 배경과 글자/아이콘 색·아이콘 선/채움·상태를 분석한다. 이미지 px와 CSS px, 관찰·추정·새 결정을 구별한다.
-- UI 스타일: [토큰 계약](skills/reference-to-ui/references/design-tokens.md)을 따른다. 기존 토큰을 우선하고 정의 → 참조 → 실제 사용처를 확인한다. 직접값 예외와 이유를 기록한다.
-- 간격 설계·교정·리듬 감사: [Spacing Audit](skills/reference-to-ui/references/spacing-audit.md)을 따른다. 새 구조8단위·촘촘한 내부4단위를 중심으로 판단하고 기존 토큰/의도된 예외를 보존한다. 기존 값 수정 전 전체 요약을 보여주며 구조의8단위 검토 의견을 하드 오류로 바꾸지 않는다.
-- 생성·수정 코드: [anti-slop 기준](skills/reference-to-ui/references/anti-slop-code.md)을 따른다. TS/JS에는 해당 일반 규칙 검사와 lint/typecheck를 적용한다. 다른 언어는 그 언어에 맞는 검증을 수행하며 anti-slop 검사 통과로 보고하지 않는다. 규칙을 끄거나 타입 단언을 반복해 통과시키지 않는다.
-- 한국어 제품 문구: [ux-copy](skills/ux-copy/SKILL.md)를 읽는다. 토스의 8가지 원칙을 적용하고 번역투·불필요한 영어·중복 설명을 줄인다. 실제 행동, 비용, 조건, 가능성, 선택권을 보존한다.
-- 가입·첫 사용·동의·복구 흐름: [onboarding-flow](skills/onboarding-flow/SKILL.md)를 읽는다.
-- UI 검증·완료 판정: [reference-review](skills/reference-review/SKILL.md)와 [디자인 게이트](skills/reference-review/references/design-gate.md)를 따른다. 실제 화면과 행동을 확인한다. 빌드 통과를 시각 검증으로 대체하지 않는다.
+- UI 설계·구현·토큰 변경: [samkill-reference-to-ui](skills/samkill-reference-to-ui/SKILL.md)를 읽는다. 사용자 문제, 핵심 행동, 필요한 정보를 먼저 정의하고 요소별 위치·크기·강조 이유를 연결한다. 기존 요구로 알 수 있는 내용을 반복해서 묻지 않는다.
+- 레퍼런스 조사·상세 분석: [samkill-uibowl-research](skills/samkill-uibowl-research/SKILL.md)를 읽는다. 실제 이미지 근거를 남기고 사방 패딩·간격·타이포그래피·버튼 배경과 글자/아이콘 색·아이콘 선/채움·상태를 분석한다. 이미지 px와 CSS px, 관찰·추정·새 결정을 구별한다.
+- UI 스타일: [토큰 계약](skills/samkill-reference-to-ui/references/design-tokens.md)을 따른다. 기존 토큰을 우선하고 정의 → 참조 → 실제 사용처를 확인한다. 직접값 예외와 이유를 기록한다.
+- 간격 설계·교정·리듬 감사: [Spacing Audit](skills/samkill-reference-to-ui/references/spacing-audit.md)을 따른다. 새 구조8단위·촘촘한 내부4단위를 중심으로 판단하고 기존 토큰/의도된 예외를 보존한다. 기존 값 수정 전 전체 요약을 보여주며 구조의8단위 검토 의견을 하드 오류로 바꾸지 않는다.
+- 생성·수정 코드: [anti-slop 기준](skills/samkill-reference-to-ui/references/anti-slop-code.md)을 따른다. TS/JS에는 해당 일반 규칙 검사와 lint/typecheck를 적용한다. 다른 언어는 그 언어에 맞는 검증을 수행하며 anti-slop 검사 통과로 보고하지 않는다. 규칙을 끄거나 타입 단언을 반복해 통과시키지 않는다.
+- 한국어 제품 문구: [samkill-ux-copy](skills/samkill-ux-copy/SKILL.md)를 읽는다. 토스의 8가지 원칙을 적용하고 번역투·불필요한 영어·중복 설명을 줄인다. 실제 행동, 비용, 조건, 가능성, 선택권을 보존한다.
+- 가입·첫 사용·동의·복구 흐름: [samkill-onboarding-flow](skills/samkill-onboarding-flow/SKILL.md)를 읽는다.
+- UI 검증·완료 판정: [samkill-reference-review](skills/samkill-reference-review/SKILL.md)와 [디자인 게이트](skills/samkill-reference-review/references/design-gate.md)를 따른다. 실제 화면과 행동을 확인한다. 빌드 통과를 시각 검증으로 대체하지 않는다.
 
-UI 작업에서는 [요소 구성 기준](skills/reference-to-ui/references/ui-composition.md)을 기본 적용한다. 요청 없는 로고/슬로건을 만들지 않고 읽는 글자는 기본14 CSS px 이상으로 유지하고, 공간이 좁은 짧은 보조정보만 요소 구성 기준의 검증·범위기록을 거쳐 최소12px 예외를 허용한다. CTA와 필터를 구별하고 텍스트 전용 행동을 최소화한다. 아이콘이 있는 CTA의 순서는 실제 동작·읽기 순서·제품 관례·명시 요구로 정한다. 동작 식별 아이콘과 진행 방향 아이콘의 역할을 구별하며 한쪽 배치를 모든 CTA에 강제하지 않는다. 불필요한 힌트·장식 구분선·스크롤을 없앤다. 아이콘은 React에서 `lucide-react`, 비 React에서 공식 Lucide SVG/해당 환경 패키지를 기본으로 사용하고 임의 제작하지 않는다. 명시된 기존 시스템/브랜드로 다른 세트를 사용할 때는 근거를 남긴다. 라이브러리 출처와 별개로 실제 동작에 맞는 아이콘인지 확인하고, 예시 입력과 전송 등 다른 행동을 같은 아이콘으로 혼동시키지 않는다. 적절한 의미가 없거나 이미 조작이 명확하면 아이콘을 생략한다. 목록과 채팅이 공간을 경쟁하면 탭/뷰 분리를 검토한다. 판단 근거를 사후에 만들어 이전 실패를 정당화하지 않는다.
+UI 작업에서는 [요소 구성 기준](skills/samkill-reference-to-ui/references/ui-composition.md)을 기본 적용한다. 요청 없는 로고/슬로건을 만들지 않고 읽는 글자는 기본14 CSS px 이상으로 유지하고, 공간이 좁은 짧은 보조정보만 요소 구성 기준의 검증·범위기록을 거쳐 최소12px 예외를 허용한다. CTA와 필터를 구별하고 텍스트 전용 행동을 최소화한다. 아이콘이 있는 CTA의 순서는 실제 동작·읽기 순서·제품 관례·명시 요구로 정한다. 동작 식별 아이콘과 진행 방향 아이콘의 역할을 구별하며 한쪽 배치를 모든 CTA에 강제하지 않는다. 불필요한 힌트·장식 구분선·스크롤을 없앤다. 아이콘은 React에서 `lucide-react`, 비 React에서 공식 Lucide SVG/해당 환경 패키지를 기본으로 사용하고 임의 제작하지 않는다. 명시된 기존 시스템/브랜드로 다른 세트를 사용할 때는 근거를 남긴다. 라이브러리 출처와 별개로 실제 동작에 맞는 아이콘인지 확인하고, 예시 입력과 전송 등 다른 행동을 같은 아이콘으로 혼동시키지 않는다. 적절한 의미가 없거나 이미 조작이 명확하면 아이콘을 생략한다. 목록과 채팅이 공간을 경쟁하면 탭/뷰 분리를 검토한다. 판단 근거를 사후에 만들어 이전 실패를 정당화하지 않는다.
 
 필요한 스킬만 읽는다. 이미 충분한 자료가 있으면 재검색하지 않는다. 명세만 요청되면 `spec-only`로 전달하고 구현·시각·행동 게이트 통과를 주장하지 않는다.
 
-글자·폰트·잘림은 [타이포그래피](skills/reference-to-ui/references/typography.md), 폼·비동기 행동은 [내용 경계와 연속 상태](skills/reference-review/references/state-stress.md)를 관련 작업에서 적용한다. 변경 리뷰는 [변경 전후와 공통 원인](skills/reference-review/references/change-review.md)을 추적한다. 외부 AI 스타일 탐지 결과는 [판독 기준](skills/reference-review/references/deslop-triage.md)에 따라 실제 근거로 확인하며 탐지 건수나 기존 결함 분류로 제품 게이트를 대신하지 않는다.
+글자·폰트·잘림은 [타이포그래피](skills/samkill-reference-to-ui/references/typography.md), 폼·비동기 행동은 [내용 경계와 연속 상태](skills/samkill-reference-review/references/state-stress.md)를 관련 작업에서 적용한다. 변경 리뷰는 [변경 전후와 공통 원인](skills/samkill-reference-review/references/change-review.md)을 추적한다. 외부 AI 스타일 탐지 결과는 [판독 기준](skills/samkill-reference-review/references/deslop-triage.md)에 따라 실제 근거로 확인하며 탐지 건수나 기존 결함 분류로 제품 게이트를 대신하지 않는다.
 
-레퍼런스 작업에서는 [Q-ID별 결합·품질 비교](skills/reference-to-ui/references/reference-synthesis.md)를 적용한다. 가져올 구체 장점과 구현 요소를 연결하고 원본/결과를 나란히 검토한다. 기능이나 색 일부만 닮았다는 이유로 완료하지 않는다. 핵심 장점의 퇴보를 수정하고 전체 조합의 위계·밀도·일관성도 확인한다.
+레퍼런스 작업에서는 [Q-ID별 결합·품질 비교](skills/samkill-reference-to-ui/references/reference-synthesis.md)를 적용한다. 가져올 구체 장점과 구현 요소를 연결하고 원본/결과를 나란히 검토한다. 기능이나 색 일부만 닮았다는 이유로 완료하지 않는다. 핵심 장점의 퇴보를 수정하고 전체 조합의 위계·밀도·일관성도 확인한다.
 
-형식 미지정 UI 디자인은 수정·렌더 가능한 화면을 기본으로 하며, 여러 화면은 [핵심 화면의 첫 비교](skills/reference-to-ui/references/reference-synthesis.md#핵심-화면의-첫-비교) 후 의존 화면으로 확장한다. 이미지 시안·명세 전용·읽기 전용의 명시 범위는 보존한다. 수행 가능한 비교·수정을 일괄 미검증 처리로 대신하지 않는다.
+형식 미지정 UI 디자인은 수정·렌더 가능한 화면을 기본으로 하며, 여러 화면은 [핵심 화면의 첫 비교](skills/samkill-reference-to-ui/references/reference-synthesis.md#핵심-화면의-첫-비교) 후 의존 화면으로 확장한다. 이미지 시안·명세 전용·읽기 전용의 명시 범위는 보존한다. 수행 가능한 비교·수정을 일괄 미검증 처리로 대신하지 않는다.
 
-복합 제품에서는 [검색 계획과 누적](skills/uibowl-research/references/research-plan.md)으로 핵심/보조 과제를 나누고 필요한 MCP 호출·추가 페이지를 이어간다. 최신 키워드만 조사하지 않는다. 분기별 출처와 구현 적용을 누적하고 빈 분기를 완료로 바꾸지 않는다. 모바일 탭은 [모바일 기준](skills/reference-to-ui/references/mobile.md)에 따라 큰 CTA와 구별하고 바 높이·선택 표시·아이콘/라벨·안전 영역을 검증한다.
+복합 제품에서는 [검색 계획과 누적](skills/samkill-uibowl-research/references/research-plan.md)으로 핵심/보조 과제를 나누고 필요한 MCP 호출·추가 페이지를 이어간다. 최신 키워드만 조사하지 않는다. 분기별 출처와 구현 적용을 누적하고 빈 분기를 완료로 바꾸지 않는다. 모바일 탭은 [모바일 기준](skills/samkill-reference-to-ui/references/mobile.md)에 따라 큰 CTA와 구별하고 바 높이·선택 표시·아이콘/라벨·안전 영역을 검증한다.
 
 날짜·수량·상태의 의미 중복도 제거하되 필요한 연도/조건은 보존한다. 서로 다른 작업 섹션은 서비스에 맞는 간격·제목·표면 단계로 구분하며 구분선 제거가 경계 제거로 이어지지 않게 한다. 생성/수정 표면의 목적은 주 제목으로 표현한다. 날짜·시간 선택도 제품 입력 스타일과 실제 선택 동작을 갖추고, 부모/자식·상태별 최종 여백을 확인한다. 목록·대화·폼은 같은 폭의 화면 묶음으로 제목·표면·입력·버튼·간격의 톤을 대조한다.
 
-상태 변화에는 [토큰 계약의 모션 기준](skills/reference-to-ui/references/design-tokens.md#상태-전환과-모션)을 적용한다. 호버 진입·해제를 부드럽게 연결하고 같은 역할의 속도·곡선을 통일한다. 불필요한 움직임을 추가하지 않으며 즉각적인 기능 반응·키보드 포커스·동작 줄이기를 보존하고 실제 전환을 검증한다.
+상태 변화에는 [토큰 계약의 모션 기준](skills/samkill-reference-to-ui/references/design-tokens.md#상태-전환과-모션)을 적용한다. 호버 진입·해제를 부드럽게 연결하고 같은 역할의 속도·곡선을 통일한다. 불필요한 움직임을 추가하지 않으며 즉각적인 기능 반응·키보드 포커스·동작 줄이기를 보존하고 실제 전환을 검증한다.
 
-같은 단계의 화면 컨테이너는 기본 패딩을 공통 토큰과 레이아웃으로 공유한다. [패딩 소유권](skills/reference-to-ui/references/design-tokens.md#공통-화면-컨테이너의-패딩-소유권)에 따라 중첩 여백과 고정 영역의 최종 정렬을 확인하고, 컴포넌트 내부 여백·가림 방지 공간은 역할을 구별한다.
+같은 단계의 화면 컨테이너는 기본 패딩을 공통 토큰과 레이아웃으로 공유한다. [패딩 소유권](skills/samkill-reference-to-ui/references/design-tokens.md#공통-화면-컨테이너의-패딩-소유권)에 따라 중첩 여백과 고정 영역의 최종 정렬을 확인하고, 컴포넌트 내부 여백·가림 방지 공간은 역할을 구별한다.
 
-행동 버튼은 [적용 범위와 위치](skills/reference-to-ui/references/product-reasoning.md#행동의-적용-범위와-위치)에 따라 실제 대상이 속한 영역에 배치한다. 판단은 특정 요소나 행 템플릿에 종속시키지 않고 필요성·요소 간 관계·사용자의 판단과 행동 순서·시각적 경쟁을 기준으로 한다. 실패 사례의 해결 후보를 보편적인 배치 규칙으로 복제하지 않는다. 화면·섹션·항목·선택 집합을 구별하고, 헤더의 빈자리나 레퍼런스 좌표만으로 위치를 정하지 않는다.
+행동 버튼은 [적용 범위와 위치](skills/samkill-reference-to-ui/references/product-reasoning.md#행동의-적용-범위와-위치)에 따라 실제 대상이 속한 영역에 배치한다. 판단은 특정 요소나 행 템플릿에 종속시키지 않고 필요성·요소 간 관계·사용자의 판단과 행동 순서·시각적 경쟁을 기준으로 한다. 실패 사례의 해결 후보를 보편적인 배치 규칙으로 복제하지 않는다. 화면·섹션·항목·선택 집합을 구별하고, 헤더의 빈자리나 레퍼런스 좌표만으로 위치를 정하지 않는다.
 
-경계·표면의 상태 전환도 모션에 포함한다. [경계 상태와 포커스](skills/reference-to-ui/references/design-tokens.md#경계-상태와-레이아웃을-흔들지-않는-포커스)에 따라 실제 초점은 input/textarea에 유지하고 시각적 표시는 입력을 감싸는 필드 컨테이너의 `box-shadow: inset`으로 적용한다. 입력 자체의 링이나 border 변경으로 강조하지 않는다. 내부 중복 링을 컴포넌트 범위에서 제거하고, 크기·내용 위치와 버튼으로의 초점 이동·고대비 대체 표시를 보존한다.
+경계·표면의 상태 전환도 모션에 포함한다. [경계 상태와 포커스](skills/samkill-reference-to-ui/references/design-tokens.md#경계-상태와-레이아웃을-흔들지-않는-포커스)에 따라 실제 초점은 input/textarea에 유지하고 시각적 표시는 입력을 감싸는 필드 컨테이너의 `box-shadow: inset`으로 적용한다. 입력 자체의 링이나 border 변경으로 강조하지 않는다. 내부 중복 링을 컴포넌트 범위에서 제거하고, 크기·내용 위치와 버튼으로의 초점 이동·고대비 대체 표시를 보존한다.
 
 ## 실패를 판단하고 보존하기
 
-[공통 실패 목록](skills/reference-review/references/failure-catalog.json)의 모든 활성 규칙, 프로젝트 제외 항목, 과거 실패를 확인한다. orc에서 실패로 정한 항목을 “결함이 아닐 수도 있다”라는 일반론으로 해제하지 않는다.
+[공통 실패 목록](skills/samkill-reference-review/references/failure-catalog.json)의 모든 활성 규칙, 프로젝트 제외 항목, 과거 실패를 확인한다. orc에서 실패로 정한 항목을 “결함이 아닐 수도 있다”라는 일반론으로 해제하지 않는다.
 
 미적용·예외는 관련 규칙 ID, 적용 범위, 실제 근거와 검증 결과를 남긴다. 명시된 사용자 요구는 존중하되 예외 범위를 임의로 넓히지 않는다. 실패 → 수정 → 재검증 → 재발을 누적하고 이전 실패를 지우지 않는다. 새 공통 규칙에는 적용 조건과 반례를 남기고 목록 버전을 갱신한다.
 
@@ -61,9 +61,9 @@ UI 작업에서는 [요소 구성 기준](skills/reference-to-ui/references/ui-c
 
 게이트의 FAIL/UNVERIFIED를 구현 완료로 바꾸지 않는다. 스크립트는 기록과 증거 무결성을 검사한다. 실제 시각 판독과 제품 사용성 판단은 별도로 수행한다.
 
-레퍼런스 기반 구현은 [수치 인계와 원본 비교 검사](skills/reference-review/references/reference-evidence.md)를 적용한다. 구현 전에 핵심 관찰값·단위·근거가 있는 인계의 prepare READY를 확인하고, RUI-16/17에는 원본·인계·실제 렌더 비교를 연결한다. ‘좁음/넓음’만 있는 분해나 chosen 값으로 대체한 관찰을 다음 단계로 넘기지 않는다. 숫자 통과와 실제 시각 판독을 구별하며 사용자 제약을 원본의 모든 특징을 지우는 근거로 확대하지 않는다.
+레퍼런스 기반 구현은 [수치 인계와 원본 비교 검사](skills/samkill-reference-review/references/reference-evidence.md)를 적용한다. 구현 전에 핵심 관찰값·단위·근거가 있는 인계의 prepare READY를 확인하고, RUI-16/17에는 원본·인계·실제 렌더 비교를 연결한다. ‘좁음/넓음’만 있는 분해나 chosen 값으로 대체한 관찰을 다음 단계로 넘기지 않는다. 숫자 통과와 실제 시각 판독을 구별하며 사용자 제약을 원본의 모든 특징을 지우는 근거로 확대하지 않는다.
 
-분해 전달은 [확장 JSON과 전체 raw](skills/reference-decompose/references/decomposition-json.md)를 사용한다. 색은 확인한 HEX·alpha·역할·근거로, 배치는 좌표계와 요소 관계로 전달한다. 받은 쪽의 해석·미지원/미확인과 실제 핵심 화면 비교를 연결하고 확장 속성을 조용히 버리지 않는다. JSON/해시/해석 기록의 준비를 실제 이해나 디자인 품질 승인으로 대신하지 않는다.
+분해 전달은 [확장 JSON과 전체 raw](skills/samkill-reference-decompose/references/decomposition-json.md)를 사용한다. 색은 확인한 HEX·alpha·역할·근거로, 배치는 좌표계와 요소 관계로 전달한다. 받은 쪽의 해석·미지원/미확인과 실제 핵심 화면 비교를 연결하고 확장 속성을 조용히 버리지 않는다. JSON/해시/해석 기록의 준비를 실제 이해나 디자인 품질 승인으로 대신하지 않는다.
 
 ## 대화 맥락 기록을 기본으로 하기
 
@@ -75,7 +75,7 @@ UI 작업에서는 [요소 구성 기준](skills/reference-to-ui/references/ui-c
 
 ## 변경과 검증
 
-읽는 UI 텍스트의 굵기 하한은 medium(500)이다. 본문·보조문구·입력값·placeholder·버튼·탭·배지·비활성 상태에도 적용하며 semibold(600)·bold(700) 등 상위 굵기는 역할에 따라 유지한다. 모든 글자를 500으로 통일하지 않는다. 상세 적용과 검증은 [글자 굵기 하한](skills/reference-to-ui/references/ui-composition.md#글자-굵기-하한)을 따른다.
+읽는 UI 텍스트의 굵기 하한은 medium(500)이다. 본문·보조문구·입력값·placeholder·버튼·탭·배지·비활성 상태에도 적용하며 semibold(600)·bold(700) 등 상위 굵기는 역할에 따라 유지한다. 모든 글자를 500으로 통일하지 않는다. 상세 적용과 검증은 [글자 굵기 하한](skills/samkill-reference-to-ui/references/ui-composition.md#글자-굵기-하한)을 따른다.
 
 관리 원본은 이 저장소의 `skills/`다. 개인 스킬 연결과 외부 참조 저장소를 혼동하지 않는다. 관련 없는 사용자 파일을 수정하거나 커밋하지 않는다.
 

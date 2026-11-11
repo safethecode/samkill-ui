@@ -15,14 +15,14 @@
 | 사용자의 요청·교정 | 반영한 결정과 이유 | 현재 자료 |
 |---|---|---|
 | 다양한 스킬을 모두 만들어 달라 | 조사, 구현, 리뷰, 제품 문구, 온보딩의 역할을 다섯 스킬로 분리했다. 작업에 필요한 스킬만 사용한다. | [사용 안내](../README.md) |
-| 번역체 UX 문구를 피하고 토스 글쓰기 원칙을 적용해 달라 | 제공된 김자유의 2022-11-15 글을 바탕으로 8가지 질문과 전후 예시를 만들었다. 문구를 줄여도 제품 사실·비용·조건·불확실성은 바꾸지 않는다. 댓글·메뉴·푸터는 원칙에서 제외했다. | [한국어 기준](../skills/ux-copy/references/korean-writing.md) |
-| 패딩부터 버튼 글자색, 아이콘 스타일까지 분석해 달라 | 요소와 변형별 E-ID로 크기·사방 여백·글자·색 조합·선/채움·정렬·상태를 기록한다. 정지 이미지에서 모르는 CSS 값이나 동작은 추정 또는 미확인으로 남긴다. | [상세 분석](../skills/uibowl-research/references/component-anatomy.md) |
-| UI 디자인은 토큰화를 확실하게 해 달라 | 토큰 파일 존재가 아니라 정의·참조·사용처까지 확인한다. 배경/글자/아이콘/테두리와 상태를 함께 검토하며 기존 토큰과 이유 있는 직접값 예외를 보존한다. | [토큰 계약](../skills/reference-to-ui/references/design-tokens.md) |
-| 제외해야 할 디자인이 들어갔는지 판독하는 게이트를 추가해 달라 | 실제 판독 결과와 증거를 기록하고 Python CLI로 누락·무결성·소스 변경·예외 선언을 검사한다. 이미지 미관을 자동 판별하는 도구라고 주장하지 않는다. | [게이트 절차](../skills/reference-review/references/design-gate.md) |
+| 번역체 UX 문구를 피하고 토스 글쓰기 원칙을 적용해 달라 | 제공된 김자유의 2022-11-15 글을 바탕으로 8가지 질문과 전후 예시를 만들었다. 문구를 줄여도 제품 사실·비용·조건·불확실성은 바꾸지 않는다. 댓글·메뉴·푸터는 원칙에서 제외했다. | [한국어 기준](../skills/samkill-ux-copy/references/korean-writing.md) |
+| 패딩부터 버튼 글자색, 아이콘 스타일까지 분석해 달라 | 요소와 변형별 E-ID로 크기·사방 여백·글자·색 조합·선/채움·정렬·상태를 기록한다. 정지 이미지에서 모르는 CSS 값이나 동작은 추정 또는 미확인으로 남긴다. | [상세 분석](../skills/samkill-uibowl-research/references/component-anatomy.md) |
+| UI 디자인은 토큰화를 확실하게 해 달라 | 토큰 파일 존재가 아니라 정의·참조·사용처까지 확인한다. 배경/글자/아이콘/테두리와 상태를 함께 검토하며 기존 토큰과 이유 있는 직접값 예외를 보존한다. | [토큰 계약](../skills/samkill-reference-to-ui/references/design-tokens.md) |
+| 제외해야 할 디자인이 들어갔는지 판독하는 게이트를 추가해 달라 | 실제 판독 결과와 증거를 기록하고 Python CLI로 누락·무결성·소스 변경·예외 선언을 검사한다. 이미지 미관을 자동 판별하는 도구라고 주장하지 않는다. | [게이트 절차](../skills/samkill-reference-review/references/design-gate.md) |
 | orc의 실패가 분석 문서에서 ‘결함이 아니다’로 바뀌는 문제를 고쳐 달라 | 기존 완화 표현을 철회했다. 원본 50개를 ID·원문·출처·해시로 보존하고 적용 여부와 예외 근거를 기록한다. 고쳤다고 과거 실패를 삭제하지 않는다. | [orc 분석과 수정 이유](orc-analysis.md) |
-| 실패 사례를 계속 판단하고 누적할 수 있어야 한다 | 프로젝트별 JSONL 실행 이력과 PROJECT 규칙을 두었다. 새 실패·수정·재발을 보존하고 재현 조건과 반례를 검토해 공통 목록에 반영한다. | [실패 목록](../skills/reference-review/references/failure-catalog.json) |
-| 코드를 생성할 때 anti-slop을 지켜 달라 | upstream 일반 규칙 15개와 TS/JS lint/typecheck 절차를 코드 지침에 연결했다. 타입 단언 반복이나 규칙 완화로 검사를 우회하지 않는다. 비 TS/JS 작업은 해당 언어의 검증을 사용한다. | [anti-slop 적용](../skills/reference-to-ui/references/anti-slop-code.md) |
-| Douglas persona와 knowledge로 요소 배치 전에 본질을 생각하게 해 달라 | 고객·상황·문제·핵심 행동·필요한 정보를 먼저 정의한다. 주요 요소마다 위치·크기·강조 이유와 제거 시 영향을 기록한다. 레퍼런스 원리와 새 아이디어의 역할을 연결한다. | [본질에서 배치하기](../skills/reference-to-ui/references/product-reasoning.md) |
+| 실패 사례를 계속 판단하고 누적할 수 있어야 한다 | 프로젝트별 JSONL 실행 이력과 PROJECT 규칙을 두었다. 새 실패·수정·재발을 보존하고 재현 조건과 반례를 검토해 공통 목록에 반영한다. | [실패 목록](../skills/samkill-reference-review/references/failure-catalog.json) |
+| 코드를 생성할 때 anti-slop을 지켜 달라 | upstream 일반 규칙 15개와 TS/JS lint/typecheck 절차를 코드 지침에 연결했다. 타입 단언 반복이나 규칙 완화로 검사를 우회하지 않는다. 비 TS/JS 작업은 해당 언어의 검증을 사용한다. | [anti-slop 적용](../skills/samkill-reference-to-ui/references/anti-slop-code.md) |
+| Douglas persona와 knowledge로 요소 배치 전에 본질을 생각하게 해 달라 | 고객·상황·문제·핵심 행동·필요한 정보를 먼저 정의한다. 주요 요소마다 위치·크기·강조 이유와 제거 시 영향을 기록한다. 레퍼런스 원리와 새 아이디어의 역할을 연결한다. | [본질에서 배치하기](../skills/samkill-reference-to-ui/references/product-reasoning.md) |
 | 따로 커밋하고 푸시해 달라 | 최초 제작은 8개, 후속 상세 분석·토큰·게이트 보강은 5개 커밋으로 나눠 `origin/main`에 푸시했다. 원격은 `safethecode/samkill`이다. | 아래 구현 이력 |
 | 이번 대화를 문서로 남기고 AGENTS.md로 기본 행동을 만들어 달라 | 이 문서에 결정 경위를 정리하고 루트 지침에 작업별 기본 기준과 향후 맥락 기록 의무를 연결했다. | [AGENTS.md](../AGENTS.md) |
 
@@ -34,7 +34,7 @@ orc의 `profiles/design.md`와 `profiles/design-components.md`를 로컬에서 �
 
 [anti-slop](https://github.com/dmmulroy/anti-slop/tree/e8c4880471b23ab7f216fba7b27d173a6ef07d4c)은 해당 revision의 README·설치 스킬·일반 규칙 등록 코드를 확인했다. upstream의 최신 변경은 향후 적용 시 재확인한다. 현재 저장소에는 제품 TS/JS 구현이 없어 Oxlint/anti-slop을 설치·실행하지 않았다.
 
-[Douglas 자료](https://github.com/team-attention/openclone/blob/40d0586541418b1a27eae4f8ac4352b78c8e4062/clones/douglas/persona.md)는 해당 revision의 persona와 고객 문제·가치·본질에 관련된 지식 5편을 읽었다. 개별 출처는 [적용 문서](../skills/reference-to-ui/references/product-reasoning.md)에 있다. 전체 지식 폴더를 읽었다고 주장하지 않는다. 인물의 말투나 정체성, 투자 조언을 가져오지 않고 고객 문제 중심 관점을 UI 판단에 응용했다.
+[Douglas 자료](https://github.com/team-attention/openclone/blob/40d0586541418b1a27eae4f8ac4352b78c8e4062/clones/douglas/persona.md)는 해당 revision의 persona와 고객 문제·가치·본질에 관련된 지식 5편을 읽었다. 개별 출처는 [적용 문서](../skills/samkill-reference-to-ui/references/product-reasoning.md)에 있다. 전체 지식 폴더를 읽었다고 주장하지 않는다. 인물의 말투나 정체성, 투자 조언을 가져오지 않고 고객 문제 중심 관점을 UI 판단에 응용했다.
 
 ## 반드시 보존할 교정
 
@@ -74,7 +74,7 @@ orc의 `profiles/design.md`와 `profiles/design-components.md`를 로컬에서 �
 
 `todo/`의 소스·토큰·기존 리뷰·게이트 결과를 읽고 저장된 전체 화면 2장을 직접 확인했다. 기존 리뷰는 aligned였으나 실제 gate-result는 경로 오류로 UNVERIFIED였다. 토큰을 쓰고 겹치지 않게 만들었다는 사실을 좋은 구성의 증거로 대신한 판독 누락을 확인했다. 새 규칙 이전에 없는 14px 하한을 당시 명시 요구 위반이었다고 소급해 주장하지 않고, 이번 교정 이후 필수 하한으로 적용한다.
 
-[실제 실패 기록](../evals/results/todo-composition-baseline.md)과 화면/코드 해시를 보존하고 [UI 구성 기준](../skills/reference-to-ui/references/ui-composition.md)을 추가했다. 구현·모바일·토큰·문구·리뷰와 AGENTS 기본 지침에 연결했다. 기존 ORC 50개/RUI 7개를 유지한 채 RUI-08–15를 추가해 catalog v2, 총 65개가 됐다. 이전 버전의 판독을 새 통과로 재사용하지 않는다.
+[실제 실패 기록](../evals/results/todo-composition-baseline.md)과 화면/코드 해시를 보존하고 [UI 구성 기준](../skills/samkill-reference-to-ui/references/ui-composition.md)을 추가했다. 구현·모바일·토큰·문구·리뷰와 AGENTS 기본 지침에 연결했다. 기존 ORC 50개/RUI 7개를 유지한 채 RUI-08–15를 추가해 catalog v2, 총 65개가 됐다. 이전 버전의 판독을 새 통과로 재사용하지 않는다.
 
 이번 요청은 스킬 개선이므로 todo 제품은 수정하지 않는다. 실패 사례 보존과 새 지침의 평가 결과를 구분하고, 향후 todo 개선은 실제 렌더와 상호작용을 다시 검증해야 한다. [새 기준의 독립 평가](../evals/results/todo-composition-green.md)에 관찰·명세·미실행 범위를 남긴다.
 
@@ -82,7 +82,7 @@ orc의 `profiles/design.md`와 `profiles/design-components.md`를 로컬에서 �
 
 Todo 피드백을 반영하던 중 사용자는 결과가 레퍼런스와 닮지 않고 품질도 전혀 같지 않으며, 여러 레퍼런스의 좋은 부분을 합쳐 반영해야 한다고 추가로 지적했다. 금지 목록 보강만으로 이 요구를 해결할 수 없으므로 긍정적인 채택 기준과 비교 절차를 추가했다.
 
-[레퍼런스 결합 기준](../skills/reference-to-ui/references/reference-synthesis.md)은 Q-ID별 원본 영역·장점·유지할 관계·변형 이유·구현 요소·토큰·비교 증거를 연결한다. 기능/색 일부의 유사성이나 chosen/의도적 차이 선언으로 전체 품질을 정당화하지 않는다. 목록과 채팅 등 서로 다른 과제에 적합한 자료를 골라 공통 시각 규칙으로 결합하고, 원본/구현을 나란히 보고 핵심 특징의 유지·검증된 변형·퇴보·미확인을 판독한다.
+[레퍼런스 결합 기준](../skills/samkill-reference-to-ui/references/reference-synthesis.md)은 Q-ID별 원본 영역·장점·유지할 관계·변형 이유·구현 요소·토큰·비교 증거를 연결한다. 기능/색 일부의 유사성이나 chosen/의도적 차이 선언으로 전체 품질을 정당화하지 않는다. 목록과 채팅 등 서로 다른 과제에 적합한 자료를 골라 공통 시각 규칙으로 결합하고, 원본/구현을 나란히 보고 핵심 특징의 유지·검증된 변형·퇴보·미확인을 판독한다.
 
 RUI-16/17을 같은 미커밋 catalog v2 개정에 추가했다. 이번 개정의 최종 수량은 원본 50개 + 추가 17개 = 67개다. 바로 위 65개는 작업 중간 상태를 기록한 것이며 최종 수량은 아니다. 새로 원본 UIbowl 이미지를 조회·비교한 것은 아니므로 실제 원본 대비 차이에 대한 사용자 평가와 문서 인계의 공백을 구분한다. Todo 제품은 여전히 수정하지 않았다.
 
@@ -253,7 +253,7 @@ AGENTS·리뷰·회귀 Y에 반영했다. 스킬 구조와 diff를 검증했으�
 
 사용자는 레퍼런스를 받으면 가장 먼저 UI를 요소별로 분리해 AI가 이해하는 언어로 바꾸는 스킬을 함께 만들자고 요청했다. 원본 한 장을 에이전트가 선택하고 요소별 프롬프트로 직접 구현해 보여준 뒤, 사용자 지적을 수정 프롬프트와 스킬에 누적하는 방식이다. 이어서 이번 작업과 후속 교정을 계속 커밋하되 오늘 날짜로 하라고 명시했다. 이전9월9일 날짜 지정은 이번에 적용하지 않는다. 앞선629486b는 별도 ‘푸시도해’ 요청에 따라 origin/main 반영을 확인했다.
 
-에이전트 선택: 기존 셀레트립 일정 편집295×640 이미지를 재사용하고 HTML/CSS 정적 실험으로 범위를 정했다. 원본의 요소·관계를 P1으로 고정해 원본을 보지 않은 구현 담당에게 사진/공식SVG만 전달했다. E1–E5 독립 표본과 조립 화면을 비교 페이지에 연결했다. 전체UI를 이미지로 대체하지 않았다. 새 [reference-decompose](../skills/reference-decompose/SKILL.md)를 조사 직후·제품 각색 전 단계로 연결하고 개인 스킬 경로에 관리 원본 symlink를 추가했다.
+에이전트 선택: 기존 셀레트립 일정 편집295×640 이미지를 재사용하고 HTML/CSS 정적 실험으로 범위를 정했다. 원본의 요소·관계를 P1으로 고정해 원본을 보지 않은 구현 담당에게 사진/공식SVG만 전달했다. E1–E5 독립 표본과 조립 화면을 비교 페이지에 연결했다. 전체UI를 이미지로 대체하지 않았다. 새 [reference-decompose](../skills/samkill-reference-decompose/SKILL.md)를 조사 직후·제품 각색 전 단계로 연결하고 개인 스킬 경로에 관리 원본 symlink를 추가했다.
 
 실제 교정: P1이 Day3의 보이는 카드 경계를 누락한 것을 내부 비교에서 발견했다. 첫 프롬프트/코드/렌더를 보존하고 P2로 경계를 보완·재렌더했다. 사용자 지적을 이미 받았다고 기록하지 않는다. 가려진 내용은 unknown이어도 보이는 컨테이너 경계까지 삭제하지 않는 해석 원리와 반례를 스킬에 추가했다. 이후 리뷰 담당은 원본을 봤으므로 P2를 새로운 blind 재현 표본으로 부르지 않는다.
 
@@ -364,7 +364,7 @@ P12 최종: 기존7필드복원과새예약visitDate저장/2건조회도추가�
 
 ## 2026-09-10 누적 피드백 스킬 통합 감사
 
-사용자가 지금까지의 피드백을 빠짐없이 스킬에 정리해 재발을 막으라고 요청했다. 레퍼런스 분해/합성부터 P12까지30개 피드백/운영 요구를 [대응표](../evals/results/round4-feedback-coverage.md)로 대조했다. 대부분의 원칙은 개별 파일에 있었으나 검수 경로가 약했다. [재발 점검](../skills/reference-review/references/feedback-regression.md)을 만들고 구현 전/reference-decompose 교정/reference-review 검사와review-criteria에 연결했다.
+사용자가 지금까지의 피드백을 빠짐없이 스킬에 정리해 재발을 막으라고 요청했다. 레퍼런스 분해/합성부터 P12까지30개 피드백/운영 요구를 [대응표](../evals/results/round4-feedback-coverage.md)로 대조했다. 대부분의 원칙은 개별 파일에 있었으나 검수 경로가 약했다. [재발 점검](../skills/samkill-reference-review/references/feedback-regression.md)을 만들고 구현 전/reference-decompose 교정/reference-review 검사와review-criteria에 연결했다.
 
 교정은 의미/관계/스타일/상태/데이터/검증의 원인과 실제 사용처를 연결하며 기존PASS·해시만으로 바뀐 화면을 통과시키지 않도록 했다. 포커스 문단은 여백에서 경계/포커스로 옮기고 범용 주제목 규정의 특정24px는 제품토큰으로 바꿨다. 보조 감사가 경로/위치/과잉값 해소를 확인하고 disabled의 구현강제/빈결과 복구강제차등 표현을 지적해 기능·의미/원인 기준으로 좁혔다. 기존 RUI 규칙을 연결하며 새catalog규칙/판독기동작은 추가하지 않았다.
 
@@ -521,7 +521,7 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 ## 2026-10-10 Primary 컬러 선택 교정
 
 - 사용자 요청: Primary 컬러를 잘 선택하지 못하는 것 같다고 지적했다. 특정 화면·색·레퍼런스는 지정되지 않았다.
-- 확인/선택: 기존 지침은 역할·토큰·대비에 구체적이고 색 관계를 관찰하도록 요구하지만 새 후보 선택과 제품 적합성 판단은 흩어져 있었다. [Primary 선택 기준](../skills/reference-to-ui/references/primary-color.md)을 추가해 제품 내용·기존 브랜드·레퍼런스의 색 관계에서 후보를 고르고 필요한 실제 화면 비교로 결정하도록 했다. 익숙한 예시색·업종 고정관념을 자동 채택하지 않고 무채색·저채도·승인된 브랜드도 보존한다. 대비 수치와 실제 행동 위계/색 적합성을 구별한다.
+- 확인/선택: 기존 지침은 역할·토큰·대비에 구체적이고 색 관계를 관찰하도록 요구하지만 새 후보 선택과 제품 적합성 판단은 흩어져 있었다. [Primary 선택 기준](../skills/samkill-reference-to-ui/references/primary-color.md)을 추가해 제품 내용·기존 브랜드·레퍼런스의 색 관계에서 후보를 고르고 필요한 실제 화면 비교로 결정하도록 했다. 익숙한 예시색·업종 고정관념을 자동 채택하지 않고 무채색·저채도·승인된 브랜드도 보존한다. 대비 수치와 실제 행동 위계/색 적합성을 구별한다.
 - 결과: reference-to-ui·토큰·리뷰·design-md·samkill-ui·루트 DESIGN을 연결하고 PRIMARY-01/02와 [수동 계약 대조](../evals/results/primary-color-selection.md)를 추가했다. 기존 제품색·catalog·판독기는 바꾸지 않았다.
 - 미확인/권한: 특정 제품의 원인·시각 개선·색 후보 렌더·사용자 선호·독립 실행 효과는 미검증이다. 문서 검증을 제품 품질 통과로 확대하지 않는다. 이번 변경은 로컬에 유지하며 커밋·푸시는 하지 않는다.
 - 파일 검증: 관련4개 스킬 quick_validate·로컬 Markdown 링크 경로186개·신규 대비 앵커·신규 파일 공백·git diff --check 통과. 개인 설치에서 관리 원본과 신규 참고 문서 접근·일치를 확인했다. 기존 링크 전체 앵커와 실제 UI는 미검증이다.
@@ -544,7 +544,7 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 ## 2026-10-11 후속 — Spacing Audit 적용
 
 - 사용자 요청: 제공한4/8pt 간격 감사 기준을 디자인 스킬에 적용할 수 있는지 물었다. 구조 변경 없이 간격만 교정하고 수정 전 전체 요약, 토큰/의도된 예외 보존, 의도된6단위 체계의 일괄 전환 전 확인을 요구했다.
-- 선택/이유: 별도 스킬을 추가하지 않고 [Spacing Audit](../skills/reference-to-ui/references/spacing-audit.md)을 구현·토큰·리뷰·samkill-ui와 AGENTS/DESIGN에서 연결했다. 원문 목록에서 빠졌지만 내부 간격에 명시된20은 내부 허용값으로 정리했다. 새 구조는8단위, 촘촘한 내부는4단위 중심으로 판단하며 비4배수 고정값/구조 비8배수/목록 밖4배수의 오류·검토 의견을 구별한다.
+- 선택/이유: 별도 스킬을 추가하지 않고 [Spacing Audit](../skills/samkill-reference-to-ui/references/spacing-audit.md)을 구현·토큰·리뷰·samkill-ui와 AGENTS/DESIGN에서 연결했다. 원문 목록에서 빠졌지만 내부 간격에 명시된20은 내부 허용값으로 정리했다. 새 구조는8단위, 촘촘한 내부는4단위 중심으로 판단하며 비4배수 고정값/구조 비8배수/목록 밖4배수의 오류·검토 의견을 구별한다.
 - 행동 계약: 선택/페이지 범위·단위·고유 요소/값 수·모든 발견값과 보존 이유를 수정 전에 전달한다. 일반 승인된 수정은 요약 뒤 수행하고, 의도된 별도 체계의 전환 권한이 없을 때만 확인한다. 바인딩을 덮어쓰지 않으며 간격 변경이 잘림/가림을 만들면 무관한 크기·글자 수정 대신 해당 변경을 되돌리고 이유를 남긴다. 토큰 보존은 이중 패딩 등 기존 실패를 면제하지 않는다.
 - 결과/미확인: SPACING-AUDIT-01–05와 [수동 계약 대조](../evals/results/spacing-audit.md)를 추가했다. 기존 catalog·판독기·데모·제품 토큰은 바꾸지 않았다. 문서 계약 대조는 독립 실행/실제 화면 감사·시각 개선 검증이 아니다. 실제 대상의 감사와 재렌더는 미실행이다. 기존 미커밋 작업을 보존하고 이번 수정은 커밋/푸시하지 않는다.
 - 파일 검증: 관련10개 문서의 로컬 링크 경로231개·신규 참고 앵커3개·신규 파일 공백·git diff --check 통과. reference-to-ui/reference-review/samkill-ui의 quick_validate와 개인 설치 연결3개를 확인했다. 기존 링크 전체 앵커·실제 화면/독립 실행은 미검증이다.
@@ -622,7 +622,7 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 
 - 사용자 요청: 흰 배경·장식 제한을 앞세워 원본 특징을 없애고, 분해에서 실측을 생략한 뒤 임의 값을 검수도 통과시키는 일이 기존 기준 아래서 반복된다고 지적했다. 실패 대상으로 `Documents/yoch.cc`를 지정했다. 지침을 다시 설명하는 데서 끝내지 않고 실제 입력과 판독 동작을 수정한다.
 - 실제 확인: yoch의 초기 분해는 정성 표현 뒤640px 등을 chosen으로 정했고, 리뷰는 약460 image-px와640 CSS-px를 섞어 퇴보를 adapted-and-verified로 처리했다. 저장 보고서의 RUI-16/17은 pass였지만 전체 게이트는 외부 인증/보조기술 unknown으로 UNVERIFIED였다. 전체 PASS였다고 확대하지 않는다. 현재 원본을1440×900/DPR1에서 읽기 전용으로 측정해 제목 열464 CSS-px를 확인했다. 초기 저장 DOM의640px와 커밋1881bf5의 CSS를 보존했다. 현재 원본 실측은 최초 실행 당시 실측의 증거가 아니다.
-- 선택/이유: [수치 인계와 비교](../skills/reference-review/references/reference-evidence.md)를 실제 JSON 입력으로 만들고, 구현 전 prepare/READY와 구현 후 원본·인계·캡처·현재 구현 해시의 연결을 추가했다. RUI-16/17 적용 시 자료 누락/단위 혼용/이전 구현의 비교 재사용은 UNVERIFIED, 미리 정한 허용 차이 초과와 시각 퇴보는 pass 선언과 무관하게 FAIL이다. 흰 기본 배경의 기존 명시 요구를 폐기하지 않고 원본을 제약보다 먼저 관찰한 뒤 충돌하는 역할·범위만 별도 결정하도록 했다.
+- 선택/이유: [수치 인계와 비교](../skills/samkill-reference-review/references/reference-evidence.md)를 실제 JSON 입력으로 만들고, 구현 전 prepare/READY와 구현 후 원본·인계·캡처·현재 구현 해시의 연결을 추가했다. RUI-16/17 적용 시 자료 누락/단위 혼용/이전 구현의 비교 재사용은 UNVERIFIED, 미리 정한 허용 차이 초과와 시각 퇴보는 pass 선언과 무관하게 FAIL이다. 흰 기본 배경의 기존 명시 요구를 폐기하지 않고 원본을 제약보다 먼저 관찰한 뒤 충돌하는 역할·범위만 별도 결정하도록 했다.
 - 재현/검증: [실제 사례와 진단](../evals/results/reference-evidence-2026-10-22/README.md)에 원본·초기 화면·수치·해시를 보존했다. 분리된 RUI-16 진단에서 같은464→640 입력과 pass 선언을 기존 판독기는 PASS, 수정 판독기는 FAIL로 판정했다. 이는 구현 뒤 작성한 진단이며 신규 생성의 품질 실험이나 yoch 전체 게이트 실행이 아니다. 회귀38개를 원본·Qwen·PDP 판독기에 각각 실행해 통과했고, Qwen 기존 Node213개/Python2개, PDP 플랫폼·동시기록8개와 audit-links도 통과했다. Goodnotes prepare의 유효/정성만/단위혼용 입력은 READY/UNVERIFIED/UNVERIFIED였다.
 - 종속 반영: [동기화 기록](downstream-sync.md)에 실제 사용처를 남겼다. Qwen 공통 프롬프트·가공 가이드·최종 게이트, PDP Gen 인계·분해/검수 복사본·플랫폼 잠금을 보존한 게이트, Goodnotes PDF 전용 인계/검수와 독립 prepare를 로컬 반영했다. PDP 원래 체크아웃과 기존 수집 파일은 보존하고 앞서 통합한 worktree에서 작업했다. 개인 PDP 설치에는 이번 인계 문단만 반영했으며 원격 전체 패키지 재설치로 확대하지 않는다.
 - 한계/남은 범위: 도구는 측정의 진실성·영역 선택·핵심 특징 누락·미관을 자동 증명하지 않는다. 실제 원본/결과 판독이 필요하다. 새 모델 생성·교정 중인 yoch의 최종 화면 승인·Goodnotes PDF/실기기 검증은 수행하지 않았다. yoch의 진행 중인 교정 코드는 수정하지 않았다. 이번 변경은 아직 커밋·푸시하지 않았고 과거 푸시 승인을 새 원격 변경의 승인으로 사용하지 않는다. 기존 screen-spec·Round07/11·output 변경은 보존한다.
@@ -642,9 +642,9 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 ## 2026-10-23 확장 분해 JSON·HEX·해석과 핵심 화면 검증
 
 - 사용자 요청: 분해의 좌표·색·레이아웃 형태를 확장 가능한 JSON으로 전달하고 규격 밖 정보와 전체 raw도 보존한다. 색은 최대한 HEX로 전달하며 실제 이해를 확인하는 절차까지 바꾸고 계속 커밋·푸시한다. 이 승인 범위에서 원본과 세 종속 프로젝트를 반영하며 무관한 작업은 제외한다.
-- 선택/이유: [분해 형식](../skills/reference-decompose/references/decomposition-json.md)에 sources/spaces/raw/elements/properties/relations/adaptations/required/extensions와 안정된 ID·revision을 정의했다. 좌표와 흐름/부모 관계, 관찰/각색, 실측/추정/미확인을 분리한다. 색은6자리 대문자 HEX·별도alpha·srgb와 역할·근거, 그라데이션 stop/방향과 원래 표기를 보존한다. 넓은 색역/미확인 색을 정확한 HEX로 꾸미지 않는다.
+- 선택/이유: [분해 형식](../skills/samkill-reference-decompose/references/decomposition-json.md)에 sources/spaces/raw/elements/properties/relations/adaptations/required/extensions와 안정된 ID·revision을 정의했다. 좌표와 흐름/부모 관계, 관찰/각색, 실측/추정/미확인을 분리한다. 색은6자리 대문자 HEX·별도alpha·srgb와 역할·근거, 그라데이션 stop/방향과 원래 표기를 보존한다. 넓은 색역/미확인 색을 정확한 HEX로 꾸미지 않는다.
 - 실제 구현: reference_check의 decompose/prepare/export와 최종 check를 연결했다. 전체 JSON·외부 raw 원문을 자르지 않고 payload로 내보내고, 받은 쪽의 항목/raw/확장별 planned·unsupported·unknown 해석을 검사한다. 수치 handoff/comparison은v2로 올려 분해 관찰ID/해시와 결합하고, 핵심 화면 source snapshot·캡처·판독과 최종 consumption을 요구한다. 확장 필드 삭제·미처리·핵심 미해결은 통과하지 않는다. catalog/contract/report 버전1·75규칙과 기존 실패 이력은 유지했다.
-- 검증: 초기12개 사례는 원본/Qwen/PDP의 구도구에서 실패3개/하위 오류14개를 확인한 뒤 구현했다. 최종 원본46+14개·Qwen/PDP각60개·Goodnotes14개, 기존Qwen Node213/Python2개·PDP전체69개가 통과했다. [실행 가능한 합성 예제](../skills/reference-decompose/references/json-example/decomposition.json), [전체 raw export와 거절 진단](../evals/results/decomposition-json-2026-10-23/README.md)을 보존했다. 이는 실제 모델 이해도/신규 UI 품질 실험과 구별한다.
+- 검증: 초기12개 사례는 원본/Qwen/PDP의 구도구에서 실패3개/하위 오류14개를 확인한 뒤 구현했다. 최종 원본46+14개·Qwen/PDP각60개·Goodnotes14개, 기존Qwen Node213/Python2개·PDP전체69개가 통과했다. [실행 가능한 합성 예제](../skills/samkill-reference-decompose/references/json-example/decomposition.json), [전체 raw export와 거절 진단](../evals/results/decomposition-json-2026-10-23/README.md)을 보존했다. 이는 실제 모델 이해도/신규 UI 품질 실험과 구별한다.
 - 종속 적용: Qwen의 가공 문서·실제 공유 가이드/진입점·helper와 출처, PDP의 분해/검수·Gen/freeze 인계와 helper, Goodnotes의 PDF전용 원문/해석·대표면 G2/G5 검수와 helper를 맞춘다. Qwen에 없던 루트 DESIGN을 도구 범위로 작성하고 임의 제품 팔레트는 만들지 않았다. PDP 통합 worktree를 사용하고 개인 설치에는 관련2문단만 추가해 구버전 나머지를 덮어쓰지 않았다.
 - 한계: 구조/해시/해석 기록은 관찰의 진실성·실제 이해·올바른 영역·미관을 자동 증명하지 않는다. 실제 핵심 화면과 전체 비교가 필요하다. host가 export payload를 REFERENCE.md/공유 component 입력에 실제 넣어야 하며 모든 추론의 자동 감시를 추가한 것은 아니다. 새 모델 추론·제품 UI/PDF·기기 검증은 수행하지 않았다. yoch 및 기존 screen-spec·Round07/11·output은 수정/커밋하지 않는다. 검증된 이번 변경을 목적별 커밋·푸시하고 실제 원격 해시를 확인한다.
 
@@ -676,3 +676,12 @@ Round10 최종 확인: 최신코드의320/390/480/1280전체통합검사PASS, �
 ### 2026-11-11 한국어 설명 커밋·푸시 확인
 
 원본 `54879dcc869eacccb22a68b79d397e6c32f88c99`·Qwen `75c193b4d3188ede080851d7cfd8f1f8d524dcf9`·PDP `a4d36fb112ccb51b415cca9d0d02bf11db54210a`를 각각 원격 main에 반영하고 실제 refs/heads/main과 일치함을 확인했다. 원본12/Qwen12/PDP5파일만 목적별로 반영했고 Goodnotes와 기존 사용자 작업은 보존했다. [동기화 범위](downstream-sync.md)와 [원격 기록](../evals/results/korean-skill-descriptions-2026-11-11-push.json)을 연결한다. 이번 원격 확인 기록은 후속 문서 커밋으로 반영하며 실제 `$` 메뉴 갱신을 확인했다고 하지 않는다.
+
+
+## 2026-11-11 Samkill 표시 제목·호출 ID와 전체 호출부 갱신
+
+- 사용자 요청: 제목은 영어 `Samkill …`, 설명은 한국어로 제공하고 `$` 호출 이름도 바꾸며 다른 스킬의 호출/참조까지 함께 갱신한다.
+- 선택/이유: samkill-ui는 유지하고 연관7개 ID·폴더에 samkill- 접두사를 붙였다. 메타데이터·기본 프롬프트·개인 연결과 현재 진입점/기준/템플릿을 동기화했다. 중복 등록을 피하려고 예전 설치 별칭은 제거했다. [이름 대응과 범위](skill-namespace-migration.md)를 따른다.
+- 실제 반영: Qwen의8개 가공 guide와6개 stage/component/catalog 호출, PDP의 복사·부분 의존 폴더/lock/전용 인계, Goodnotes 호출, 개인 PDP2파일, 별도 화면설계서 기술 참조를 수정했다. 제품별 계약·helper 동작·75규칙 의미는 보존했고 catalog v6에는 현재 namespace 포인터만 반영했다. 과거 평가·해시·날짜별 서술은 보존했다. 기존 미추적 screen-spec은 관련 호출만 로컬 수정하고 이번 커밋에서 제외한다.
+- 검증: 원본46+14개·Qwen213+2개·PDP69개·Goodnotes helper14개 통과, 형식/설치 연결·현재 링크·실제 Qwen context 로딩과 독립 검토를 확인했다. Qwen lint3건·CheckJS14건은 변경 전과 같은 FAIL로 남겼다. PDP 기본 Python의 PIL 누락과 Goodnotes의 최초 잘못된 discovery 경로도 [검증](../evals/results/samkill-skill-namespace-2026-11-11.json)에 보존한다.
+- 미확인: 현재 앱의 메뉴/캐시 갱신·자동 선택·새 모델 추론·새 UI/PDF/실기기 품질은 수행하지 않았다. 승인된 이번 변경만 목적별 커밋·푸시하며 원본·종속 구현 해시와 실제 원격 확인은 후속 기록으로 확정한다.
